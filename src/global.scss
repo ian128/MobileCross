@@ -28,4 +28,8 @@
 @font-face {
     font-family: 'Proxima Nova';
     src: url("../src/assets/fonts/ProximaNova-Regular.otf") format('opentype'),
-  }
+}
+
+* {
+  font-family: 'Proxima Nova';
+}
