@@ -1,0 +1,125 @@
+.row{
+    padding: 1rem;
+}
+
+.title{
+    position: absolute;
+    top: 13%;
+    left: 30%;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 61px;
+    color: #ffffff;
+    z-index: 10;
+}
+
+.rectangle-one{
+    position: absolute;
+    width: 140%;
+    height: 70%;
+    left: -22%;
+    top: -66%;
+    background: #5F9FFF;
+    border-radius: 76px;
+    transform: rotate(-13.75deg);
+    z-index: 3;
+}
+
+.rectangle-two{
+    position: absolute;
+    width: 170%;
+    height: 70%;
+    left: -50%;
+    top: -39%;
+    background: #5599FF;
+    border-radius: 98px;
+    transform: rotate(-13.75deg);
+    z-index: 2;
+}
+
+.rectangle-three{
+    position: absolute;
+    width: 170%;
+    height: 70%;
+    left: -70%;
+    top: -27%;
+    background: #3D89FB;
+    border-radius: 98px;
+    z-index: 1;
+}
+
+.card-container{
+    padding: 1rem;
+    position: absolute;
+    width: 78%;
+    left: 10%;
+    top: 30%;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    z-index: 10;
+}
+
+.email-title{
+    left: 10%;
+    top: 15%;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #3699F7;
+    z-index: 10;
+}
+
+.password-title{
+    left: 10%;
+    top: 55%;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #3699F7;
+    z-index: 10;
+}
+
+.button{
+    position: absolute;
+    width: 84%;
+    height: 6%;
+    left: 8%;
+    top: 57%;
+    background: #3D89FB;
+    border-radius: 6px;
+}
+
+.button-title{
+    position: absolute;
+    left: 42%;
+    top: 30%;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+}
+
+.footer{
+    position: absolute;
+    left: 18%;
+    top: 580px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #273134;
+}
+
+.footer-a{
+    position: absolute;
+    width: 100%;
+    left: 110%;
+    top: 0%;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3699F7;
+}
+
+input{
+    flex:1
+}
