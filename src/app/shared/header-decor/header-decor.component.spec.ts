@@ -1,22 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Page2Page } from './page2.page';
+import { HeaderDecorComponent } from './header-decor.component';
 
-describe('Page2Page', () => {
-  let component: Page2Page;
-  let fixture: ComponentFixture<Page2Page>;
+describe('HeaderDecorComponent', () => {
+  let component: HeaderDecorComponent;
+  let fixture: ComponentFixture<HeaderDecorComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ Page2Page ],
+      declarations: [ HeaderDecorComponent ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Page2Page);
+    fixture = TestBed.createComponent(HeaderDecorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

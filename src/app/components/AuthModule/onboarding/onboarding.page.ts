@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./onboarding.page.scss'],
 })
 export class OnboardingPage implements OnInit {
-
+  pict2="../"
   constructor() { }
 
   ngOnInit() {

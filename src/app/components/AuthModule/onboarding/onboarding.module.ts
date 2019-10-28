@@ -19,8 +19,11 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
   ],
   declarations: [OnboardingPage]
 })
-export class OnboardingPageModule {}
+export class OnboardingPageModule {
+  images = [1, 2, 3].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
+}
+

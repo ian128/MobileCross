@@ -1,9 +1,75 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>onboarding</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+    <div class="padding">
+        <ion-slides>
 
+            <ion-slide>
+                <ion-grid>
+                  <ion-row>
+                    <ion-col>
+                        <h1>Welcome to..</h1>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                      <ion-col>
+                        <ion-img src="assets/images/onboarding/1.png"></ion-img>
+                      </ion-col>
+                    </ion-row>
+                </ion-grid>
+              </ion-slide>
+           
+    
+            <ion-slide>
+              <ion-grid>
+                <ion-row>
+                  <ion-col>
+                      <h1>Rent a field!</h1>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                      <ion-img src="assets/images/onboarding/2.png"></ion-img>
+                    </ion-col>
+                  </ion-row>
+              </ion-grid>
+            </ion-slide>
+    
+            <ion-slide>
+                <ion-grid>
+                  <ion-row>
+                    <ion-col>
+                        <h1>Sparring!</h1>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                      <ion-col>
+                        <ion-img src="assets/images/onboarding/3.png"></ion-img>
+                      </ion-col>
+                    </ion-row>
+                </ion-grid>
+              </ion-slide>
+    
+    
+    
+              <ion-slide>
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col>
+                          <h1>Sport News!</h1>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                          <ion-img src="assets/images/onboarding/4.png"></ion-img>
+                        </ion-col>
+                      </ion-row>
+                  </ion-grid>
+                </ion-slide>
+          </ion-slides>
+    </div>
+    <div padding>
+        <a [routerLink]="['/','register']"><ion-button class = "button button-block">Sign Up</ion-button></a>
+    </div>
+    <div class="ion-text-center">
+        <p>Already have an account? <a [routerLink]="['/','login']">Login</a></p>
+      </div>
 </ion-content>
