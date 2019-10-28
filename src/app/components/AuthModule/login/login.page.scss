@@ -1,89 +1,36 @@
-.row{
-    padding: 1rem;
+:not(app-header-decor) {
+    position: relative;
 }
 
 .title{
-    position: absolute;
-    top: 13%;
-    left: 30%;
-    font-weight: bold;
+    margin-top: 25%;
+    font-weight: bolder;
     font-size: 50px;
-    line-height: 61px;
     color: #ffffff;
-    z-index: 10;
+}
+
+.form-title{
+    color: #3699F7;
+    font-size: 14pt;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.spacer{
+    height: 10%;
 }
 
 .card-container{
-    padding: 1rem;
-    position: absolute;
-    width: 78%;
-    height: 150px;
-    left: 10%;
-    top: 30%;
+    margin: auto;
+    width: 80%;
+    padding: 2em;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 7px;
-    z-index: 10;
 }
 
-.email-title{
-    position: absolute;
-    left: 10%;
-    top: 15%;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-    color: #3699F7;
-    z-index: 10;
-}
-
-.password-title{
-    position: absolute;
-    left: 10%;
-    top: 55%;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-    color: #3699F7;
-    z-index: 10;
-}
-
-.button{
-    position: absolute;
-    width: 84%;
-    height: 6%;
-    left: 8%;
-    top: 57%;
-    background: #3D89FB;
-    border-radius: 6px;
-}
-
-.button-title{
-    position: absolute;
-    left: 42%;
-    top: 30%;
-    font-size: 16px;
-    line-height: 19px;
-    color: #ffffff;
-}
-
-.footer{
-    position: absolute;
-    left: 18%;
-    top: 580px;
-    font-size: 16px;
-    line-height: 19px;
-    color: #273134;
-}
-
-.footer-a{
-    position: absolute;
-    width: 100%;
-    left: 110%;
-    top: 0%;
-    font-size: 16px;
-    line-height: 19px;
-    color: #3699F7;
+ion-input {
+    border-bottom: #EEEEEE 1px solid;
 }
