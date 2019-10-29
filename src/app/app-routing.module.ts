@@ -10,6 +10,8 @@ const routes: Routes = [
   { path: 'page3', loadChildren: './components/AuthModule/onboarding/page3/page3.module#Page3PageModule' },
   { path: 'page4', loadChildren: './components/AuthModule/onboarding/page4/page4.module#Page4PageModule' },
   { path: 'onboarding', loadChildren: './components/AuthModule/onboarding/onboarding.module#OnboardingPageModule' },
+  { path: 'myprofile', loadChildren: './myprofile/myprofile.module#MyprofilePageModule' },
+  { path: 'editprofile', loadChildren: './myprofile/editprofile/editprofile.module#EditprofilePageModule' },
 ];
 
 @NgModule({
