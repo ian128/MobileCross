@@ -5,12 +5,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { LoginPage } from './login.page';
+import { OnboardingPage } from './onboarding.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: LoginPage
+    component: OnboardingPage
   }
 ];
 
@@ -19,8 +19,11 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
   ],
-  declarations: [LoginPage]
+  declarations: [OnboardingPage]
 })
-export class LoginPageModule {}
+export class OnboardingPageModule {
+  images = [1, 2, 3].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
+}
+
