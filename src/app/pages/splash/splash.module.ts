@@ -24,7 +24,6 @@ const routes: Routes = [
   ],
   declarations: [
     SplashPage,
-    HeaderDecorComponent
   ]
 })
 export class SplashPageModule {}
