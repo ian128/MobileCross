@@ -18,13 +18,15 @@ ion-toolbar{
 }
 
 .quicklink-icon{
-    height: 3em;
+    height: 2em;
 }
 
 .quicklink-text{
+    padding-top: 0.3rem;
     font-size: 8pt;
     text-transform: uppercase;
     line-height:0;
+    color: #3D89FB;
 }
 
 .bold{
@@ -39,10 +41,44 @@ ion-toolbar{
     border-left: 2px solid #EEEEEE;
 }
 
-.sport-button{
-    margin: 0.5em;
+.sport-button1{
+    margin-right: 0.3em;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.sport-button2{
+    margin-right: 0.3em;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.sport-button3{
+    margin-right: 0.3em;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.sport-button4{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
@@ -71,6 +107,11 @@ ion-toolbar{
         height: 8em;
         object-fit: cover;
     }
+
+    .field-content{
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
     
 }
 
@@ -82,11 +123,8 @@ ion-toolbar{
     display: block;
     overflow: hidden;
     color:white;
-    
-    h3{
-        padding-top: 1em;
-        font-weight: bolder;
-        line-height: 0.1;
+    p{
+        padding-top: 0.7em;
     }
 
     .news-picture{
@@ -99,13 +137,13 @@ ion-toolbar{
         margin-top: -6em;
         padding-left:16px;
         padding-right: 16px;
-        height: 5em;
+        height: 4em;
         background: rgba(0, 0, 0, 0.44);
     }
 
     .more-button{
-        top:1.1em;
-        right:0.8em;
+        top:25%;
+        right:5%;
         padding: 4pt;
         position: absolute;
         background: #3D89FB;
