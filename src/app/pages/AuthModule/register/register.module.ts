@@ -6,6 +6,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { RegisterPage } from './register.page';
+import { HeaderDecorComponent } from 'src/app/shared/header-decor/header-decor.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 const routes: Routes = [
   {
@@ -19,8 +21,11 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    SharedModule
   ],
-  declarations: [RegisterPage]
+  declarations: [
+    RegisterPage,
+  ]
 })
 export class RegisterPageModule {}
