@@ -12,3 +12,43 @@ ion-title{
     color: white;
     font-weight: bolder;
 }
+
+.main-image{
+    height: 30%;
+    overflow: hidden;
+    object-fit: cover;
+
+}
+
+h3{
+    font-weight: bolder;
+    line-height: 0;
+}
+
+.price-table{
+    border: 1px solid #EEEEEE;
+    border-radius: 16px;
+    ion-row:nth-child(1){
+        border-bottom: 1px solid #EEEEEE;
+        ion-col{
+            b{
+                line-height: 0;
+            }
+            p{
+                line-height: 0;
+            }
+        }
+    }
+}
+
+.thin{
+    font-weight: 400;
+}
+
+.bold{
+    font-weight: bolder;
+}
+
+.tight{
+    line-height: 0;
+}

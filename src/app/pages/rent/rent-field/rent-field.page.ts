@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-rent-field',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RentFieldPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit() {
   }
@@ -16,4 +19,7 @@ export class RentFieldPage implements OnInit {
     console.log(ev.detail.value);
   }
 
+  fieldDetails(){
+    this.router.navigate(['/','field-details'])
+  }
 }
