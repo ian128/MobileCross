@@ -79,7 +79,7 @@ ion-toolbar{
     width: 100%;
     border: 1px solid #EAEAEA;
     border-radius: 12pt;
-    display: inline-block;
+    display: block;
     overflow: hidden;
     color:white;
     
@@ -90,16 +90,25 @@ ion-toolbar{
     }
 
     .news-picture{
-        position: absolute;
-        object-position: left;
         object-fit: cover;
+        height:25vh;
     }
 
     .news-content{
-        margin-top:9em;
+        display: block;
+        margin-top: -6em;
         padding-left:16px;
         padding-right: 16px;
         height: 5em;
         background: rgba(0, 0, 0, 0.44);
+    }
+
+    .more-button{
+        top:1.1em;
+        right:0.8em;
+        padding: 4pt;
+        position: absolute;
+        background: #3D89FB;
+        border-radius: 12pt;
     }
 }
