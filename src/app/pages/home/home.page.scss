@@ -1,0 +1,105 @@
+ion-toolbar{
+    --background: #3D89FB;
+}
+
+:not(app-header-ellipse){
+    position: relative;
+}
+
+.logo{
+    height: 20%;
+}
+
+.quicklink{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.quicklink-icon{
+    height: 3em;
+}
+
+.quicklink-text{
+    font-size: 8pt;
+    text-transform: uppercase;
+    line-height:0;
+}
+
+.bold{
+    font-weight: bolder;
+}
+
+.box-menu:first-child{
+    border-right: 2px solid #EEEEEE;
+}
+
+.box-menu:last-child{
+    border-left: 2px solid #EEEEEE;
+}
+
+.sport-button{
+    margin: 0.5em;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+
+.horizontal-scrolling{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.field-card{
+    margin-right: 1em;
+    width: 100%;
+    border: 1px solid #EAEAEA;
+    border-radius: 12pt;
+    display: inline-block;
+
+    h3{
+        font-weight: bolder;
+        line-height: 0;
+    }
+    
+    .field-picture{
+        height: 8em;
+        object-fit: cover;
+    }
+    
+}
+
+.news-card{
+    margin-right: 1em;
+    width: 100%;
+    border: 1px solid #EAEAEA;
+    border-radius: 12pt;
+    display: inline-block;
+    overflow: hidden;
+    color:white;
+    
+    h3{
+        padding-top: 1em;
+        font-weight: bolder;
+        line-height: 0.1;
+    }
+
+    .news-picture{
+        position: absolute;
+        object-position: left;
+        object-fit: cover;
+    }
+
+    .news-content{
+        margin-top:9em;
+        padding-left:16px;
+        padding-right: 16px;
+        height: 5em;
+        background: rgba(0, 0, 0, 0.44);
+    }
+}
