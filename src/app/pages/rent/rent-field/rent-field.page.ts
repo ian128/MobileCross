@@ -12,4 +12,8 @@ export class RentFieldPage implements OnInit {
   ngOnInit() {
   }
 
+  segmentChanged(ev: any) {
+    console.log(ev.detail.value);
+  }
+
 }
