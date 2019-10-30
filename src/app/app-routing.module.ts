@@ -14,6 +14,8 @@ const routes: Routes = [
   { path: 'field-details', loadChildren: './pages/rent/field-details/field-details.module#FieldDetailsPageModule' },
   { path: 'sparring', loadChildren: './pages/SparringModule/sparring-list/sparring-list.module#SparringListPageModule' },
   { path: 'sparring-detail', loadChildren: './pages/SparringModule/sparring-detail/sparring-detail.module#SparringDetailPageModule' },
+  { path: 'sparring-info', loadChildren: './pages/SparringModule/sparring-detail/sparring-info/sparring-info.module#SparringInfoPageModule' },
+  { path: 'sparring-discussion', loadChildren: './pages/SparringModule/sparring-detail/sparring-discussion/sparring-discussion.module#SparringDiscussionPageModule' },
 ];
 
 @NgModule({

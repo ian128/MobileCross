@@ -7,10 +7,25 @@ import { IonicModule } from '@ionic/angular';
 
 import { SparringDetailPage } from './sparring-detail.page';
 
+
 const routes: Routes = [
   {
     path: '',
-    component: SparringDetailPage
+    component: SparringDetailPage,
+    children:[
+      {
+        path: 'details',
+        loadChildren: './sparring-info/sparring-info.module#SparringInfoPageModule'
+      },
+      {
+        path: 'discussion',
+        loadChildren: './sparring-discussion/sparring-discussion.module#SparringDiscussionPageModule'
+      },
+      {
+        path: '',
+        redirectTo: '/sparring-detail/details'
+      }
+    ]
   }
 ];
 

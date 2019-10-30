@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sparring-detail.page.scss'],
 })
 export class SparringDetailPage implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
