@@ -1,0 +1,117 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title text-center>Rent a field</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <!--Featured Fields-->
+  <h3>Featured Fields</h3>
+  <div class="field-card" (click)="fieldDetails()">
+      <ion-img class="field-picture" src="assets/icon/tennis.png"></ion-img>
+      <div class="field-content">
+        <h3>Lapangan</h3>
+        <p>Gading Serpong, Tangerang</p>
+      </div>
+  </div>
+  <h3>Popular Fields</h3>
+  <ion-segment value="badminton" (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="badminton">
+      <div class="category">Badminton</div>
+    </ion-segment-button>
+    <ion-segment-button value="basketball">
+      <div class="category">Basketball</div>
+    </ion-segment-button>
+    <ion-segment-button value="futsal">
+      <div class="category">Futsal</div>
+    </ion-segment-button>
+    <ion-segment-button value="tennis">
+      <div class="category">Tennis</div>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div class="horizontal-scrolling">
+      <div class="field-card-small" (click)="fieldDetails()">
+          <ion-img class="field-picture" src="assets/icon/tennis.png"></ion-img>
+          <div class="field-content">
+            <h6>Lapangan</h6>
+            <p class="detail">10 mins from your location</p>
+          </div>
+      </div>
+  
+      <div class="field-card-small">
+          <ion-img class="field-picture" src="assets/icon/tennis.png"></ion-img>
+          <div class="field-content">
+            <h6>Lapangan</h6>
+            <p class="detail">10 mins from your location</p>
+          </div>
+      </div>
+
+      <div class="field-card-small">
+          <ion-img class="field-picture" src="assets/icon/tennis.png"></ion-img>
+          <div class="field-content">
+            <h6>Lapangan</h6>
+            <p class="detail">10 mins from your location</p>
+          </div>
+      </div>
+
+      <div class="field-card-small">
+          <ion-img class="field-picture" src="assets/icon/tennis.png"></ion-img>
+          <div class="field-content">
+            <h6>Lapangan</h6>
+            <p class="detail">10 mins from your location</p>
+          </div>
+      </div>
+  </div>
+
+  <h3>Nearby Fields</h3>
+  <ion-segment value="badminton" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="badminton">
+        <div class="category">Badminton</div>
+      </ion-segment-button>
+      <ion-segment-button value="basketball">
+        <div class="category">Basketball</div>
+      </ion-segment-button>
+      <ion-segment-button value="futsal">
+        <div class="category">Futsal</div>
+      </ion-segment-button>
+      <ion-segment-button value="tennis">
+        <div class="category">Tennis</div>
+      </ion-segment-button>
+  </ion-segment>
+
+  <div class="horizontal-scrolling">
+      <div class="field-card-small">
+          <ion-img class="field-picture" src="assets/icon/tennis.png"></ion-img>
+          <div class="field-content">
+            <h6>Lapangan</h6>
+            <p class="detail">10 mins from your location</p>
+          </div>
+      </div>
+  
+      <div class="field-card-small">
+          <ion-img class="field-picture" src="assets/icon/tennis.png"></ion-img>
+          <div class="field-content">
+            <h6>Lapangan</h6>
+            <p class="detail">10 mins from your location</p>
+          </div>
+      </div>
+
+      <div class="field-card-small">
+          <ion-img class="field-picture" src="assets/icon/tennis.png"></ion-img>
+          <div class="field-content">
+            <h6>Lapangan</h6>
+            <p class="detail">10 mins from your location</p>
+          </div>
+      </div>
+
+      <div class="field-card-small">
+          <ion-img class="field-picture" src="assets/icon/tennis.png"></ion-img>
+          <div class="field-content">
+            <h6>Lapangan</h6>
+            <p class="detail">10 mins from your location</p>
+          </div>
+      </div>
+  </div>
+
+</ion-content>
