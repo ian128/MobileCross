@@ -12,6 +12,8 @@ const routes: Routes = [
   { path: 'news-detail', loadChildren: './pages/NewsModule/news-detail/news-detail.module#NewsDetailPageModule' },
   { path: 'rent-field', loadChildren: './pages/rent/rent-field/rent-field.module#RentFieldPageModule' },
   { path: 'field-details', loadChildren: './pages/rent/field-details/field-details.module#FieldDetailsPageModule' },
+  { path: 'sparring-list', loadChildren: './pages/SparringModule/sparring-list/sparring-list.module#SparringListPageModule' },
+  { path: 'sparring-detail', loadChildren: './pages/SparringModule/sparring-detail/sparring-detail.module#SparringDetailPageModule' },
 ];
 
 @NgModule({
