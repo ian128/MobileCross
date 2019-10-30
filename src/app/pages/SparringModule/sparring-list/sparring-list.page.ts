@@ -12,4 +12,9 @@ export class SparringListPage implements OnInit {
   ngOnInit() {
   }
 
+
+  segmentChanged(ev: any) {
+    console.log(ev.detail.value);
+  }
+
 }
