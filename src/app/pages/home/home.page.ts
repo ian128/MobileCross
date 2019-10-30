@@ -15,7 +15,7 @@ export class HomePage implements OnInit {
   ngOnInit() {
   }
 
-  goToNews(){
-    this.router.navigate(['/','news'])
+  navTo(input){
+    this.router.navigate(['/',input])
   }
 }

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'rent-field', pathMatch: 'full' },
+  { path: '', redirectTo: 'splash', pathMatch: 'full' },
   { path: 'login', loadChildren: './pages/AuthModule/login/login.module#LoginPageModule' },
   { path: 'register', loadChildren: './pages/AuthModule/register/register.module#RegisterPageModule' },
   { path: 'onboarding', loadChildren: './pages/AuthModule/onboarding/onboarding.module#OnboardingPageModule' },
