@@ -1,0 +1,152 @@
+ion-toolbar{
+    --background: #3D89FB;
+}
+
+:not(app-header-ellipse){
+    position: relative;
+}
+
+.logo{
+    height: 20%;
+}
+
+.quicklink{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.quicklink-icon{
+    height: 2em;
+}
+
+.quicklink-text{
+    padding-top: 0.3rem;
+    font-size: 8pt;
+    text-transform: uppercase;
+    line-height:0;
+    color: #3D89FB;
+}
+
+.bold{
+    font-weight: bolder;
+}
+
+.box-menu:first-child{
+    border-right: 2px solid #EEEEEE;
+}
+
+.box-menu:last-child{
+    border-left: 2px solid #EEEEEE;
+}
+
+.sport-button1{
+    margin-right: 0.3em;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.sport-button2{
+    margin-right: 0.3em;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.sport-button3{
+    margin-right: 0.3em;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.sport-button4{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+
+.horizontal-scrolling{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.field-card{
+    margin-right: 1em;
+    width: 100%;
+    border: 1px solid #EAEAEA;
+    border-radius: 12pt;
+    display: inline-block;
+
+    h3{
+        font-weight: bolder;
+        line-height: 0;
+    }
+    
+    .field-picture{
+        height: 8em;
+        object-fit: cover;
+    }
+
+    .field-content{
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+    
+}
+
+.news-card{
+    margin-right: 1em;
+    width: 100%;
+    border: 1px solid #EAEAEA;
+    border-radius: 12pt;
+    display: inline-block;
+    overflow: hidden;
+    color:white;
+    p{
+        padding-top: 0.7em;
+    }
+
+    .news-picture{
+        object-fit: cover;
+        height:25vh;
+    }
+
+    .news-content{
+        display: block;
+        margin-top: -6em;
+        padding-left:16px;
+        padding-right: 16px;
+        height: 4em;
+        background: rgba(0, 0, 0, 0.44);
+    }
+
+    .more-button{
+        top:25%;
+        right:5%;
+        padding: 4pt;
+        position: absolute;
+        background: #3D89FB;
+        border-radius: 12pt;
+    }
+}
