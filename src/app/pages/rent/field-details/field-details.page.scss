@@ -13,6 +13,11 @@ ion-title{
     font-weight: bolder;
 }
 
+.padding-left{
+    padding-left: 1rem;
+    padding-top: 1rem
+}
+
 .main-image{
     height: 30%;
     overflow: hidden;
@@ -26,10 +31,11 @@ h3{
 }
 
 .price-table{
-    border: 1px solid #EEEEEE;
+    margin: 1rem;
+    border: 1px solid #eaeaea;
     border-radius: 16px;
     ion-row:nth-child(1){
-        border-bottom: 1px solid #EEEEEE;
+        border-bottom: 1px solid #eaeaea;
         ion-col{
             b{
                 line-height: 0;
