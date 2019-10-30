@@ -5,15 +5,15 @@
   <div class="quicklink">
     <ion-grid>
       <ion-row class="ion-text-center">
-        <ion-col class="box-menu">
+        <ion-col class="box-menu" (click)="navTo('rent-field')">
           <ion-img class="quicklink-icon" src="assets/icon/rentField.png"></ion-img>
           <p class="bold quicklink-text">Rent Field</p>
         </ion-col>
-        <ion-col class="box-menu">
+        <ion-col class="box-menu" (click)="navTo('sparring')">
           <ion-img class="quicklink-icon" src="assets/icon/sparring.png"></ion-img>
           <p class="bold quicklink-text">Sparring</p>
         </ion-col>
-        <ion-col class="box-menu" (click)="goToNews()">
+        <ion-col class="box-menu" (click)="navTo('news')">
           <ion-img class="quicklink-icon" src="assets/icon/news.png"></ion-img>
           <p class="bold quicklink-text">News</p>
         </ion-col>
