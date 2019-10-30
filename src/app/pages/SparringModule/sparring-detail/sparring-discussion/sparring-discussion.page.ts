@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-sparring-discussion',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sparring-discussion.page.scss'],
 })
 export class SparringDiscussionPage implements OnInit {
-
+  paperPlane = faPaperPlane;
   constructor() { }
 
   ngOnInit() {
