@@ -6,6 +6,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { MyprofilePage } from './myprofile.page';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 const routes: Routes = [
   {
@@ -19,7 +21,9 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    FontAwesomeModule,
+    RouterModule.forChild(routes),
+    SharedModule,
   ],
   declarations: [MyprofilePage]
 })
