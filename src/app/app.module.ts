@@ -18,7 +18,7 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome'
     BrowserModule, 
     IonicModule.forRoot(), 
     AppRoutingModule,
-    FontAwesomeModule,
+    FontAwesomeModule
   ],
   providers: [
     StatusBar,

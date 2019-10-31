@@ -1,0 +1,120 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title text-center>My Profile</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+<ion-content padding>
+
+  <!--Profile Section-->
+  <ion-grid>
+    <ion-row class="ion-align-items-center">   
+      <ion-col size="4">
+        <ion-avatar class="avatar">
+          <ion-img src="https://www.androidcentral.com/sites/androidcentral.com/files/styles/xlarge/public/article_images/2017/08/interfacelift-wallpaper-s8.jpg?itok=ZMktNFT4"></ion-img>
+        </ion-avatar>
+        <a [routerLink]="['/','editprofile']"><ion-button fill="clear">Edit Profile</ion-button></a>
+      </ion-col>
+      <ion-col>
+        <h2 class="name">Gal Gadot</h2>
+        <div class="joined-event">
+          <ion-grid>
+            <ion-row>
+                <ion-col size="3"class="num-event">
+                  10
+                </ion-col>
+                <ion-col>
+                Upcoming Event You've Joined
+                </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+        <ion-button float-right size="small" fill="clear">See your upcoming events</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <div class="divider"></div>
+
+      <!--Your active fields-->
+    <ion-row  class="ion-align-items-center">
+        <ion-col size="7">
+            <h5 class="thigh">Your Active Fields</h5>
+        </ion-col>
+        <ion-col>
+            <a [routerLink]="['/','addnewfield']"><ion-button size="small" fill="clear"><b>+Add new field</b></ion-button></a>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div class="horizontal-scrolling">
+
+            <div class="field-card" *ngFor="let x of [].constructor(5)">
+                <ion-img class="field-picture" src="assets/icon/tennis.png"></ion-img>
+                <div class="field-content">
+                  <p class="title bold thigh">Lapangan</p>
+                  <p class="loc thigh">Gading Serpong, Tangerang</p>
+                </div>
+            </div>
+  
+        </div>
+
+      </ion-col>
+    </ion-row>
+
+    <div class="divider"></div>
+
+    <!--Your active Events-->
+    <ion-row class="ion-align-items-center">
+        <ion-col size="7">
+            <h5 class="thigh">Your Active Events</h5>
+        </ion-col>
+        <ion-col>
+            <a >
+              <ion-button size="small" fill="clear">
+                <b>+Add new Event</b>
+              </ion-button>
+            </a>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div class="horizontal-scrolling">
+
+            <div class="sparring-card" *ngFor="let x of [].constructor(4)">
+                <div class="card-header">
+                  <ion-grid>
+                    <ion-row align-items-center>
+                      <ion-col size="10"> 
+                        <span>Basket Anak Anak UMN</span>
+                      </ion-col>
+                      <ion-col>
+                        <ion-button fill="clear" color="dark" size="small"><fa-icon [icon]="share"></fa-icon></ion-button>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </div>
+                <div class="card-content">
+                    <p><fa-icon [icon]="globe"></fa-icon> UMN Only</p>
+                    <p><fa-icon [icon]="mapPin"></fa-icon> Cisauk Staples Centre</p>
+                    <p><fa-icon [icon]="stopwatch"></fa-icon> Tomorrow, <b>7 pm - 9 pm</b></p>
+                  
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col> 
+                              <ion-button>Join Game</ion-button>
+                            </ion-col>
+                            <ion-col ends>
+                                <a [routerLink]="['/','sparring-detail']">Details</a>
+                            </ion-col>
+                          </ion-row>
+                    </ion-grid>
+                </div>
+              </div>
+
+        </div>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<app-footer-menu-bar></app-footer-menu-bar>

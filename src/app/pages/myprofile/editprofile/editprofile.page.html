@@ -1,0 +1,77 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>Edit Profile</ion-title>
+      <ion-buttons slot="start">
+          <ion-back-button color="light" defaultHref="/myprofile"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+<ion-content padding>
+  <form>
+    <ion-grid>
+      <ion-row align-items-stretch>
+          <ion-col size=2></ion-col>
+          <ion-col size=8>
+            <ion-avatar class="profile-picture">
+                <ion-img size=4 src="https://www.androidcentral.com/sites/androidcentral.com/files/styles/xlarge/public/article_images/2017/08/interfacelift-wallpaper-s8.jpg?itok=ZMktNFT4"></ion-img>
+            </ion-avatar>
+            <ion-button expand="full" size="small" fill="clear">Change Photo</ion-button>
+          </ion-col>
+          <ion-col size=2></ion-col>
+      </ion-row>
+      <ion-row>   
+          <ion-col>
+             <ion-label>First Name</ion-label>
+             <ion-input  name="firstname" type="text" placeholder="First Name"></ion-input>
+          </ion-col>
+          <ion-col>
+             <ion-label>Last Name</ion-label>
+             <ion-input name="lastname" type="text" placeholder="Last Name"></ion-input>
+          </ion-col>
+     </ion-row>
+     <ion-row>
+        <ion-col>
+            <ion-item>
+                <ion-label>Phone Number</ion-label>
+              <ion-input name="phone" type="text" placeholder="Phone Number"></ion-input>
+            </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>  
+        <ion-col>
+          <ion-item>
+              <ion-label>E-Mail</ion-label>
+            <ion-input name="email" type="email" placeholder="E-Mail" ngModel required></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+              <ion-label>Phone Number</ion-label>
+            <ion-input name="phone" type="number" placeholder="Phone Number" ngModel required></ion-input>
+          </ion-item>
+        </ion-col>
+     </ion-row>
+     <ion-row>
+       <ion-col>
+          <ion-segment>
+              <ion-segment-button >
+                <ion-label>Male</ion-label>
+              </ion-segment-button>
+              <ion-segment-button>
+                <ion-label>Female</ion-label>
+              </ion-segment-button>
+            </ion-segment>
+       </ion-col>
+     </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+      <ion-button  size="large" fill="clear" color="light" type="submit" expand="block">Edit Profile</ion-button>
+  </ion-toolbar>
+</ion-footer>
