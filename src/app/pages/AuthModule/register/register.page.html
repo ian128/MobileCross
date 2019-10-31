@@ -1,9 +1,35 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>register</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
+  <app-header-decor></app-header-decor>
+  <h1 class="title ion-text-center">Sign Up</h1>
+  <div class="spacer"></div>
+  
+  <div padding>
+      <div class="card-container">
+          <div class="form-title">
+              First Name
+          </div>
+          <ion-input type="text" name="fname" placeholder="Enter your first name"></ion-input>
+          <br>
+          <div class="form-title">
+              Last Name
+          </div>
+            <ion-input type="text" name="lname" placeholder="Enter your last name"></ion-input>
+          <br>
+          <div class="form-title">
+            Phone
+          </div>
+          <ion-input type="text" name="phone" placeholder="08XX-XXXX-XXXX"></ion-input>
+          <br>
+          <div class="form-title">
+            Password
+          </div>
+          <ion-input type="email" name="email" placeholder="raga@example.com"></ion-input>
+      </div>
+  </div>
+  <div padding>
+    <a [routerLink]="['/','home']"><ion-button class = "button button-block">Sign Up</ion-button></a>
+  </div>
+    <div class="ion-text-center">
+      <p>Already have an account? <a [routerLink]="['/','login']">Sign In</a></p>
+  </div>
 </ion-content>
