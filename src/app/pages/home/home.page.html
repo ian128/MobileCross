@@ -49,15 +49,7 @@
   
   <div class="horizontal-scrolling">
 
-    <div class="field-card">
-        <ion-img class="field-picture" src="assets/icon/tennis.png"></ion-img>
-        <div class="field-content">
-          <h3>Lapangan</h3>
-          <p>Gading Serpong, Tangerang</p>
-        </div>
-    </div>
-
-    <div class="field-card">
+    <div class="field-card" *ngFor="let x of [].constructor(5)" (click)="fieldDetails()">
         <ion-img class="field-picture" src="assets/icon/tennis.png"></ion-img>
         <div class="field-content">
           <h3>Lapangan</h3>
@@ -71,21 +63,13 @@
   <h3 class="bold">Popular News</h3>
   <div class="horizontal-scrolling">
 
-    <div class="news-card">
+    <div class="news-card"  *ngFor="let x of [].constructor(5)" (click)="newsDetail()">
           <ion-img class="news-picture" src="https://www.si.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_1400/MTY3ODg1NzUwMDczODI4NjI1/robert-lewandowski-bayern-munich-union-berlin.webp"></ion-img>
             <div class="news-content">
                 <p>Manchester United Masuk dalam<br>Zona Degradasi!</p>
                 <div class="more-button">View More</div>
             </div>
      </div>
-
-     <div class="news-card">
-        <ion-img class="news-picture" src="https://www.si.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_1400/MTY3ODg1NzUwMDczODI4NjI1/robert-lewandowski-bayern-munich-union-berlin.webp"></ion-img>
-          <div class="news-content">
-              <p>Manchester United Masuk dalam<br>Zona Degradasi!</p>
-              <div class="more-button">View More</div>
-          </div>
-   </div>
 
 
   </div>

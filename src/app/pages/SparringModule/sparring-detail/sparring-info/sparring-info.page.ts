@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { faUserTimes, faGlobeAsia, faDollarSign, faBuilding,
   faStopwatch,faMapPin, faTag
  } from '@fortawesome/free-solid-svg-icons';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-sparring-info',
@@ -17,9 +18,18 @@ export class SparringInfoPage implements OnInit {
   mapPin = faMapPin;
   notes = faTag;
 
-  constructor() { }
+  constructor(
+    private toastController: ToastController
+  ) { }
 
   ngOnInit() {
   }
 
+  async joinGame(){
+    var x = await this.toastController.create({
+      message: "You have been joined into this game!",
+      duration: 2000,
+    })
+    x.present()
+  }
 }

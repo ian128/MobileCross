@@ -20,6 +20,7 @@ const routes: Routes = [
   { path: 'editprofile', loadChildren: './pages/myprofile/editprofile/editprofile.module#EditprofilePageModule' },
   { path: 'addnewevent', loadChildren: './pages/addnewevent/addnewevent.module#AddneweventPageModule' },
   { path: 'addnewfield', loadChildren: './pages/addnewfield/addnewfield.module#AddnewfieldPageModule' },
+  { path: 'active-program', loadChildren: './pages/active-program/active-program.module#ActiveProgramPageModule' },
 ];
 
 @NgModule({

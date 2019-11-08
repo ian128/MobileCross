@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {faShare, faGlobeAsia, faMapPin, faStopwatch} from '@fortawesome/free-solid-svg-icons'
+import { Router } from '@angular/router';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-myprofile',
@@ -12,9 +14,23 @@ export class MyprofilePage implements OnInit {
   mapPin = faMapPin
   stopwatch = faStopwatch
 
-  constructor() { }
+  constructor(
+    private router: Router,
+    private toastController: ToastController
+  ) { }
 
   ngOnInit() {
   }
 
+  async joinGame(){
+    var x = await this.toastController.create({
+      message: "You have been joined into this game!",
+      duration: 2000,
+    })
+    x.present()
+  }
+
+  fieldDetails(){
+    this.router.navigateByUrl('/field-details')
+  }
 }

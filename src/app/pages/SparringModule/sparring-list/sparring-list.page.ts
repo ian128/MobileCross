@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-sparring-list',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SparringListPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    private toastController: ToastController
+  ) { }
 
   ngOnInit() {
   }
@@ -15,6 +18,14 @@ export class SparringListPage implements OnInit {
 
   segmentChanged(ev: any) {
     console.log(ev.detail.value);
+  }
+  
+  async joinGame(){
+    var x = await this.toastController.create({
+      message: "You have been joined into this game!",
+      duration: 2000,
+    })
+    x.present()
   }
 
 }

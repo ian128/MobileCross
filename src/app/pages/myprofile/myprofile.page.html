@@ -16,7 +16,7 @@
         <a [routerLink]="['/','editprofile']"><ion-button fill="clear">Edit Profile</ion-button></a>
       </ion-col>
       <ion-col>
-        <h2 class="name">Gal Gadot</h2>
+        <h2 class="name">Lorem Ipsum</h2>
         <div class="joined-event">
           <ion-grid>
             <ion-row>
@@ -29,7 +29,7 @@
             </ion-row>
           </ion-grid>
         </div>
-        <ion-button float-right size="small" fill="clear">See your upcoming events</ion-button>
+        <a [routerLink]="['/','active-program']"><ion-button float-right size="small" fill="clear">See your upcoming events</ion-button></a>
       </ion-col>
     </ion-row>
 
@@ -48,7 +48,7 @@
       <ion-col>
         <div class="horizontal-scrolling">
 
-            <div class="field-card" *ngFor="let x of [].constructor(5)">
+            <div class="field-card" *ngFor="let x of [].constructor(5)" (click)="fieldDetails()">
                 <ion-img class="field-picture" src="assets/icon/tennis.png"></ion-img>
                 <div class="field-content">
                   <p class="title bold thigh">Lapangan</p>
@@ -101,7 +101,7 @@
                     <ion-grid>
                         <ion-row>
                             <ion-col> 
-                              <ion-button>Join Game</ion-button>
+                              <ion-button (click)="joinGame()">Join Game</ion-button>
                             </ion-col>
                             <ion-col ends>
                                 <a [routerLink]="['/','sparring-detail']">Details</a>

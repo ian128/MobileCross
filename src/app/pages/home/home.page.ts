@@ -18,4 +18,12 @@ export class HomePage implements OnInit {
   navTo(input){
     this.router.navigate(['/',input])
   }
+
+  fieldDetails(){
+    this.router.navigate(['/','field-details'])
+  }
+
+  newsDetail(){
+    this.router.navigate(['/','news-detail'])
+  }
 }

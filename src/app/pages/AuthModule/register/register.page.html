@@ -1,9 +1,5 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>register</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
+<ion-content (click)="proceed()">
+  <ion-img *ngIf="step == 0" src="assets/mockup/Signup_1.jpg"></ion-img>
+  <ion-img *ngIf="step == 1" src="assets/mockup/Signup_2.jpg"></ion-img>
+  <ion-img *ngIf="step == 2" src="assets/mockup/Signup_3.jpg"></ion-img>
 </ion-content>
