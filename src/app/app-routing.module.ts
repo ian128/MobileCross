@@ -5,6 +5,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'splash', pathMatch: 'full' },
   { path: 'login', loadChildren: './pages/AuthModule/login/login.module#LoginPageModule' },
   { path: 'register', loadChildren: './pages/AuthModule/register/register.module#RegisterPageModule' },
+  { path: 'password-register', loadChildren: './pages/AuthModule/register/password-register/password-register.module#PasswordRegisterPageModule' },
   { path: 'onboarding', loadChildren: './pages/AuthModule/onboarding/onboarding.module#OnboardingPageModule' },
   { path: 'splash', loadChildren: './pages/splash/splash.module#SplashPageModule' },
   { path: 'home', loadChildren: './pages/home/home.module#HomePageModule' },
@@ -20,7 +21,6 @@ const routes: Routes = [
   { path: 'editprofile', loadChildren: './pages/myprofile/editprofile/editprofile.module#EditprofilePageModule' },
   { path: 'addnewevent', loadChildren: './pages/addnewevent/addnewevent.module#AddneweventPageModule' },
   { path: 'addnewfield', loadChildren: './pages/addnewfield/addnewfield.module#AddnewfieldPageModule' },
-  { path: 'password-register', loadChildren: './pages/AuthModule/register/password-register/password-register.module#PasswordRegisterPageModule' },
 ];
 
 @NgModule({
