@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from 'src/app/services/auth-service.service';
 
 @Component({
   selector: 'app-register',
@@ -8,12 +7,10 @@ import { AuthService } from 'src/app/services/auth-service.service';
 })
 export class RegisterPage implements OnInit {
 
-  constructor(private authSvc: AuthService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.authSvc.doSignUp().subscribe((f)=>{
-      console.log(f);
-    })
+    
   }
 
 }
