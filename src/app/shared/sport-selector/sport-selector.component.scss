@@ -1,0 +1,29 @@
+.sport-button{
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    margin-top:0.2em;
+    margin-bottom: 0.2em;
+    width: 1vh;
+
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.quicklink-icon{
+    padding-top: 1em;
+    height: 56px;
+}
+
+.quicklink-text{
+    padding-top: 0.3rem;
+    font-size: 8pt;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+    font-weight: bold;
+}
+
+.bold{
+    font-weight: bolder;
+}
