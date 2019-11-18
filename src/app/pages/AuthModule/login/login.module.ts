@@ -20,8 +20,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
+    RouterModule.forChild(routes),
     SharedModule,
-    RouterModule.forChild(routes)
   ],
   declarations: [LoginPage]
 })
