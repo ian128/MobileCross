@@ -5,15 +5,14 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { MyprofilePage } from './myprofile.page';
+import { PasswordRegisterPage } from './password-register.page';
 import { SharedModule } from 'src/app/shared/shared.module';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { AppRoutingModule } from 'src/app/app-routing.module';
+
 
 const routes: Routes = [
   {
     path: '',
-    component: MyprofilePage
+    component: PasswordRegisterPage
   }
 ];
 
@@ -22,10 +21,9 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    FontAwesomeModule,
     RouterModule.forChild(routes),
     SharedModule,
   ],
-  declarations: [MyprofilePage]
+  declarations: [PasswordRegisterPage]
 })
-export class MyprofilePageModule {}
+export class PasswordRegisterPageModule {}
