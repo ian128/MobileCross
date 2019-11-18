@@ -6,7 +6,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { SplashPage } from './splash.page';
-import { HeaderDecorComponent } from 'src/app/shared/header-decor/header-decor.component';
 
 const routes: Routes = [
   {
