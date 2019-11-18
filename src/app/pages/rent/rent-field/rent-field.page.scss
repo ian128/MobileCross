@@ -47,37 +47,3 @@ h3{
     }
     
 }
-
-.field-card-small{
-    margin-right: 1em;
-    width: 35%;
-    border: 1px solid #EAEAEA;
-    border-radius: 12pt;
-    display: inline-block;
-    overflow: hidden;
-
-    h6{
-        font-weight: bolder;
-        line-height: 0;
-    }
-    
-    .field-picture{
-        height: 8em;
-        object-fit: cover;
-    }
-
-    .field-content{
-        padding-left: 1rem;
-        padding-top: 1rem;
-    }
-    
-    .detail{
-        font-size: 6pt;
-    }
-    
-}
-
-.category{
-    font-size: 12px;
-    font-weight: 100;
-}

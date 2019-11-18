@@ -9,17 +9,15 @@ import { Router } from '@angular/router';
 export class RentFieldPage implements OnInit {
 
   constructor(
-    private router: Router
   ) { }
 
   ngOnInit() {
   }
 
-  segmentChanged(ev: any) {
-    console.log(ev.detail.value);
+  popularFieldSelection(e){
+    console.log(e)
   }
-
-  fieldDetails(){
-    this.router.navigate(['/','field-details'])
+  nearbyFieldsSelection(e){
+    console.log(e)
   }
 }

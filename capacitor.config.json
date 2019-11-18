@@ -1,0 +1,8 @@
+{
+  "appId": "com.nullptrexcept.raga",
+  "appName": "Raga",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}
