@@ -9,6 +9,7 @@ import { RegisterPage } from './register.page';
 import { HeaderDecorComponent } from 'src/app/shared/header-decor/header-decor.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 
+
 const routes: Routes = [
   {
     path: '',

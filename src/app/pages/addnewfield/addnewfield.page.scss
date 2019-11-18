@@ -1,0 +1,31 @@
+ion-title{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+}
+
+ion-toolbar{
+    --background: #3699F7;
+}
+
+ion-title{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+}
+
+ion-input{
+    --padding-start	: 4px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+    
+.photo{
+    height: 128px;
+    width: 100%;
+    background : #888888;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 8px;
+}

@@ -1,15 +1,38 @@
 import { NgModule} from '@angular/core';
 import { HeaderDecorComponent } from './header-decor/header-decor.component';
-
+import { HeaderEllipseComponent } from './header-ellipse/header-ellipse.component';
+import { FooterMenuBarComponent } from './footer-menu-bar/footer-menu-bar.component';
+import { IonicModule } from '@ionic/angular';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SportSelectorComponent } from './sport-selector/sport-selector.component';
+import { CardFieldShortComponent } from './card-field-short/card-field-short.component';
+import { SelectorSportWordComponent } from './selector-sport-word/selector-sport-word.component';
+import { CardSparringComponent } from './card-sparring/card-sparring.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
+    IonicModule,
+    FontAwesomeModule,
+    RouterModule,
   ],
   declarations: [
-    HeaderDecorComponent
+    FooterMenuBarComponent,
+    HeaderDecorComponent,
+    HeaderEllipseComponent,
+    SportSelectorComponent,
+    CardFieldShortComponent,
+    SelectorSportWordComponent,
+    CardSparringComponent,
   ],
   exports: [
-    HeaderDecorComponent
+    FooterMenuBarComponent,
+    HeaderDecorComponent,
+    HeaderEllipseComponent,
+    SportSelectorComponent,
+    CardFieldShortComponent,
+    SelectorSportWordComponent,
+    CardSparringComponent
   ]
 })
 

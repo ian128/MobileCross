@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar class="main-header">
+      <ion-title>Sparring </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!--Selector-->
+<ion-header>
+    <ion-toolbar>
+        <app-selector-sport-word (onSelected)="select($event)"></app-selector-sport-word>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+    <ion-list>
+      <ion-item lines="none" *ngFor="let x of [].constructor(5)"> 
+          <app-card-sparring
+          [sparringID]="'1'"
+          [title]="'Basket Anak anak umn'"
+          [participants]="'UMN Only'"
+          [location]="'Cisauk Staples Center'"
+          [day]="'Tomorrow'"
+          [time]="'7-9 PM'"
+          ></app-card-sparring>
+          
+      </ion-item>
+    </ion-list>
+</ion-content>
+<app-footer-menu-bar></app-footer-menu-bar>
