@@ -48,13 +48,28 @@
       <ion-col>
         <div class="horizontal-scrolling">
 
-            <div class="field-card" *ngFor="let x of [].constructor(5)">
-                <ion-img class="field-picture" src="assets/icon/tennis.png"></ion-img>
-                <div class="field-content">
-                  <p class="title bold thigh">Lapangan</p>
-                  <p class="loc thigh">Gading Serpong, Tangerang</p>
-                </div>
-            </div>
+            <app-card-field-short
+            [imgUrl]="'assets/icon/tennis.png'"
+            [title]="'title'"
+            [subtitle]="'10 mins from your location'"
+            [fieldId]="123"
+          ></app-card-field-short>
+
+
+          <app-card-field-short
+          [imgUrl]="'assets/icon/tennis.png'"
+          [title]="'title'"
+          [subtitle]="'10 mins from your location'"
+          [fieldId]="123"
+        ></app-card-field-short>
+
+
+        <app-card-field-short
+        [imgUrl]="'assets/icon/tennis.png'"
+        [title]="'title'"
+        [subtitle]="'10 mins from your location'"
+        [fieldId]="123"
+      ></app-card-field-short>
   
         </div>
 
@@ -80,37 +95,23 @@
       <ion-col>
         <div class="horizontal-scrolling">
 
-            <div class="sparring-card" *ngFor="let x of [].constructor(4)">
-                <div class="card-header">
-                  <ion-grid>
-                    <ion-row align-items-center>
-                      <ion-col size="10"> 
-                        <span>Basket Anak Anak UMN</span>
-                      </ion-col>
-                      <ion-col>
-                        <ion-button fill="clear" color="dark" size="small"><fa-icon [icon]="share"></fa-icon></ion-button>
-                      </ion-col>
-                    </ion-row>
-                  </ion-grid>
-                </div>
-                <div class="card-content">
-                    <p><fa-icon [icon]="globe"></fa-icon> UMN Only</p>
-                    <p><fa-icon [icon]="mapPin"></fa-icon> Cisauk Staples Centre</p>
-                    <p><fa-icon [icon]="stopwatch"></fa-icon> Tomorrow, <b>7 pm - 9 pm</b></p>
-                  
-                    <ion-grid>
-                        <ion-row>
-                            <ion-col> 
-                              <ion-button>Join Game</ion-button>
-                            </ion-col>
-                            <ion-col ends>
-                                <a [routerLink]="['/','sparring-detail']">Details</a>
-                            </ion-col>
-                          </ion-row>
-                    </ion-grid>
-                </div>
-              </div>
+          <app-card-sparring
+          [sparringID]="'1'"
+          [title]="'Basket Anak anak umn'"
+          [participants]="'UMN Only'"
+          [location]="'Cisauk Staples Center'"
+          [day]="'Tomorrow'"
+          [time]="'7-9 PM'"
+          ></app-card-sparring>
 
+          <app-card-sparring
+          [sparringID]="'1'"
+          [title]="'Basket Anak anak umn'"
+          [participants]="'UMN Only'"
+          [location]="'Cisauk Staples Center'"
+          [day]="'Tomorrow'"
+          [time]="'7-9 PM'"
+          ></app-card-sparring>
         </div>
 
       </ion-col>

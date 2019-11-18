@@ -13,4 +13,8 @@ export class AddnewfieldPage implements OnInit {
   ngOnInit() {
   }
 
+  select(e){
+    console.log(e)
+  }
+
 }

@@ -25,28 +25,7 @@
       </ion-row>
 
       <!--Sport selection-->
-      <ion-row>
-        <ion-col>
-          <ion-segment>
-            <ion-segment-button class="sport-button" value="badminton" checked>
-                <ion-img class="quicklink-icon" src="assets/icon/badminton.png"></ion-img>
-                <ion-label class="bold quicklink-text">Badminton</ion-label>
-            </ion-segment-button>
-            <ion-segment-button class="sport-button"  value="basketball">
-                <ion-img class="quicklink-icon" src="assets/icon/basketball.png"></ion-img>
-                <ion-label class="bold quicklink-text">Basketball</ion-label>
-            </ion-segment-button>
-            <ion-segment-button class="sport-button"  value="futsal">
-                <ion-img class="quicklink-icon" src="assets/icon/football.png"></ion-img>
-                <ion-label class="bold quicklink-text">Futsal</ion-label>
-            </ion-segment-button>
-            <ion-segment-button class="sport-button"  value="tennis">
-                <ion-img class="quicklink-icon" src="assets/icon/tennis.png"></ion-img>
-                <ion-label class="bold quicklink-text">Tennis</ion-label>
-            </ion-segment-button>
-          </ion-segment>
-        </ion-col>
-      </ion-row>
+      <app-sport-selector (onSelected)="select($event)"></app-sport-selector>
                 
       <ion-row>   
           <ion-col>

@@ -51,35 +51,6 @@ a{
     white-space: nowrap;
 }
 
-.field-card{
-    margin-right: 1em;
-    border: 1px solid #EAEAEA;
-    border-radius: 12pt;
-    width: 50%;
-    display: inline-block;
-
-    h3{
-        font-weight: bolder;
-        line-height: 0;
-    }
-    
-    .field-picture{
-        height: 8em;
-        object-fit: cover;
-    }
-
-    .field-content{
-        padding-left: 1rem;
-        padding-top: 0.1rem;
-        .title{
-            font-size: 12px;
-        }
-        .loc{
-            font-size: 10px;
-        }
-    }
-}
-
 .sparring-card{
     margin-top: 24px;
     margin-left: auto;
