@@ -1,0 +1,67 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>Field Details</ion-title>
+      <ion-buttons slot="start">
+          <ion-back-button color="light" defaultHref="/rent-field"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <ion-img class="main-image" src="https://img.fcbayern.com/image/fetch/f_auto,h_768,q_auto:good,w_1366/https://fcbayern.com/binaries/content/gallery/fc-bayern/homepage/saison-18-19/galerien/neue-allianz-arena/arenaumbau_02_duc_030818.jpg/arenaumbau_02_duc_030818.jpg/fcbhippo%3Axtralargesixteentonine%3Fv%3D1533304938776"></ion-img>
+  <div class="padding-left">
+    <h3>Cisauk Staples Centre</h3>
+    <p>Gading Serpong, Tangerang</p>
+    </div>
+    <!--Buttons-->
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" >Call</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" color="medium">Email</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <!--Price Table-->
+    <ion-grid class="price-table ion-text-center">
+      <ion-row>
+        <ion-col>
+          <b>Rp120.000</b>
+          <p>Weekday</p>
+        </ion-col>
+        <ion-col>
+          <b>Rp180.000</b>
+          <p>Weekend</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+            09.00-22.00 WIB
+          </ion-col>
+          <ion-col>
+            09.00-22.00 WIB
+          </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <!--list -->
+    <ion-list class="field-list">
+
+      <ion-item *ngFor="let n of [].constructor(3)">
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <h4 class="bold">Lapangan Alpha</h4>
+              <p class="thin tight">Luas: 3x4 meter</p>
+            </ion-col>
+            <ion-col>
+
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+
+    </ion-list>
+</ion-content>

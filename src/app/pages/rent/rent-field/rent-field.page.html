@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title text-center>Rent a field</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <!--Featured Fields-->
+  <h3>Featured Fields</h3>
+  <div class="field-card" (click)="fieldDetails()">
+      <ion-img class="field-picture" src="assets/icon/tennis.png"></ion-img>
+      <div class="field-content">
+        <h3>Lapangan</h3>
+        <p>Gading Serpong, Tangerang</p>
+      </div>
+  </div>
+
+  <h3>Popular Fields</h3>
+  <app-selector-sport-word
+  (onSelected)="popularFieldSelection($event)"
+  ></app-selector-sport-word>
+
+  <div class="horizontal-scrolling">
+      <app-card-field-short
+        [imgUrl]="'assets/icon/tennis.png'"
+        [title]="'title'"
+        [subtitle]="'10 mins from your location'"
+        [fieldId]="123"
+      ></app-card-field-short>
+      <app-card-field-short></app-card-field-short>
+      <app-card-field-short></app-card-field-short>
+  </div>
+
+  <h3>Nearby Fields</h3>
+  <app-selector-sport-word
+    (onSelected)="nearbyFieldsSelection($event)"
+  ></app-selector-sport-word>
+
+  <div class="horizontal-scrolling">
+      <app-card-field-short
+      [imgUrl]="'assets/icon/tennis.png'"
+      [title]="'title'"
+      [subtitle]="'10 mins from your location'"
+      [fieldId]="123"
+    ></app-card-field-short>
+    <app-card-field-short
+    [imgUrl]="'assets/icon/tennis.png'"
+    [title]="'title'"
+    [subtitle]="'10 mins from your location'"
+    [fieldId]="123"
+  ></app-card-field-short>
+
+  </div>
+
+</ion-content>
+<app-footer-menu-bar></app-footer-menu-bar>
