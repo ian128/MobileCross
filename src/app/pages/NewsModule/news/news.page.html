@@ -5,7 +5,24 @@
 </ion-header>
 
 <ion-content>
-  <div class="container">
+    <ion-list>
+        <ion-list-header color="tertiary">
+          <ion-label>News List</ion-label>
+        </ion-list-header>
+          <ion-item *ngFor="let x of newsList;let i=index" >
+              <ion-avatar >
+                <img [src]="x.urlToImage">
+              </ion-avatar>
+              <ion-label>
+                <h3>{{x.title}}}</h3>
+                <p>{{x.description}}</p>
+                <p>{{x.url}}</p>
+              </ion-label>
+            </ion-item>
+        </ion-list>
+
+
+  <!-- <div class="container">
       <h3>Popular News</h3>
 
       <div class="news-card" (click)="openNewsDetails()">
@@ -14,14 +31,6 @@
                   <p>Manchester United Masuk dalam<br>Zona Degradasi</p>
                   <div class="more-button">View More</div>
               </div>
-      </div>
-
-      <div class="news-card">
-          <ion-img class="news-picture" src="https://www.si.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_1400/MTY3ODg1NzUwMDczODI4NjI1/robert-lewandowski-bayern-munich-union-berlin.webp"></ion-img>
-            <div class="news-content">
-              <p>Manchester United Masuk dalam<br>Zona Degradasi</p>
-                <div class="more-button">View More</div>
-            </div>
       </div>
 
       <h3>Latest News</h3>
@@ -35,17 +44,9 @@
                     <div class="more-button">View More</div>
                 </div>
         </div>
-
-        <div class="news-card">
-            <ion-img class="news-picture" src="https://www.si.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_1400/MTY3ODg1NzUwMDczODI4NjI1/robert-lewandowski-bayern-munich-union-berlin.webp"></ion-img>
-              <div class="news-content">
-                <p>Manchester United Masuk dalam<br>Zona Degradasi</p>
-                  <div class="more-button">View More</div>
-              </div>
-        </div>
       
       </div>
         
-  </div>
+  </div> -->
 </ion-content>
 <app-footer-menu-bar></app-footer-menu-bar>
