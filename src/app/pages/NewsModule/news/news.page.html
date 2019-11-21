@@ -5,6 +5,7 @@
 </ion-header>
 
 <ion-content>
+    <!-- <ion-button (click)="getNewsList()" >Refresh</ion-button>
     <ion-list>
         <ion-list-header color="tertiary">
           <ion-label>News List</ion-label>
@@ -19,16 +20,16 @@
                 <p>{{x.url}}</p>
               </ion-label>
             </ion-item>
-        </ion-list>
+        </ion-list> -->
 
 
-  <!-- <div class="container">
+  <div class="container">
       <h3>Popular News</h3>
 
-      <div class="news-card" (click)="openNewsDetails()">
-            <ion-img class="news-picture" src="https://www.si.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_1400/MTY3ODg1NzUwMDczODI4NjI1/robert-lewandowski-bayern-munich-union-berlin.webp"></ion-img>
+      <div class="news-card" (click)="openNewsDetails()" *ngFor="let x of newsList;let i=index">
+            <ion-img class="news-picture" src="{{x.urlToImage}}"></ion-img>
               <div class="news-content">
-                  <p>Manchester United Masuk dalam<br>Zona Degradasi</p>
+                  <p>{{x.title}}}</p>
                   <div class="more-button">View More</div>
               </div>
       </div>
@@ -37,16 +38,16 @@
 
       <div class="horizontal-scrolling">
 
-        <div class="news-card">
-              <ion-img class="news-picture" src="https://www.si.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_1400/MTY3ODg1NzUwMDczODI4NjI1/robert-lewandowski-bayern-munich-union-berlin.webp"></ion-img>
-                <div class="news-content">
-                  <p>Manchester United Masuk dalam<br>Zona Degradasi</p>
-                    <div class="more-button">View More</div>
-                </div>
-        </div>
+        <div class="news-card" (click)="openNewsDetails()" *ngFor="let x of newsList;let i=index">
+          <ion-img class="news-picture" src="{{x.urlToImage}}"></ion-img>
+            <div class="news-content">
+                <p>{{x.title}}}</p>
+                <div class="more-button">View More</div>
+            </div>
+    </div>
       
       </div>
         
-  </div> -->
+  </div>
 </ion-content>
 <app-footer-menu-bar></app-footer-menu-bar>
