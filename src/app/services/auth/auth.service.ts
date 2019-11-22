@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import {HttpHeaders, HttpClient } from '@angular/common/http';
 import { baseUrl } from '../base';
 
 @Injectable({
@@ -8,12 +8,14 @@ import { baseUrl } from '../base';
 export class AuthService {
   
   kHttpHeaders: HttpHeaders=new HttpHeaders({
-    'Content-Type': 'application/json'
+    'Content-Type': 'application/json',
+    'Origin': 'http://evil.com'
+
   })
 
   constructor(
     private http: HttpClient
-  ) { }
+  ) {}
 
   login(){
     return this.http.get(
@@ -48,8 +50,8 @@ export class AuthService {
     return this.http.post(baseUrl+'/api/account',
      data,
      {
-       headers: this.kHttpHeaders
-     }
+       headers: this.kHttpHeaders,
+     },
     )
   }
 

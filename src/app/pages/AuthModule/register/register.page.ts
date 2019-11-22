@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ToastController } from '@ionic/angular';
 import { AuthService } from 'src/app/services/auth/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -11,27 +12,27 @@ import { AuthService } from 'src/app/services/auth/auth.service';
 
 export class RegisterPage implements OnInit {
   mainRegister: FormGroup=new FormGroup({
-    first_name: new FormControl(null,{
+    first_name: new FormControl("Kucing",{
       updateOn: 'change',
       validators: [Validators.required]
     }),
-    last_name:new FormControl(null,{
+    last_name:new FormControl("Oren",{
       updateOn: 'change',
       validators: [Validators.required]
     }),
-    phone_number:new FormControl(null,{
+    phone_number:new FormControl("0928932",{
       updateOn: 'change',
       validators: [Validators.required]
     }),
-    email:new FormControl(null,{
+    email:new FormControl("tes@tes.com",{
       updateOn: 'change',
       validators: [Validators.required]
     }),
-    password: new FormControl(null,{
+    password: new FormControl("1234",{
       updateOn: 'change',
       validators: [Validators.required]
     }),
-    confirmPass: new FormControl(null,{
+    confirmPass: new FormControl("1234",{
       updateOn: 'change',
       validators: [Validators.required]
     }),
@@ -40,6 +41,7 @@ export class RegisterPage implements OnInit {
   constructor(
     private toastController: ToastController,
     private authService: AuthService,
+    private router: Router,
   ) { }
 
   ngOnInit() {
@@ -59,17 +61,23 @@ export class RegisterPage implements OnInit {
         return
       }else{
         this.authService.makeNewAccount(this.mainRegister.value).subscribe(
-          (f)=>{
-            console.log('Success')
-            console.log(f)
+          async f=>{
+            (await this.toastController.create({
+              message: "New account has been created",
+              color:"success",
+              duration: 2000,
+            })).present()
+            this.router.navigate(['/','login'])
           },
-          (err)=>{
-            console.log('Error')
-            console.log(err)
+          async (err)=>{
+            (await this.toastController.create({
+              message: JSON.stringify(err),
+              color:"danger",
+              duration: 2000,
+            })).present()
           }
         )
       }
-      
     }else{
       (await this.toastController.create({
         message: "Please check your forms, then try submitting again",
