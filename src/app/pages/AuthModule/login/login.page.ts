@@ -24,6 +24,8 @@ export class LoginPage implements OnInit {
 
   ngOnInit() {
     this.isProcessing=false;
+    this.email="tes@tes.com"
+    this.password="tes"
   }
 
   async auth(){
@@ -57,13 +59,17 @@ export class LoginPage implements OnInit {
         this.isProcessing=false
 
         var found = false;
+        var selectedID: String
+        
         res.forEach((f)=>{
+          console.log(f)
           if(f.email == this.email && f.password == md5(this.password)){
             found = true
+            selectedID = f.id
           }
         })
         if(found){
-          this.authSvc.setLoggedIn();
+          this.authSvc.setLoggedIn(selectedID);
           this.router.navigate(['/','home'])
           return;
         }else{

@@ -17,13 +17,27 @@ export class AuthService {
     )
   }
 
-  setLoggedIn(){
-    localStorage.setItem('isLoggedIn', 'true')
+  setLoggedIn(userID: String){
+    localStorage.setItem('raga', JSON.stringify({
+      'loggedIn': true,
+      'userID': userID
+    }))
   }
 
   isLoggedIn(): Boolean{
-    if(localStorage.getItem('isLoggedIn') == 'true') return true;
+    var z = JSON.parse(
+      localStorage.getItem('raga')
+    )
+    if(z != null) return true;
     else return false;
+  }
+
+  getLoggedInUserID(){
+    var z = JSON.parse(
+      localStorage.getItem('raga')
+    )
+    if(z == null) return null;
+    else return z.userID;
   }
 
 }
