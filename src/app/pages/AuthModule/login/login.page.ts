@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/auth/auth.service';
 
-var md5 = require('md5');
+import * as md5 from 'md5';
 
 import { ToastController } from '@ionic/angular';
 import { Router } from '@angular/router';
