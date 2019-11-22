@@ -8,42 +8,24 @@
   <div class="container">
       <h3>Popular News</h3>
 
-      <div class="news-card" (click)="openNewsDetails()">
-            <ion-img class="news-picture" src="https://www.si.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_1400/MTY3ODg1NzUwMDczODI4NjI1/robert-lewandowski-bayern-munich-union-berlin.webp"></ion-img>
+      <div class="news-card" *ngFor="let x of newsList;let i=index"  (click)="openNewsDetails(x.url)" >
+            <ion-img class="news-picture" src="{{x.urlToImage}}"></ion-img>
               <div class="news-content">
-                  <p>Manchester United Masuk dalam<br>Zona Degradasi</p>
+                  <div class="news-content-text">{{x.title}}}</div>
                   <div class="more-button">View More</div>
               </div>
-      </div>
-
-      <div class="news-card">
-          <ion-img class="news-picture" src="https://www.si.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_1400/MTY3ODg1NzUwMDczODI4NjI1/robert-lewandowski-bayern-munich-union-berlin.webp"></ion-img>
-            <div class="news-content">
-              <p>Manchester United Masuk dalam<br>Zona Degradasi</p>
-                <div class="more-button">View More</div>
-            </div>
       </div>
 
       <h3>Latest News</h3>
 
       <div class="horizontal-scrolling">
-
-        <div class="news-card">
-              <ion-img class="news-picture" src="https://www.si.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_1400/MTY3ODg1NzUwMDczODI4NjI1/robert-lewandowski-bayern-munich-union-berlin.webp"></ion-img>
-                <div class="news-content">
-                  <p>Manchester United Masuk dalam<br>Zona Degradasi</p>
-                    <div class="more-button">View More</div>
-                </div>
-        </div>
-
-        <div class="news-card">
-            <ion-img class="news-picture" src="https://www.si.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_1400/MTY3ODg1NzUwMDczODI4NjI1/robert-lewandowski-bayern-munich-union-berlin.webp"></ion-img>
+        <div class="news-card" *ngFor="let x of newsList;let i=index" (click)="openNewsDetails(x.url)" >
+            <ion-img class="news-picture" src="{{x.urlToImage}}"></ion-img>
               <div class="news-content">
-                <p>Manchester United Masuk dalam<br>Zona Degradasi</p>
+                  <div class="news-content-text">{{x.title}}}</div>
                   <div class="more-button">View More</div>
               </div>
         </div>
-      
       </div>
         
   </div>
