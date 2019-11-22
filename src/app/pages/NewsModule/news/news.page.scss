@@ -30,6 +30,7 @@ h3{
 }
 
 .news-card{
+    display: inline-block;
     margin-right: 1em;
     width: 100%;
     border: 1px solid #EAEAEA;
@@ -55,15 +56,20 @@ h3{
         padding-right: 16px;
         height: 4em;
         background: rgba(0, 0, 0, 0.44);
-    }
 
-    .more-button{
-        top:25%;
-        right:5%;
-        padding: 8pt;
-        position: absolute;
-        background: #3D89FB;
-        border-radius: 12pt;
-        font-size: 8pt;
+        .news-content-text{
+            top: 1vh;
+            max-width: 65vw;
+        }
+
+        .more-button{
+            top: 1vh;
+            right: 5vw;
+            padding: 8pt;
+            position: absolute;
+            background: #3D89FB;
+            border-radius: 12pt;
+            font-size: 8pt;
+        }
     }
 }
