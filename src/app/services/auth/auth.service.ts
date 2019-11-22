@@ -13,7 +13,7 @@ export class AuthService {
 
   login(){
     return this.http.get(
-      baseUrl+'api/account'
+      baseUrl+'/api/account'
     )
   }
 }
