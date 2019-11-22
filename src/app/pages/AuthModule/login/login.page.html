@@ -8,16 +8,19 @@
             <div class="form-title">
               Email
             </div>
-            <ion-input type="email" name="email" placeholder="raga@example.com"></ion-input>
+            <ion-input type="email" [(ngModel)]="email" name="email" placeholder="raga@example.com"></ion-input>
             <br>
             <div class="form-title">
               Password
             </div>
-            <ion-input type="password" name="password" placeholder="Your password"></ion-input>
+            <ion-input type="password" [(ngModel)]="password"  name="password" placeholder="Your password"></ion-input>
         </div>
     </div>
     <div padding>
-      <a [routerLink]="['/','home']"><ion-button class = "button button-block">Sign In</ion-button></a>
+      <a>
+        <ion-button (click)="auth()" *ngIf="!isProcessing" class = "button button-block">Sign In</ion-button>
+        <ion-button (click)="auth()" *ngIf="isProcessing" class = "button button-block" disabled>Processing...</ion-button>
+      </a>
     </div>
       <div class="ion-text-center">
         <p>Don't have an account? <a [routerLink]="['/','register']">Sign Up</a></p>
