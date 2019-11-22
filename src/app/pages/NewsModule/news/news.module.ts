@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { NewsPage } from './news.page';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   {
@@ -20,6 +21,7 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
+    HttpClientModule,
     RouterModule.forChild(routes),
     SharedModule
   ],
