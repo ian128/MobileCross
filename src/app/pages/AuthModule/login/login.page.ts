@@ -3,7 +3,7 @@ import { AuthService } from 'src/app/services/auth/auth.service';
 
 var md5 = require('md5');
 
-import { AlertController, ToastController } from '@ionic/angular';
+import { ToastController } from '@ionic/angular';
 import { Router } from '@angular/router';
 
 @Component({
@@ -69,7 +69,7 @@ export class LoginPage implements OnInit {
         }else{
           var err = await this.toastController.create(
             {
-              message: "Account Not Found",
+              message: "Wrong password or account not found",
               duration: 2000,
               color: "danger"
             }

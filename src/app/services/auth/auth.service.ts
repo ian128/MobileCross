@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { baseUrl } from '../base';
-import { truncate } from 'fs';
 
 @Injectable({
   providedIn: 'root'
@@ -26,5 +25,5 @@ export class AuthService {
     if(localStorage.getItem('isLoggedIn') == 'true') return true;
     else return false;
   }
-  
+
 }
