@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { baseUrl } from '../base';
 
 @Injectable({
@@ -7,6 +7,10 @@ import { baseUrl } from '../base';
 })
 export class AuthService {
   
+  kHttpHeaders: HttpHeaders=new HttpHeaders({
+    'Content-Type': 'application/json'
+  })
+
   constructor(
     private http: HttpClient
   ) { }
@@ -38,6 +42,15 @@ export class AuthService {
     )
     if(z == null) return null;
     else return z.userID;
+  }
+
+  makeNewAccount(data: any){
+    return this.http.post(baseUrl+'/api/account',
+     data,
+     {
+       headers: this.kHttpHeaders
+     }
+    )
   }
 
 }
