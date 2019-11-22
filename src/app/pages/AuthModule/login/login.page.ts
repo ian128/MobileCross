@@ -70,7 +70,7 @@ export class LoginPage implements OnInit {
         })
         if(found){
           this.authSvc.setLoggedIn(selectedID);
-          this.router.navigate(['/','home'])
+          location.href='/home'
           return;
         }else{
           var err = await this.toastController.create(
