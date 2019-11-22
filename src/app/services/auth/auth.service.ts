@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { baseUrl } from '../base';
+import { truncate } from 'fs';
 
 @Injectable({
   providedIn: 'root'
@@ -16,4 +17,14 @@ export class AuthService {
       baseUrl+'/api/account'
     )
   }
+
+  setLoggedIn(){
+    localStorage.setItem('isLoggedIn', 'true')
+  }
+
+  isLoggedIn(): Boolean{
+    if(localStorage.getItem('isLoggedIn') == 'true') return true;
+    else return false;
+  }
+  
 }
