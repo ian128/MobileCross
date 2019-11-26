@@ -9,8 +9,6 @@ export class AuthService {
   
   kHttpHeaders: HttpHeaders=new HttpHeaders({
     'Content-Type': 'application/json',
-    'Origin': 'http://evil.com'
-
   })
 
   constructor(
