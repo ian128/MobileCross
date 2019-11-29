@@ -52,7 +52,10 @@
     </div>
 
     <div padding>
-      <ion-button class = "button button-block" (click)="submit()">Sign Up</ion-button>
+      <ion-button class = "button button-block" (click)="submit()" *ngIf="!isProcessing">Sign Up</ion-button>
+      <ion-button class = "button button-block" disabled *ngIf="isProcessing"> 
+        <ion-spinner name="bubbles"></ion-spinner>
+      </ion-button>
     </div>
 
   </form>

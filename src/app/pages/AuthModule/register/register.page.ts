@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 })
 
 export class RegisterPage implements OnInit {
+  isProcessing: Boolean
   mainRegister: FormGroup=new FormGroup({
     first_name: new FormControl("Kucing",{
       updateOn: 'change',
@@ -45,7 +46,7 @@ export class RegisterPage implements OnInit {
   ) { }
 
   ngOnInit() {
-    
+    this.isProcessing=false;
   }
 
   async submit(){
@@ -60,8 +61,10 @@ export class RegisterPage implements OnInit {
         })).present()
         return
       }else{
+        this.isProcessing=true
         this.authService.makeNewAccount(this.mainRegister.value).subscribe(
           async f=>{
+            this.isProcessing=false;
             (await this.toastController.create({
               message: "New account has been created",
               color:"success",
@@ -70,8 +73,9 @@ export class RegisterPage implements OnInit {
             this.router.navigate(['/','login'])
           },
           async (err)=>{
+            this.isProcessing=false;
             (await this.toastController.create({
-              message: JSON.stringify(err),
+              message: "This email has been used",
               color:"danger",
               duration: 2000,
             })).present()
