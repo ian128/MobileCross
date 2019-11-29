@@ -7,56 +7,22 @@
 <!--Selector-->
 <ion-header>
     <ion-toolbar>
-        <ion-segment value="badminton" (ionChange)="segmentChanged($event)">
-            <ion-segment-button value="badminton">
-              <div class="category">Badminton</div>
-            </ion-segment-button>
-            <ion-segment-button value="basketball">
-              <div class="category">Basketball</div>
-            </ion-segment-button>
-            <ion-segment-button value="futsal">
-              <div class="category">Futsal</div>
-            </ion-segment-button>
-            <ion-segment-button value="tennis">
-              <div class="category">Tennis</div>
-            </ion-segment-button>
-        </ion-segment>
+        <app-selector-sport-word (onSelected)="select($event)"></app-selector-sport-word>
     </ion-toolbar>
   </ion-header>
 
 <ion-content>
-    <ion-list >
+    <ion-list>
       <ion-item lines="none" *ngFor="let x of [].constructor(5)"> 
-          <div class="sparring-card">
-            <div class="card-header">
-              <ion-grid>
-                <ion-row align-items-center>
-                  <ion-col size="10"> 
-                    <span>Basket Anak Anak UMN</span>
-                  </ion-col>
-                  <ion-col>
-                    Share
-                  </ion-col>
-                </ion-row>
-              </ion-grid>
-            </div>
-            <div class="card-content">
-                <p>UMN Only</p>
-                <p>Cisauk Staples Centre</p>
-                <p>Tomorrow, <b>7 pm - 9 pm</b></p>
-                
-                <ion-grid>
-                    <ion-row>
-                        <ion-col> 
-                          <ion-button>Join Game</ion-button>
-                        </ion-col>
-                        <ion-col ends>
-                            <a [routerLink]="['/','sparring-detail']">Details</a>
-                        </ion-col>
-                      </ion-row>
-                </ion-grid>
-            </div>
-          </div>
+          <app-card-sparring
+          [sparringID]="'1'"
+          [title]="'Basket Anak anak umn'"
+          [participants]="'UMN Only'"
+          [location]="'Cisauk Staples Center'"
+          [day]="'Tomorrow'"
+          [time]="'7-9 PM'"
+          ></app-card-sparring>
+          
       </ion-item>
     </ion-list>
 </ion-content>
