@@ -3,33 +3,64 @@
   <h1 class="title ion-text-center">Sign Up</h1>
   <div class="spacer"></div>
   
-  <div padding>
-      <div class="card-container">
+  <form [formGroup]="mainRegister">
+    <div padding>
+        <div class="card-container">
           <div class="form-title">
               First Name
           </div>
-          <ion-input type="text" name="fname" placeholder="Enter your first name"></ion-input>
+          <ion-input formControlName="first_name" type="text"name="fname" placeholder="Enter your first name"></ion-input>
+          <ion-label color="danger" *ngIf="mainRegister.get('first_name').touched && mainRegister.get('first_name').invalid">This field is required</ion-label>
+          <br>
           <br>
           <div class="form-title">
               Last Name
           </div>
-            <ion-input type="text" name="lname" placeholder="Enter your last name"></ion-input>
+            <ion-input formControlName="last_name" type="text" name="lname" placeholder="Enter your last name"></ion-input>
+            <ion-label color="danger" *ngIf="mainRegister.get('last_name').touched && mainRegister.get('last_name').invalid">This field is required</ion-label>
+            <br>
           <br>
           <div class="form-title">
             Phone
           </div>
-          <ion-input type="text" name="phone" placeholder="08XX-XXXX-XXXX"></ion-input>
+          <ion-input formControlName="phone_number" type="text" name="phone" placeholder="08XX-XXXX-XXXX"></ion-input>
+          <ion-label color="danger" *ngIf="mainRegister.get('phone_number').touched && mainRegister.get('phone_number').invalid">This field is required</ion-label>
+          <br>
           <br>
           <div class="form-title">
             Email
           </div>
-          <ion-input type="email" name="email" placeholder="raga@example.com"></ion-input>
-      </div>
-  </div>
-  <div padding>
-    <a [routerLink]="['/','password-register']"><ion-button class = "button button-block">Sign Up</ion-button></a>
-  </div>
-    <div class="ion-text-center">
-      <p>Already have an account? <a [routerLink]="['/','login']">Sign In</a></p>
+          <ion-input formControlName="email" type="email" name="email" placeholder="raga@example.com"></ion-input>
+          <ion-label color="danger" *ngIf="mainRegister.get('email').touched && mainRegister.get('email').invalid">This field is required</ion-label>
+          <br>
+          <br>
+          <div class="form-title">
+            Password
+          </div>
+          <ion-input type="password" formControlName="password" name="password" placeholder="Your password"></ion-input>
+          <ion-label color="danger" *ngIf="mainRegister.get('password').touched && mainRegister.get('password').invalid">This field is required</ion-label>
+          <br>
+          <br>
+          <div class="form-title">
+            Confirm your password
+          </div>
+          <ion-input type="password" formControlName="confirmPass" name="confirmPass" placeholder="Re-enter your password"></ion-input>
+          <ion-label color="danger" *ngIf="mainRegister.get('confirmPass').touched && mainRegister.get('confirmPass').invalid">This field is required</ion-label>
+          <br>
+        </div>
+    
+    </div>
+
+    <div padding>
+      <ion-button class = "button button-block" (click)="submit()" *ngIf="!isProcessing">Sign Up</ion-button>
+      <ion-button class = "button button-block" disabled *ngIf="isProcessing"> 
+        <ion-spinner name="bubbles"></ion-spinner>
+      </ion-button>
+    </div>
+
+  </form>
+
+  <div class="ion-text-center">
+    <p>Already have an account? <a [routerLink]="['/','login']">Sign In</a></p>
   </div>
 </ion-content>
