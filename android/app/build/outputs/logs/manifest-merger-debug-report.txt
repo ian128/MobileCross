@@ -1,0 +1,433 @@
+-- Merging decision tree log ---
+provider#android.support.v4.content.FileProvider
+INJECTED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:34:9-42:20
+	android:grantUriPermissions
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:38:13-47
+	android:authorities
+		INJECTED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:36:13-64
+	android:exported
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:37:13-37
+	android:name
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:35:13-67
+manifest
+ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:2:1-63:12
+MERGED from [:capacitor-android] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-36:12
+MERGED from [com.android.support:design:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/9945d09bc2913d379855ba67e36c5e57/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/447a28a6d1b39b085d05f397d6b4b5ce/AndroidManifest.xml:17:1-22:12
+MERGED from [:capacitor-cordova-android-plugins] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/7f8430e8cb1a55b2955300d7ad12192a/AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:17:1-47:12
+MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/d11ca8ffc128ecaa216888c7c1d9aaf2/AndroidManifest.xml:2:1-19:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/10792fe49b2132676bc1b8515550e798/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/5572934fc182f03ae5daae690081da33/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/3a4310993dfdecf568b91c90614dbad3/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/9338acee2a419a7aa6715557f315e868/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/0732252ba01a272bc49391fd10cc2d7a/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/c081593e3f531064a6dc12daec52fc1c/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/0049f195e4c65dd225fea12584094025/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/3a6319a9257c958442a56f52d0438436/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/d277a018a34cd42ee1fa9205857bb35d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customtabs:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/customtabs-28.0.0.aar/fbc6d054ee6475d10e8632ed0c468d08/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/2f11557f2c3f93934d286f9dff2e2710/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/d04d3afd0f98b305cef70489c52e5bdf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/b65263c4d9a8d1e0d67fe0b9b544eda1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/1b577d63f9389d60fd52a78ab83f8717/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/07ca5218e9b050b45e5e9138b5bc9d86/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/246718816b86631b037a16cfb9bab9d7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/affb0049ae4dd909ab0c6dba20bf2d2d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/eb760a1f70688539a61ed704821be072/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/0229c4b9c490bee6eedacd7c3f7d35fc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/40dcb9fdd56bb824587381701447be6b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/1ef0d427408797322ba54ef4adeb5845/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/08043f43cc4424be806d7ce426977448/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/aebf4990790033bd873ad3044a2bebef/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/99b92c248ad50f28d997a1d75e8d4b7c/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/02349b978b2064b0fae371e2f3ca6d9e/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/53c9ceb0e89b1120e85a5b308395e392/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/c4887a96f77cdcd942af45e2bc27b5d2/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/947d4d47085a5faca16c9ec5c0d3bb1b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/fc1362d31bdb3984959edb01055b4b3a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/fa7a953ba5e5cbdf21339f3649b6f37f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/9e908400dc46d05c1e77a6208475f1a6/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/b4ee1e8616e9e7583aee207c0c7e5a82/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/f70464c72d570ebe4e8ae5d92973949e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/d0805639f392f8b7e243e0440c3fc984/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/55ccb7542e11467a9bcab8e39ce40983/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/17e8da2cd92d3c7665f3a4667de2c559/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/510a2f3c0b6a199fed0c208cc89c1cd2/AndroidManifest.xml:17:1-22:12
+MERGED from [org.apache.cordova:framework:7.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/framework-7.0.0.aar/acb488827a8415dca66a4f15341a9015/AndroidManifest.xml:20:1-27:12
+INJECTED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:2:1-63:12
+	package
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:3:5-37
+		INJECTED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:2:1-63:12
+		INJECTED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:2:1-63:12
+		INJECTED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:4:5-83
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:4:22-64
+application
+ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:5:5-43:19
+MERGED from [:capacitor-android] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-34:19
+MERGED from [:capacitor-android] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-34:19
+MERGED from [com.android.support:design:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/9945d09bc2913d379855ba67e36c5e57/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/9945d09bc2913d379855ba67e36c5e57/AndroidManifest.xml:22:5-20
+MERGED from [:capacitor-cordova-android-plugins] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-13:19
+MERGED from [:capacitor-cordova-android-plugins] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-13:19
+MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/7f8430e8cb1a55b2955300d7ad12192a/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/7f8430e8cb1a55b2955300d7ad12192a/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/d11ca8ffc128ecaa216888c7c1d9aaf2/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/d11ca8ffc128ecaa216888c7c1d9aaf2/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/10792fe49b2132676bc1b8515550e798/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/10792fe49b2132676bc1b8515550e798/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/5572934fc182f03ae5daae690081da33/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/5572934fc182f03ae5daae690081da33/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/3a4310993dfdecf568b91c90614dbad3/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/3a4310993dfdecf568b91c90614dbad3/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/9338acee2a419a7aa6715557f315e868/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/9338acee2a419a7aa6715557f315e868/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/0732252ba01a272bc49391fd10cc2d7a/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/0732252ba01a272bc49391fd10cc2d7a/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/c081593e3f531064a6dc12daec52fc1c/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/c081593e3f531064a6dc12daec52fc1c/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/0049f195e4c65dd225fea12584094025/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/0049f195e4c65dd225fea12584094025/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/99b92c248ad50f28d997a1d75e8d4b7c/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/99b92c248ad50f28d997a1d75e8d4b7c/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/02349b978b2064b0fae371e2f3ca6d9e/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/02349b978b2064b0fae371e2f3ca6d9e/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/53c9ceb0e89b1120e85a5b308395e392/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/53c9ceb0e89b1120e85a5b308395e392/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/02349b978b2064b0fae371e2f3ca6d9e/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.nullptrexcept.raga.MainActivity
+ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:13:9-32:20
+	android:label
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:16:13-56
+	android:launchMode
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:18:13-44
+	android:configChanges
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:14:13-90
+	android:theme
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:17:13-62
+	android:name
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:15:13-63
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:20:13-23:29
+action#android.intent.action.MAIN
+ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:22:27-74
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/custom_url_scheme
+ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:25:13-30:29
+action#android.intent.action.VIEW
+ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:26:25-66
+category#android.intent.category.DEFAULT
+ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:27:17-76
+	android:name
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:27:27-73
+category#android.intent.category.BROWSABLE
+ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:28:17-78
+	android:name
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:28:27-75
+data
+ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:29:17-68
+	android:scheme
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:29:23-65
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:49:5-79
+	android:name
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:49:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:50:5-81
+	android:name
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:50:22-78
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:52:5-81
+	android:name
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:52:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:53:5-79
+	android:name
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:53:22-76
+uses-feature#android.hardware.location.gps
+ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:54:5-66
+	android:name
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:54:19-63
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:56:5-79
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:56:22-76
+uses-permission#android.permission.CAMERA
+ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:59:5-65
+	android:name
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:59:22-62
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:61:5-71
+	android:name
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:61:22-68
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:62:5-79
+	android:name
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:62:22-77
+uses-sdk
+INJECTED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml
+MERGED from [:capacitor-android] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:capacitor-android] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/9945d09bc2913d379855ba67e36c5e57/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/9945d09bc2913d379855ba67e36c5e57/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/447a28a6d1b39b085d05f397d6b4b5ce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/447a28a6d1b39b085d05f397d6b4b5ce/AndroidManifest.xml:20:5-44
+MERGED from [:capacitor-cordova-android-plugins] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
+MERGED from [:capacitor-cordova-android-plugins] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
+MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/7f8430e8cb1a55b2955300d7ad12192a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/7f8430e8cb1a55b2955300d7ad12192a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/d11ca8ffc128ecaa216888c7c1d9aaf2/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/d11ca8ffc128ecaa216888c7c1d9aaf2/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/10792fe49b2132676bc1b8515550e798/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/10792fe49b2132676bc1b8515550e798/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/5572934fc182f03ae5daae690081da33/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/5572934fc182f03ae5daae690081da33/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/3a4310993dfdecf568b91c90614dbad3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/3a4310993dfdecf568b91c90614dbad3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/9338acee2a419a7aa6715557f315e868/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/9338acee2a419a7aa6715557f315e868/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/0732252ba01a272bc49391fd10cc2d7a/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/0732252ba01a272bc49391fd10cc2d7a/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/c081593e3f531064a6dc12daec52fc1c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/c081593e3f531064a6dc12daec52fc1c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/0049f195e4c65dd225fea12584094025/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/0049f195e4c65dd225fea12584094025/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/3a6319a9257c958442a56f52d0438436/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/3a6319a9257c958442a56f52d0438436/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/d277a018a34cd42ee1fa9205857bb35d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/d277a018a34cd42ee1fa9205857bb35d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/customtabs-28.0.0.aar/fbc6d054ee6475d10e8632ed0c468d08/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/customtabs-28.0.0.aar/fbc6d054ee6475d10e8632ed0c468d08/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/2f11557f2c3f93934d286f9dff2e2710/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/2f11557f2c3f93934d286f9dff2e2710/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/d04d3afd0f98b305cef70489c52e5bdf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/d04d3afd0f98b305cef70489c52e5bdf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/b65263c4d9a8d1e0d67fe0b9b544eda1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/b65263c4d9a8d1e0d67fe0b9b544eda1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/1b577d63f9389d60fd52a78ab83f8717/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/1b577d63f9389d60fd52a78ab83f8717/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/07ca5218e9b050b45e5e9138b5bc9d86/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/07ca5218e9b050b45e5e9138b5bc9d86/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/246718816b86631b037a16cfb9bab9d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/246718816b86631b037a16cfb9bab9d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/affb0049ae4dd909ab0c6dba20bf2d2d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/affb0049ae4dd909ab0c6dba20bf2d2d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/eb760a1f70688539a61ed704821be072/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/eb760a1f70688539a61ed704821be072/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/0229c4b9c490bee6eedacd7c3f7d35fc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/0229c4b9c490bee6eedacd7c3f7d35fc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/40dcb9fdd56bb824587381701447be6b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/40dcb9fdd56bb824587381701447be6b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/1ef0d427408797322ba54ef4adeb5845/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/1ef0d427408797322ba54ef4adeb5845/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/08043f43cc4424be806d7ce426977448/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/08043f43cc4424be806d7ce426977448/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/aebf4990790033bd873ad3044a2bebef/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/aebf4990790033bd873ad3044a2bebef/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/99b92c248ad50f28d997a1d75e8d4b7c/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/99b92c248ad50f28d997a1d75e8d4b7c/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-compat:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/02349b978b2064b0fae371e2f3ca6d9e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/02349b978b2064b0fae371e2f3ca6d9e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/53c9ceb0e89b1120e85a5b308395e392/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/53c9ceb0e89b1120e85a5b308395e392/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/c4887a96f77cdcd942af45e2bc27b5d2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/c4887a96f77cdcd942af45e2bc27b5d2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/947d4d47085a5faca16c9ec5c0d3bb1b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/947d4d47085a5faca16c9ec5c0d3bb1b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/fc1362d31bdb3984959edb01055b4b3a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/fc1362d31bdb3984959edb01055b4b3a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/fa7a953ba5e5cbdf21339f3649b6f37f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/fa7a953ba5e5cbdf21339f3649b6f37f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/9e908400dc46d05c1e77a6208475f1a6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/9e908400dc46d05c1e77a6208475f1a6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/b4ee1e8616e9e7583aee207c0c7e5a82/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/b4ee1e8616e9e7583aee207c0c7e5a82/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/f70464c72d570ebe4e8ae5d92973949e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/f70464c72d570ebe4e8ae5d92973949e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/d0805639f392f8b7e243e0440c3fc984/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/d0805639f392f8b7e243e0440c3fc984/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/55ccb7542e11467a9bcab8e39ce40983/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/55ccb7542e11467a9bcab8e39ce40983/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/17e8da2cd92d3c7665f3a4667de2c559/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/17e8da2cd92d3c7665f3a4667de2c559/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/510a2f3c0b6a199fed0c208cc89c1cd2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/510a2f3c0b6a199fed0c208cc89c1cd2/AndroidManifest.xml:20:5-44
+MERGED from [org.apache.cordova:framework:7.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/framework-7.0.0.aar/acb488827a8415dca66a4f15341a9015/AndroidManifest.xml:25:5-44
+MERGED from [org.apache.cordova:framework:7.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/framework-7.0.0.aar/acb488827a8415dca66a4f15341a9015/AndroidManifest.xml:25:5-44
+INJECTED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/0049f195e4c65dd225fea12584094025/AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		INJECTED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:39:13-41:64
+	android:resource
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:41:17-51
+	android:name
+		ADDED from /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/android/app/src/main/AndroidManifest.xml:40:17-67
+uses-feature#android.hardware.camera
+ADDED from [:capacitor-android] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-13:36
+	android:required
+		ADDED from [:capacitor-android] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-33
+	android:name
+		ADDED from [:capacitor-android] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-47
+service#com.getcapacitor.plugin.background.BackgroundTaskService
+ADDED from [:capacitor-android] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:40
+	android:exported
+		ADDED from [:capacitor-android] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+	android:name
+		ADDED from [:capacitor-android] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-84
+receiver#com.getcapacitor.plugin.notification.TimedNotificationPublisher
+ADDED from [:capacitor-android] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:9-100
+	android:name
+		ADDED from [:capacitor-android] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:19-97
+receiver#com.getcapacitor.plugin.notification.NotificationDismissReceiver
+ADDED from [:capacitor-android] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:9-101
+	android:name
+		ADDED from [:capacitor-android] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:19-98
+meta-data#firebase_messaging_auto_init_enabled
+ADDED from [:capacitor-android] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-25:37
+	android:value
+		ADDED from [:capacitor-android] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-34
+	android:name
+		ADDED from [:capacitor-android] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-64
+service#com.getcapacitor.CapacitorFirebaseMessagingService
+ADDED from [:capacitor-android] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:9-33:19
+	android:stopWithTask
+		ADDED from [:capacitor-android] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-41
+	android:name
+		ADDED from [:capacitor-android] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-78
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [:capacitor-android] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-32:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [:capacitor-android] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:17-78
+	android:name
+		ADDED from [:capacitor-android] /Users/ian128/Documents/DokumenUMN/SM7/MCC/FinalProject/MobileCross/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:25-75
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/7f8430e8cb1a55b2955300d7ad12192a/AndroidManifest.xml:28:9-34:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/7f8430e8cb1a55b2955300d7ad12192a/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/7f8430e8cb1a55b2955300d7ad12192a/AndroidManifest.xml:29:13-82
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:24:22-65
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:26:22-79
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:29:9-35:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:30:13-84
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/43400a9e565f05dfaec2fcd8d7782c5e/AndroidManifest.xml:42:25-78
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:17.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/d11ca8ffc128ecaa216888c7c1d9aaf2/AndroidManifest.xml:12:9-16:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:17.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/d11ca8ffc128ecaa216888c7c1d9aaf2/AndroidManifest.xml:14:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:17.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/d11ca8ffc128ecaa216888c7c1d9aaf2/AndroidManifest.xml:15:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:17.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/d11ca8ffc128ecaa216888c7c1d9aaf2/AndroidManifest.xml:16:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:17.0.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/d11ca8ffc128ecaa216888c7c1d9aaf2/AndroidManifest.xml:13:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/5572934fc182f03ae5daae690081da33/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/5572934fc182f03ae5daae690081da33/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/5572934fc182f03ae5daae690081da33/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/5572934fc182f03ae5daae690081da33/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/c081593e3f531064a6dc12daec52fc1c/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/c081593e3f531064a6dc12daec52fc1c/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ian128/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/c081593e3f531064a6dc12daec52fc1c/AndroidManifest.xml:24:13-58
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v4:26.1.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/0049f195e4c65dd225fea12584094025/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/99b92c248ad50f28d997a1d75e8d4b7c/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/99b92c248ad50f28d997a1d75e8d4b7c/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/0049f195e4c65dd225fea12584094025/AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/ian128/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/0049f195e4c65dd225fea12584094025/AndroidManifest.xml:27:13-51
