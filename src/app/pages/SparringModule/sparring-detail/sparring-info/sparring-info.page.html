@@ -11,13 +11,16 @@
     <ion-item>
       <ion-grid>
           <ion-row>
-            <h5><fa-icon [icon]="building"></fa-icon> Futsal</h5>
+            <h5><fa-icon [icon]="building"></fa-icon>{{court.name}}</h5>
           </ion-row>
         <ion-row>
-          <h5><fa-icon [icon]="globeAsia"></fa-icon> Public Game</h5>
+          <h5><fa-icon [icon]="globeAsia"></fa-icon>{{sparring.who_can_play}}</h5>
         </ion-row>
         <ion-row>
-          <h5><fa-icon [icon]="dollarSign"></fa-icon> Rp100.000/person</h5>
+          <h5><fa-icon [icon]="dollarSign"></fa-icon> {{
+            date.getDay() == 0 || date.getDay() == 6 ? court.weekend_price : 
+            court.weekday_price | currency:'IDR':'Rp'
+          }}/person</h5>
           </ion-row>
       </ion-grid>
     </ion-item>
@@ -25,10 +28,10 @@
     <ion-item>
       <ion-grid>
           <ion-row>
-              <h5><fa-icon [icon]="stopwatch"></fa-icon> Tomorrow, 7 pm - 9 pm <br> Repeat every week</h5>
+              <h5><fa-icon [icon]="stopwatch"></fa-icon> {{sparring.date}}, 7 pm - 9 pm <br> Repeat every week : {{sparring.repeat_every_week}}</h5>
             </ion-row>
           <ion-row>
-            <h5><fa-icon [icon]="mapPin"></fa-icon> Cisauk Staples Centre</h5>
+            <h5><fa-icon [icon]="mapPin"></fa-icon>{{court.location}}</h5>
           </ion-row>
           <ion-row>
               <h5><fa-icon [icon]="notes"></fa-icon> Tes</h5>
