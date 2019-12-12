@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Profile } from 'src/app/models/profile';
+import { baseUrl } from '../base';
 
 @Injectable({
   providedIn: 'root'
@@ -12,11 +13,11 @@ export class EditProfileService {
   ) { }
 
   retrieveCurrentProfile(id){
-    return this.http.get<Profile>("https://metal-coil-259515.appspot.com/api/account/"+id)
+    return this.http.get<Profile>(baseUrl+"/api/account/"+id)
   }
 
   updateCurrentProfile(id, body){
-    return this.http.put("https://metal-coil-259515.appspot.com/api/account/"+id,
+    return this.http.put(baseUrl+"/api/account/"+id,
     body)
   }
 }

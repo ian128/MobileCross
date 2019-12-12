@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Profile } from 'src/app/models/profile';
+import { baseUrl } from '../base';
 
 @Injectable({
   providedIn: 'root'
@@ -12,6 +13,6 @@ export class MyProfileService {
   ) { }
 
   getUserAccount(id){
-    return this.http.get<Profile>("https://metal-coil-259515.appspot.com/api/account/"+id)
+    return this.http.get<Profile>(baseUrl+"/api/account/"+id)
   }
 }

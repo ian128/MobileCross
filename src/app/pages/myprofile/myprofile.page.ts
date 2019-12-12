@@ -42,4 +42,8 @@ export class MyprofilePage implements OnInit {
     )
   }
 
+  ionViewWillEnter(){
+    this.ngOnInit()
+  }
+
 }
