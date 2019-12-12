@@ -12,6 +12,15 @@ export class EditProfileService {
     private http: HttpClient
   ) { }
 
+  getProfilePicture(){
+    return localStorage.getItem('photoprofile')
+  }
+
+  setProfilePicture(base64){
+    localStorage.setItem('photoprofile',base64)
+    return true
+  }
+
   retrieveCurrentProfile(id){
     return this.http.get<Profile>(baseUrl+"/api/account/"+id)
   }

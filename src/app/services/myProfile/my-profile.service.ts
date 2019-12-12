@@ -15,4 +15,9 @@ export class MyProfileService {
   getUserAccount(id){
     return this.http.get<Profile>(baseUrl+"/api/account/"+id)
   }
+
+  getProfilePicture(){
+    return localStorage.getItem('photoprofile')
+  }
+
 }

@@ -14,9 +14,9 @@
           <ion-col size=2></ion-col>
           <ion-col size=8>
             <ion-avatar class="profile-picture">
-                <ion-img size=4 src="https://www.androidcentral.com/sites/androidcentral.com/files/styles/xlarge/public/article_images/2017/08/interfacelift-wallpaper-s8.jpg?itok=ZMktNFT4"></ion-img>
+                <ion-img size=4 [src]="pictureB64"></ion-img>
             </ion-avatar>
-            <ion-button expand="full" size="small" fill="clear">Change Photo</ion-button>
+            <ion-button (click)="takePhoto()" expand="full" size="small" fill="clear">Change Photo</ion-button>
           </ion-col>
           <ion-col size=2></ion-col>
       </ion-row>
