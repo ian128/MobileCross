@@ -16,7 +16,7 @@
         <a [routerLink]="['/','editprofile']"><ion-button fill="clear">Edit Profile</ion-button></a>
       </ion-col>
       <ion-col>
-        <h2 class="name">Gal Gadot</h2>
+        <h2 class="name">{{profile.first_name +' '+profile.last_name}}</h2>
         <div class="joined-event">
           <ion-grid>
             <ion-row>

@@ -8,7 +8,7 @@
   </ion-header>
   
 <ion-content padding>
-  <form>
+  <form [formGroup] = "formData">
     <ion-grid>
       <ion-row align-items-stretch>
           <ion-col size=2></ion-col>
@@ -23,18 +23,18 @@
       <ion-row>   
           <ion-col>
              <ion-label>First Name</ion-label>
-             <ion-input  name="firstname" type="text" placeholder="First Name"></ion-input>
+             <ion-input formControlName="first_name" name="firstname" type="text" placeholder="First Name"></ion-input>
           </ion-col>
           <ion-col>
              <ion-label>Last Name</ion-label>
-             <ion-input name="lastname" type="text" placeholder="Last Name"></ion-input>
+             <ion-input formControlName="last_name" name="lastname" type="text" placeholder="Last Name"></ion-input>
           </ion-col>
      </ion-row>
      <ion-row>
         <ion-col>
             <ion-item>
                 <ion-label>Phone Number</ion-label>
-              <ion-input name="phone" type="text" placeholder="Phone Number"></ion-input>
+              <ion-input formControlName="phone_number" name="phone" type="text" placeholder="Phone Number"></ion-input>
             </ion-item>
         </ion-col>
       </ion-row>
@@ -42,18 +42,11 @@
         <ion-col>
           <ion-item>
               <ion-label>E-Mail</ion-label>
-            <ion-input name="email" type="email" placeholder="E-Mail" ngModel required></ion-input>
+            <ion-input formControlName="email" name="email" type="email" placeholder="E-Mail"></ion-input>
           </ion-item>
         </ion-col>
       </ion-row>
-      <ion-row>
-        <ion-col>
-          <ion-item>
-              <ion-label>Phone Number</ion-label>
-            <ion-input name="phone" type="number" placeholder="Phone Number" ngModel required></ion-input>
-          </ion-item>
-        </ion-col>
-     </ion-row>
+     <!--
      <ion-row>
        <ion-col>
           <ion-segment>
@@ -66,12 +59,13 @@
             </ion-segment>
        </ion-col>
      </ion-row>
+     -->
     </ion-grid>
   </form>
 </ion-content>
 
 <ion-footer>
   <ion-toolbar>
-      <ion-button  size="large" fill="clear" color="light" type="submit" expand="block">Edit Profile</ion-button>
+      <ion-button (click)="submit()" size="large" fill="clear" color="light" type="submit" expand="block">Edit Profile</ion-button>
   </ion-toolbar>
 </ion-footer>
