@@ -3,7 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { AuthGuardService } from './services/authGuard/auth-guard.service';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'splash', pathMatch: 'full' },
+  { path: '', redirectTo: 'addnewevent', pathMatch: 'full' },
   { path: 'login', loadChildren: './pages/AuthModule/login/login.module#LoginPageModule' },
   { path: 'register', loadChildren: './pages/AuthModule/register/register.module#RegisterPageModule' },
   { path: 'password-register', loadChildren: './pages/AuthModule/register/password-register/password-register.module#PasswordRegisterPageModule' },
@@ -38,6 +38,7 @@ const routes: Routes = [
     canActivate:[AuthGuardService]},
   { path: 'addnewfield', loadChildren: './pages/addnewfield/addnewfield.module#AddnewfieldPageModule',
     canActivate:[AuthGuardService]},
+  { path: 'add-event-success', loadChildren: './pages/addnewevent/add-event-success/add-event-success.module#AddEventSuccessPageModule' },
 ];
 
 @NgModule({

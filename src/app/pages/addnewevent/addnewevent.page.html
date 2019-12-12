@@ -8,13 +8,12 @@
   </ion-header>
   
 <ion-content>
-  <form>
+  <form [formGroup] = "formData"> 
     <ion-grid padding>
-      
       <ion-row color="primary" justify-content-center>
         <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
             <ion-label>Event Name</ion-label>
-            <ion-input  name="fieldname" type="text" placeholder="Event Name" ngModel required></ion-input>
+            <ion-input formControlName="name" name="name" type="text" placeholder="Event Name"></ion-input>
         </ion-col>
       </ion-row>
     
@@ -30,7 +29,7 @@
       <ion-row>
         <ion-col>
           <ion-label>Field Location</ion-label>
-          <ion-input  name="fieldlocation" type="text" placeholder="Field Location" ngModel required></ion-input>
+          <ion-input  name="fieldlocation" type="text" placeholder="Field Location"></ion-input>
         </ion-col>
         <ion-col size="2" class="ion-align-items-end">
           <ion-button size="large" fill="clear">
@@ -42,22 +41,22 @@
       <ion-row>   
           <ion-col>
               <ion-label>Event Date</ion-label>
-              <ion-input name="event" type="text" placeholder="1/11/2019"></ion-input>
+              <ion-input formControlName="date" name="event" type="text" placeholder="1/11/2019"></ion-input>
           </ion-col>
           <ion-col>
               <ion-label>Price per Person</ion-label>
-              <ion-input name="email" type="Number" placeholder="100.000"></ion-input>
+              <ion-input formControlName="price_per_person" name="email" type="Number" placeholder="100.000"></ion-input>
           </ion-col>
       </ion-row>
 
       <ion-row>   
           <ion-col>
               <ion-label>Start Time</ion-label>
-              <ion-input  name="startTime" type="text" placeholder="09:00"></ion-input>
+              <ion-input formControlName="start_time" name="startTime" type="text" placeholder="09:00"></ion-input>
           </ion-col>
           <ion-col>
               <ion-label>End Time</ion-label>
-              <ion-input name="endTime" type="text" placeholder="18:00"></ion-input>
+              <ion-input formControlName="end_time" name="endTime" type="text" placeholder="18:00"></ion-input>
           </ion-col>
       </ion-row>
 
@@ -68,10 +67,11 @@
       </ion-row>
           
       <ion-row>
-        <ion-textarea class='desc' placeholder="Describe your event here" rows=6></ion-textarea>
+        <ion-textarea class='desc' formControlName="desc" placeholder="Describe your event here" rows=6></ion-textarea>
       </ion-row>
 
       <ion-row>
+        <!--
         <ion-col>
 
             <ion-label>Max. Participant</ion-label>
@@ -85,9 +85,10 @@
             </ion-row>
 
         </ion-col>
+        -->
         <ion-col>
             <ion-label>Who can play?</ion-label>
-            <ion-input placeholder="Only for organizations.."></ion-input>
+            <ion-input formControlName="who_can_play" placeholder="Only for organizations.."></ion-input>
         </ion-col>
       </ion-row>
 
@@ -97,13 +98,13 @@
             <ion-label> Repeat this event every week?</ion-label>
           </ion-col>
           <ion-col>
-              <ion-toggle></ion-toggle>
+              <ion-toggle formControlName="repeat_every_week"></ion-toggle>
           </ion-col>
       </ion-row>
 
       <ion-row>
           <ion-col>
-              <ion-button size="large" type="submit" expand="block">Add New Event</ion-button>
+              <ion-button (click)="submit()"size="large" type="submit" expand="block">Add New Event</ion-button>
           </ion-col>
         </ion-row>
 
