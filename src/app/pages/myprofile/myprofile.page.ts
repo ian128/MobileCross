@@ -34,6 +34,8 @@ export class MyprofilePage implements OnInit {
   activeFields: Court[]
   activeEvents: SparringPair[]
 
+  numberOfEvents: any
+
   constructor(
     private myProfileSvc: MyProfileService,
     private authSvc: AuthService,
@@ -61,20 +63,24 @@ export class MyprofilePage implements OnInit {
 
     this.profilePicture=this.myProfileSvc.getProfilePicture()
 
-    this.ngZone.run(async ()=>{
-      this.loadingActiveEvents=true
-      let event: Sparring[] = await this.myProfileSvc.getActiveEvents(this.userId)
-
-      for(let n=0; n < event.length; n++){
-        if(this.activeEvents == null) this.activeEvents=[]
-        this.activeEvents.push({
-          sparring: event[n],
-          court: await this.myProfileSvc.getACourt(event[n].court_id).toPromise()
-        })
-        console.log(this.activeEvents.length)
+    this.loadingActiveEvents=true
+    this.myProfileSvc.getActiveEvents(this.userId).then(
+      async (res : Sparring[])=>{
+        this.numberOfEvents=res.length
+        this.activeEvents =[]
+        for(let n=0; n < res.length; n++){
+          this.ngZone.runTask(async ()=>{
+            this.loadingActiveEvents=true
+            this.activeEvents.push({
+              sparring: res[n],
+              court: await this.myProfileSvc.getACourt(res[n].court_id).toPromise()
+            })
+            this.loadingActiveEvents=false
+          })
+        }
+        this.loadingActiveEvents=false
       }
-      this.loadingActiveEvents=false
-    })
+    )
 
     this.ngZone.run(async ()=>{
       this.loadingActiveFields=true

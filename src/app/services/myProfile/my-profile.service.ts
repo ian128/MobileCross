@@ -16,9 +16,6 @@ type SparringPair={
 })
 
 export class MyProfileService {
-  public activeFieldsSubject:ReplaySubject<Court[]> = new ReplaySubject(1);
-  public activeEventsSubject:ReplaySubject<SparringPair[]> = new ReplaySubject(1);
-
   constructor(
     private http: HttpClient
   ) { }

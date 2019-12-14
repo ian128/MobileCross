@@ -21,8 +21,8 @@
           <ion-grid>
             <ion-row>
                 <ion-col size="3"class="num-event">
-                  <ion-spinner name="dots" *ngIf="activeEvents == null"></ion-spinner>
-                  <span *ngIf="activeEvents != null">{{activeEvents.length}}</span>
+                  <ion-spinner name="dots" *ngIf="numberOfEvents == null"></ion-spinner>
+                  <span *ngIf="numberOfEvents != null">{{numberOfEvents}}</span>
                 </ion-col>
                 <ion-col>
                 Upcoming Event You've Joined
