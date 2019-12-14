@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { Court } from 'src/app/models/court';
 
 @Component({
   selector: 'app-card-field-short',
@@ -7,10 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./card-field-short.component.scss'],
 })
 export class CardFieldShortComponent implements OnInit {
-  @Input() imgUrl: String
-  @Input() title: String
-  @Input() subtitle: String
-  @Input() fieldId: String
+  @Input() court: Court
   
   constructor(
     private router: Router

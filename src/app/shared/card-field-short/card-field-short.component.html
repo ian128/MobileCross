@@ -1,7 +1,7 @@
 <div class="field-card-small" (click)="fieldDetails()">
-  <ion-img class="field-picture" [src]="imgUrl"></ion-img>
+  <ion-img class="field-picture" [src]="court.photo"></ion-img>
   <div class="field-content">
-    <h6>{{title}}</h6>
-    <p class="detail">{{subtitle}}</p>
+    <h6>{{court.name}}</h6>
+    <p class="detail">{{court.location}}</p>
   </div>
 </div>
