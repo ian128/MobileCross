@@ -1,9 +1,10 @@
 <ion-content>
   <ion-list>
+    
     <ion-item>
       <ion-grid>
         <ion-row>
-            <b><fa-icon [icon]="userTimes"></fa-icon>9 more players needed</b>
+            <b><fa-icon [icon]="userTimes"></fa-icon>Masih placeholder</b>
         </ion-row>
       </ion-grid>
     </ion-item>
@@ -11,13 +12,16 @@
     <ion-item>
       <ion-grid>
           <ion-row>
-            <h5><fa-icon [icon]="building"></fa-icon> Futsal</h5>
+            <h5><fa-icon [icon]="building"></fa-icon>{{court.name}}</h5>
           </ion-row>
         <ion-row>
-          <h5><fa-icon [icon]="globeAsia"></fa-icon> Public Game</h5>
+          <h5><fa-icon [icon]="globeAsia"></fa-icon>{{sparring.who_can_play}}</h5>
         </ion-row>
         <ion-row>
-          <h5><fa-icon [icon]="dollarSign"></fa-icon> Rp100.000/person</h5>
+          <h5><fa-icon [icon]="dollarSign"></fa-icon> {{
+            'Rp'+date.getDay() == 0 || date.getDay() == 6 ? court.weekend_price : 
+            court.weekday_price | currency:'IDR'
+          }}/person</h5>
           </ion-row>
       </ion-grid>
     </ion-item>
@@ -25,13 +29,14 @@
     <ion-item>
       <ion-grid>
           <ion-row>
-              <h5><fa-icon [icon]="stopwatch"></fa-icon> Tomorrow, 7 pm - 9 pm <br> Repeat every week</h5>
+              <h5><fa-icon [icon]="stopwatch"></fa-icon> {{sparring.date}}, {{sparring.start_time}} -  {{sparring.end_time}}  </h5>
+              <h5 *ngIf="sparring.repeat_every_week == 'yes'">Repeat every week</h5>
             </ion-row>
           <ion-row>
-            <h5><fa-icon [icon]="mapPin"></fa-icon> Cisauk Staples Centre</h5>
+            <h5><fa-icon [icon]="mapPin"></fa-icon>{{court.location}}</h5>
           </ion-row>
           <ion-row>
-              <h5><fa-icon [icon]="notes"></fa-icon> Tes</h5>
+              <h5><fa-icon [icon]="notes"></fa-icon>{{sparring.desc}}</h5>
           </ion-row>
           <ion-row>
             <ion-img src="assets/images/placeholder/maps.png"></ion-img>
@@ -44,6 +49,13 @@
   </ion-list>
 </ion-content>
 
-<ion-footer>
-    <ion-button expand="full">JOIN GAME</ion-button>
+<ion-footer *ngIf="isLoading">
+    <ion-button expand="full" *ngIf="!isJoined" disabled>
+      <ion-spinner name="dots"></ion-spinner>
+    </ion-button>
+</ion-footer>
+
+<ion-footer *ngIf="!isLoading">
+  <ion-button expand="full" *ngIf="!isJoined" (click)="join()">JOIN GAME</ion-button>
+  <ion-button expand="full" disabled *ngIf="isJoined">JOINED</ion-button>
 </ion-footer>

@@ -12,9 +12,9 @@
     </ion-grid>
   </div>
   <div class="card-content">
-    <p><fa-icon [icon]="globe"></fa-icon> {{sparring.who_can_play}}</p>
-    <p><fa-icon [icon]="mapPin"></fa-icon> {{court.name}}</p>
-    <p><fa-icon [icon]="stopwatch"></fa-icon> {{sparring.date}}, <b>{{sparring.start_time}}</b></p>
+      <p><fa-icon [icon]="globe"></fa-icon> {{sparring.who_can_play}}</p>
+      <p><fa-icon [icon]="mapPin"></fa-icon> {{court.name}}</p>
+      <p><fa-icon [icon]="stopwatch"></fa-icon> {{sparring.date}}, <b>{{sparring.start_time}}</b></p>
     
       <ion-grid>
           <ion-row>
@@ -22,7 +22,7 @@
                 <ion-button>Join Game</ion-button>
               </ion-col>
               <ion-col ends>
-                <a (click)="details()">Details</a>
+                  <a (click)="details()">Details</a>
               </ion-col>
             </ion-row>
       </ion-grid>

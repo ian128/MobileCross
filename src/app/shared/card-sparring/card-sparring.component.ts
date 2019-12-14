@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import {faShare, faGlobeAsia, faMapPin, faStopwatch} from '@fortawesome/free-solid-svg-icons'
 import { Sparring } from 'src/app/models/sparring';
 import { Court } from 'src/app/models/court';
@@ -18,7 +18,7 @@ export class CardSparringComponent implements OnInit {
 
   @Input() sparring: Sparring
   @Input() court: Court
-  
+
   constructor(
     private router: Router
   ) { }
@@ -36,4 +36,5 @@ export class CardSparringComponent implements OnInit {
     )
     this.router.navigate(['/','sparring-detail'])
   }
+
 }
