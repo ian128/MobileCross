@@ -15,14 +15,30 @@ export class CardFieldShortComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    if(this.court == null) this.court={
-      photo: "https://images.unsplash.com/photo-1487466365202-1afdb86c764e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
-      name: "placeholder",
-      location: "yeah"
+    if(this.court == null){
+      this.court={
+        photo: null,
+        name: "placeholder",
+        email: "y",
+        id:1,
+        phone_number:"3983",
+        sport_id:3,
+        location: "yeah",
+        user_id:1,
+        weekday_price:3094,
+        weekend_price:289
+      }
+    }else{
+      if(this.court.photo == null) return
+      if(!this.court.photo.includes('http')) this.court.photo = null
     }
   }
 
   fieldDetails(){
-    this.router.navigate(['/','field-details'])
+    this.router.navigate(['/','field-details'],{
+      state: {
+        court: this.court
+      }
+    })
   }
 }

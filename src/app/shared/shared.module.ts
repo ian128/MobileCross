@@ -9,14 +9,15 @@ import { CardFieldShortComponent } from './card-field-short/card-field-short.com
 import { SelectorSportWordComponent } from './selector-sport-word/selector-sport-word.component';
 import { CardSparringComponent } from './card-sparring/card-sparring.component';
 import { RouterModule } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     IonicModule,
     FontAwesomeModule,
     RouterModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   declarations: [
     FooterMenuBarComponent,

@@ -1,16 +1,11 @@
 .field-card-small{
     margin-right: 0.5em;
-    width: 45%;
+    width: 50%;
     border: 1px solid #EAEAEA;
     border-radius: 12pt;
     display: inline-block;
     overflow: hidden;
 
-    h6{
-        font-weight: bolder;
-        line-height: 0;
-    }
-    
     .field-picture{
         height: 8em;
         object-fit: cover;
@@ -18,10 +13,19 @@
 
     .field-content{
         padding: 0.2rem;
+        
+        h6{
+            font-weight: bolder;
+            line-height: 0;
+            max-width: 100%;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            hyphens: auto;
+        }    
+        .detail{
+            font-size: 12px;
+        }
+        
     }
-    
-    .detail{
-        font-size: 6pt;
-    }
-    
+
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Output, Input } from '@angular/core';
 import { EventEmitter } from '@angular/core';
 
 @Component({
@@ -8,10 +8,17 @@ import { EventEmitter } from '@angular/core';
 })
 export class SportSelectorComponent implements OnInit {
   @Output() onSelected = new EventEmitter();
+  @Input() selected: string | null
+  
   constructor() { }
 
   ngOnInit() {
-    this.onSelected.emit('badminton')
+    if(this.selected == null){
+      this.selected = "badminton"
+      this.onSelected.emit('badminton')
+    }else{
+      this.onSelected.emit(this.selected)
+    }
   }
 
 }

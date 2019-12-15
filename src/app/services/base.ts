@@ -14,3 +14,23 @@ export const sports={
     "futsal": 3,
     "tennis": 4
 }
+
+export const sportDetails={
+    1:{
+        "name": "badminton",
+        "max_participant": 8
+    },
+    2:{
+        "name": "basketball",
+        "max_participant": 15
+    },
+    3:{
+        "id": 3,
+        "name": "futsal",
+        "max_participant": 15
+    },
+    4:{
+        "name": "tennis",
+        "max_participant": 6
+    }
+}

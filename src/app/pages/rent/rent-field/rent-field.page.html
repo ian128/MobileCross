@@ -20,8 +20,10 @@
   (onSelected)="popularFieldSelection($event)"
   ></app-selector-sport-word>
 
-  <div class="horizontal-scrolling">
+  <div class="horizontal-scrolling" >
       <app-card-field-short
+      *ngFor="let item of selectedPopularFields"
+      [court]="item"
     
       ></app-card-field-short>
   </div>
@@ -33,11 +35,9 @@
 
   <div class="horizontal-scrolling">
       <app-card-field-short
-      
+      *ngFor="let item of selectedNearbyFields"
+      [court]="item"
     ></app-card-field-short>
-    <app-card-field-short
-    
-  ></app-card-field-short>
 
   </div>
 

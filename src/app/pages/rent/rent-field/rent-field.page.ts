@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Court } from 'src/app/models/court';
+import { RentFieldService } from 'src/app/services/rentField/rent-field.service';
+import { sports } from 'src/app/services/base';
 
 @Component({
   selector: 'app-rent-field',
@@ -9,19 +11,37 @@ import { Court } from 'src/app/models/court';
 })
 export class RentFieldPage implements OnInit {
   
+  private allFields: Court[]
+
   selectedPopularFields: Court[]
   selectedNearbyFields: Court[]
   
   constructor(
+    private rentFieldSvc: RentFieldService
   ) { }
 
-  ngOnInit() {
+  async ngOnInit() {
+    this.allFields = await this.rentFieldSvc.getAllCourt().toPromise()
+    console.log(this.allFields)
+    this.popularFieldSelection(sports[1])
+    this.nearbyFieldsSelection(sports[1])
   }
 
   popularFieldSelection(e){
     console.log(e)
+    if(this.allFields == null) return
+    this.selectedPopularFields = this.allFields.filter(
+      (item) => item.id == sports[e]
+    )
+    console.log(this.selectedPopularFields)
   }
+
   nearbyFieldsSelection(e){
     console.log(e)
+    if(this.allFields == null) return
+    this.selectedNearbyFields = this.allFields.filter(
+      (item) => item.id == sports[e]
+    )
+    console.log(this.selectedNearbyFields)
   }
 }
