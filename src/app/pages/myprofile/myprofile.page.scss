@@ -6,6 +6,10 @@ ion-toolbar{
     position: relative;
 }
 
+ion-spinner {
+    height: 24px !important;
+    width: 24px !important;
+}
 
 ion-title{
     text-transform: uppercase;
