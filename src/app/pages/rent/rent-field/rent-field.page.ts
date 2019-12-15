@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Court } from 'src/app/models/court';
 
 @Component({
   selector: 'app-rent-field',
@@ -7,7 +8,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./rent-field.page.scss'],
 })
 export class RentFieldPage implements OnInit {
-
+  
+  selectedPopularFields: Court[]
+  selectedNearbyFields: Court[]
+  
   constructor(
   ) { }
 
