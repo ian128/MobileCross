@@ -32,6 +32,7 @@ const routes: Routes = [
   { path: 'editprofile', loadChildren: './pages/myprofile/editprofile/editprofile.module#EditprofilePageModule',
     canActivate:[AuthGuardService] },
   { path: 'addnewevent', loadChildren: './pages/addnewevent/addnewevent.module#AddneweventPageModule',
+  canActivate:[AuthGuardService] },
   { path: 'addnewfield', loadChildren: './pages/addnewfield/addnewfield.module#AddnewfieldPageModule',
     canActivate:[AuthGuardService] },
   { path: 'add-event-success', loadChildren: './pages/addnewevent/add-event-success/add-event-success.module#AddEventSuccessPageModule' },

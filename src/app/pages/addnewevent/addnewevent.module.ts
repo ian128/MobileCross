@@ -25,6 +25,7 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     SharedModule,
   ],
-  declarations: [AddneweventPage]
+  declarations: [AddneweventPage],
+  entryComponents:[]
 })
 export class AddneweventPageModule {}
