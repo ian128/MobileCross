@@ -11,17 +11,18 @@ import { AppRoutingModule } from './app-routing.module';
 
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome'
 import { HttpClientModule } from '@angular/common/http';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [
     BrowserModule, 
+    FormsModule,
     IonicModule.forRoot(), 
     AppRoutingModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [
     StatusBar,

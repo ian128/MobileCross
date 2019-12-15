@@ -13,16 +13,14 @@
 
 <ion-content>
     <ion-list>
-      <ion-item lines="none" *ngFor="let x of [].constructor(5)"> 
+      <ion-item lines="none" *ngFor="let item of sparringPairFiltered"> 
           <app-card-sparring
-          [sparringID]="'1'"
-          [title]="'Basket Anak anak umn'"
-          [participants]="'UMN Only'"
-          [location]="'Cisauk Staples Center'"
-          [day]="'Tomorrow'"
-          [time]="'7-9 PM'"
+          [sparring]="item.sparring"
+          [court]="item.court"
           ></app-card-sparring>
-          
+      </ion-item>
+      <ion-item *ngIf="sparringPairFiltered.length == 0" lines="none">
+        <ion-label>No item(s) in this selection</ion-label>
       </ion-item>
     </ion-list>
 </ion-content>
