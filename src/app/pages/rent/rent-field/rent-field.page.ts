@@ -13,18 +13,22 @@ export class RentFieldPage implements OnInit {
   
   private allFields: Court[]
 
-  selectedPopularFields: Court[]
-  selectedNearbyFields: Court[]
+  selectedPopularFields: Court[] =[]
+  selectedNearbyFields: Court[]=[]
+
+  loading: Boolean
   
   constructor(
     private rentFieldSvc: RentFieldService
   ) { }
 
   async ngOnInit() {
+    this.loading=true
     this.allFields = await this.rentFieldSvc.getAllCourt().toPromise()
     console.log(this.allFields)
     this.popularFieldSelection(sports[1])
     this.nearbyFieldsSelection(sports[1])
+    this.loading=false
   }
 
   popularFieldSelection(e){

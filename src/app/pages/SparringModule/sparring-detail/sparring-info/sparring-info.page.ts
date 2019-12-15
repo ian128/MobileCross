@@ -27,7 +27,7 @@ export class SparringInfoPage implements OnInit {
   mapPin = faMapPin;
   notes = faTag;
 
-  private date: Date
+  public date: Date
 
   isLoading: boolean
 

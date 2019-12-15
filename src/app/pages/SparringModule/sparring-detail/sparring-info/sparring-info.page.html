@@ -19,8 +19,8 @@
         </ion-row>
         <ion-row>
           <h5><fa-icon [icon]="dollarSign"></fa-icon> {{
-            'Rp'+date.getDay() == 0 || date.getDay() == 6 ? court.weekend_price : 
-            court.weekday_price | currency:'IDR'
+            date.getDay().toString() == '0' || date.getDay().toString() == '6' ? (court.weekend_price | currency:'IDR'): 
+            (court.weekday_price | currency:'IDR')
           }}/person</h5>
           </ion-row>
       </ion-grid>
