@@ -1,7 +1,6 @@
-<ion-content padding>
+<ion-content class="ion-padding">
   <app-header-ellipse></app-header-ellipse>
   <ion-img class="logo" src="assets/images/splash/logo.png"></ion-img>
-
   <!-- Quicklink-->
   <div class="quicklink">
     <ion-grid>
@@ -48,46 +47,32 @@
   <h3 class="bold">Nearby Field</h3>
   
   <div class="horizontal-scrolling">
-
-    <div class="field-card">
+    
+    <div class="field-card" *ngFor="let item of nearbyCourts" (click)="fieldDetails(item)">
         <ion-img class="field-picture" src="assets/icon/tennis.png"></ion-img>
         <div class="field-content">
-          <h3>Lapangan</h3>
-          <p>Gading Serpong, Tangerang</p>
-        </div>
-    </div>
-
-    <div class="field-card">
-        <ion-img class="field-picture" src="assets/icon/tennis.png"></ion-img>
-        <div class="field-content">
-          <h3>Lapangan</h3>
-          <p>Gading Serpong, Tangerang</p>
+          <h3>{{item.name}}</h3>
+          <p>{{item.location}}</p>
+          <p *ngIf="measurements != undefined">
+            {{measurements.hasOwnProperty(item.id) ? measurements[item.id]+' km from you': 'Calculating..'}}
+          </p>
         </div>
     </div>
 
   </div>
 
-  <!-- Popular News
   <h3 class="bold">Popular News</h3>
   <div class="horizontal-scrolling">
-
-    <div class="news-card">
-          <ion-img class="news-picture" src="https://www.si.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_1400/MTY3ODg1NzUwMDczODI4NjI1/robert-lewandowski-bayern-munich-union-berlin.webp"></ion-img>
-            <div class="news-content">
-                <p>Manchester United Masuk dalam<br>Zona Degradasi!</p>
-                <div class="more-button">View More</div>
-            </div>
-     </div>
-
-     <div class="news-card">
-        <ion-img class="news-picture" src="https://www.si.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_1400/MTY3ODg1NzUwMDczODI4NjI1/robert-lewandowski-bayern-munich-union-berlin.webp"></ion-img>
-          <div class="news-content">
-              <p>Manchester United Masuk dalam<br>Zona Degradasi!</p>
-              <div class="more-button">View More</div>
-          </div>
-   </div>
-  </div>
-  -->
+    <div class="news-card" *ngFor="let item of newsList;let i=index">
+      <ion-img class="news-picture" [src]="item.urlToImage"></ion-img>
+      <div class="news-content">
+        <p class="news-content-text">{{item.title}}</p>
+        <div class="more-button" (click)="openNewsDetails(item.url)">
+          View More
+        </div>
+      </div>
+    </div>
+</div>
 
 </ion-content>
 <app-footer-menu-bar></app-footer-menu-bar>

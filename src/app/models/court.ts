@@ -1,12 +1,12 @@
 export interface Court{
-    "id": Number,
+    "id": any,
     "name": string,
-    "user_id": Number,
-    "sport_id": Number,
+    "user_id": any,
+    "sport_id": any,
     "email": string,
     "photo": string,
-    "weekday_price": Number,
-    "weekend_price": Number,
+    "weekday_price": any,
+    "weekend_price": any,
     "location": string,
     "phone_number": string 
 }

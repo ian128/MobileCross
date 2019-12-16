@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { DomSanitizer } from '@angular/platform-browser';
 import { HttpClient } from '@angular/common/http';
 import { LoadingController } from '@ionic/angular';
-
 
 @Component({
   selector: 'app-news',
@@ -12,7 +10,6 @@ import { LoadingController } from '@ionic/angular';
 })
 export class NewsPage implements OnInit {
   constructor(
-    private sanitize: DomSanitizer,
     private route: Router,
     public http: HttpClient,
     public loadingController: LoadingController
@@ -21,8 +18,7 @@ export class NewsPage implements OnInit {
   }
   newsList:any[]=[]
 
-  async getNewsList()
-  {
+  async getNewsList(){
     const loading = await this.loadingController.create({
       message: 'Loading..',
     });
