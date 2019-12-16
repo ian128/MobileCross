@@ -9,14 +9,18 @@ import { CardFieldShortComponent } from './card-field-short/card-field-short.com
 import { SelectorSportWordComponent } from './selector-sport-word/selector-sport-word.component';
 import { CardSparringComponent } from './card-sparring/card-sparring.component';
 import { RouterModule } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { SelectFieldComponent } from '../pages/addnewevent/select-field/select-field.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   imports: [
     IonicModule,
     FontAwesomeModule,
     RouterModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    CommonModule
   ],
   declarations: [
     FooterMenuBarComponent,
@@ -26,6 +30,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     CardFieldShortComponent,
     SelectorSportWordComponent,
     CardSparringComponent,
+    SelectFieldComponent,
   ],
   exports: [
     FooterMenuBarComponent,
@@ -35,7 +40,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     CardFieldShortComponent,
     SelectorSportWordComponent,
     CardSparringComponent,
-    ReactiveFormsModule
+    SelectFieldComponent,
+    ReactiveFormsModule,
+  ],
+  entryComponents:[
+    SelectFieldComponent,
   ]
 })
 

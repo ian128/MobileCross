@@ -5,13 +5,12 @@ import { RouteReuseStrategy, RouterModule } from '@angular/router';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome'
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,6 +18,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule, 
     FormsModule,
+    CommonModule,
     IonicModule.forRoot(), 
     AppRoutingModule,
     FontAwesomeModule,

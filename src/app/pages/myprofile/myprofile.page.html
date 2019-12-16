@@ -1,27 +1,28 @@
 <ion-header>
     <ion-toolbar>
-      <ion-title text-center>My Profile</ion-title>
+      <ion-title class="ion-text-center">My Profile</ion-title>
     </ion-toolbar>
   </ion-header>
   
-<ion-content padding>
+<ion-content class="ion-padding">
 
   <!--Profile Section-->
   <ion-grid>
     <ion-row class="ion-align-items-center">   
       <ion-col size="4">
         <ion-avatar class="avatar">
-          <ion-img src="https://www.androidcentral.com/sites/androidcentral.com/files/styles/xlarge/public/article_images/2017/08/interfacelift-wallpaper-s8.jpg?itok=ZMktNFT4"></ion-img>
+          <ion-img [src]="profilePicture"></ion-img>
         </ion-avatar>
         <a [routerLink]="['/','editprofile']"><ion-button fill="clear">Edit Profile</ion-button></a>
       </ion-col>
       <ion-col>
-        <h2 class="name">Gal Gadot</h2>
+        <h2 class="name">{{profile.first_name +' '+profile.last_name}}</h2>
         <div class="joined-event">
           <ion-grid>
             <ion-row>
                 <ion-col size="3"class="num-event">
-                  10
+                  <ion-spinner name="dots" *ngIf="numberOfEvents == null"></ion-spinner>
+                  <span *ngIf="numberOfEvents != null">{{numberOfEvents}}</span>
                 </ion-col>
                 <ion-col>
                 Upcoming Event You've Joined
@@ -29,7 +30,7 @@
             </ion-row>
           </ion-grid>
         </div>
-        <ion-button float-right size="small" fill="clear">See your upcoming events</ion-button>
+        <ion-button class="ion-float-right" size="small" fill="clear">See your upcoming events</ion-button>
       </ion-col>
     </ion-row>
 
@@ -37,39 +38,28 @@
 
       <!--Your active fields-->
     <ion-row  class="ion-align-items-center">
-        <ion-col size="7">
-            <h5 class="thigh">Your Active Fields</h5>
-        </ion-col>
+      <ion-col>
+        <p>
+          <ion-spinner *ngIf="loadingActiveFields" name="circles"></ion-spinner>  
+          Your Active Fields
+        </p>
+      </ion-col>
         <ion-col>
-            <a [routerLink]="['/','addnewfield']"><ion-button size="small" fill="clear"><b>+Add new field</b></ion-button></a>
+          <a [routerLink]="['/','addnewfield']">
+            <ion-button class="ion-float-right" size="small" fill="clear">
+              <b>+Add new field</b>
+            </ion-button>
+          </a>
         </ion-col>
     </ion-row>
+    
     <ion-row>
       <ion-col>
         <div class="horizontal-scrolling">
-
             <app-card-field-short
-            [imgUrl]="'assets/icon/tennis.png'"
-            [title]="'title'"
-            [subtitle]="'10 mins from your location'"
-            [fieldId]="123"
+            *ngFor="let item of activeFields"
+            [court]="item"
           ></app-card-field-short>
-
-
-          <app-card-field-short
-          [imgUrl]="'assets/icon/tennis.png'"
-          [title]="'title'"
-          [subtitle]="'10 mins from your location'"
-          [fieldId]="123"
-        ></app-card-field-short>
-
-
-        <app-card-field-short
-        [imgUrl]="'assets/icon/tennis.png'"
-        [title]="'title'"
-        [subtitle]="'10 mins from your location'"
-        [fieldId]="123"
-      ></app-card-field-short>
   
         </div>
 
@@ -79,13 +69,16 @@
     <div class="divider"></div>
 
     <!--Your active Events-->
-    <ion-row class="ion-align-items-center">
-        <ion-col size="6">
-            <h5 class="thigh">Your Active Events</h5>
+    <ion-row class="justify-content-center">
+        <ion-col>
+          <p>
+            <ion-spinner *ngIf="loadingActiveEvents" name="circles"></ion-spinner>  
+            Your Active Events
+          </p>
         </ion-col>
         <ion-col>
             <a [routerLink]="['/','addnewevent']">
-              <ion-button size="small" fill="clear">
+              <ion-button class="ion-float-right" size="small" fill="clear">
                 <b>+Add new Event</b>
               </ion-button>
             </a>
@@ -95,23 +88,12 @@
       <ion-col>
         <div class="horizontal-scrolling">
 
-          <app-card-sparring
-          [sparringID]="'1'"
-          [title]="'Basket Anak anak umn'"
-          [participants]="'UMN Only'"
-          [location]="'Cisauk Staples Center'"
-          [day]="'Tomorrow'"
-          [time]="'7-9 PM'"
+          <app-card-sparring *ngFor="let item of activeEvents"
+          [sparring]="item.sparring"
+          [court]="item.court"
           ></app-card-sparring>
 
-          <app-card-sparring
-          [sparringID]="'1'"
-          [title]="'Basket Anak anak umn'"
-          [participants]="'UMN Only'"
-          [location]="'Cisauk Staples Center'"
-          [day]="'Tomorrow'"
-          [time]="'7-9 PM'"
-          ></app-card-sparring>
+
         </div>
 
       </ion-col>

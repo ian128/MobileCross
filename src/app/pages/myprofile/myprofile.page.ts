@@ -1,20 +1,96 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgZone } from '@angular/core';
 import {faShare, faGlobeAsia, faMapPin, faStopwatch} from '@fortawesome/free-solid-svg-icons'
+import { MyProfileService } from 'src/app/services/myProfile/my-profile.service';
+import { AuthService } from 'src/app/services/auth/auth.service';
+import { Profile } from 'src/app/models/profile';
+import { Sparring } from 'src/app/models/sparring';
+import { Court } from 'src/app/models/court';
+
+type SparringPair={
+  sparring: Sparring,
+  court: Court
+}
 
 @Component({
   selector: 'app-myprofile',
   templateUrl: './myprofile.page.html',
   styleUrls: ['./myprofile.page.scss'],
 })
+
 export class MyprofilePage implements OnInit {
   share = faShare
   globe = faGlobeAsia
   mapPin = faMapPin
   stopwatch = faStopwatch
 
-  constructor() { }
+  loadingActiveEvents: Boolean
+  loadingActiveFields: Boolean
 
-  ngOnInit() {
+  userId: any
+  profile: Profile
+
+  profilePicture: any
+
+  activeFields: Court[]
+  activeEvents: SparringPair[]
+
+  numberOfEvents: any
+
+  constructor(
+    private myProfileSvc: MyProfileService,
+    private authSvc: AuthService,
+    private ngZone: NgZone,
+  ) {
+    this.profile={
+      id: "Loading...",
+      email: "Loading...",
+      first_name: "Connecting...",
+      last_name: " ",
+      password: "Loading...",
+      phone_number: "Loading...",
+      photo_profile: "Loading...",
+    }
+  }
+
+  async ngOnInit() {
+    this.userId = this.authSvc.getLoggedInUserID()
+
+    this.myProfileSvc.getUserAccount(this.userId).subscribe(
+      (response)=>{
+        this.profile=response
+      }
+    )
+
+    this.profilePicture=this.myProfileSvc.getProfilePicture()
+
+    this.loadingActiveEvents=true
+    this.myProfileSvc.getActiveEvents(this.userId).then(
+      async (res : Sparring[])=>{
+        this.numberOfEvents=res.length
+        this.activeEvents =[]
+        for(let n=0; n < res.length; n++){
+          this.ngZone.runTask(async ()=>{
+            this.loadingActiveEvents=true
+            this.activeEvents.push({
+              sparring: res[n],
+              court: await this.myProfileSvc.getACourt(res[n].court_id).toPromise()
+            })
+            this.loadingActiveEvents=false
+          })
+        }
+        this.loadingActiveEvents=false
+      }
+    )
+
+    this.ngZone.run(async ()=>{
+      this.loadingActiveFields=true
+      this.activeFields=await this.myProfileSvc.getActiveFields(this.userId)
+      this.loadingActiveFields=false
+    })
+  }
+
+  ionViewWillEnter(){
+    this.ngOnInit()
   }
 
 }

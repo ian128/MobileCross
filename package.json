@@ -65,8 +65,6 @@
   },
   "description": "An Ionic project",
   "cordova": {
-    "plugins": {
-      "cordova-plugin-advanced-http": {}
-    }
+    "plugins": {}
   }
 }
