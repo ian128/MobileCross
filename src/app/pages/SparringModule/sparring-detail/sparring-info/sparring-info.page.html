@@ -1,10 +1,11 @@
 <ion-content>
   <ion-list>
     
-    <ion-item>
+    <ion-item *ngIf="peopleNeeded != undefined">
       <ion-grid>
-        <ion-row>
-            <b><fa-icon [icon]="userTimes"></fa-icon>Masih placeholder</b>
+        <ion-row >
+            <b><fa-icon [icon]="userTimes"></fa-icon>
+              {{ peopleNeeded <= 0 ? 'Minimum participant(s) has been reached' : peopleNeeded+' more participant(s) are needed'}}</b>
         </ion-row>
       </ion-grid>
     </ion-item>

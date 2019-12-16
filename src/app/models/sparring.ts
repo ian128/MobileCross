@@ -1,8 +1,8 @@
 export interface Sparring{
-    "id": Number
+    "id": any
     "name": string,
-    "sport_id": Number,
-    "court_id": Number,
+    "sport_id": any,
+    "court_id": any,
     "date": string,
     "price_per_person": any,
     "start_time": any,
@@ -10,5 +10,5 @@ export interface Sparring{
     "desc": any,
     "who_can_play": any,
     "repeat_every_week": any,
-    "user_id": Number
+    "user_id": any
 }

@@ -6,6 +6,7 @@ import { Court } from 'src/app/models/court';
 import { Sparring } from 'src/app/models/sparring';
 import { SparringService } from 'src/app/services/sparring/sparring.service';
 import { AuthService } from 'src/app/services/auth/auth.service';
+import { sportDetails } from 'src/app/services/base';
 
 @Component({
   selector: 'app-sparring-info',
@@ -31,6 +32,8 @@ export class SparringInfoPage implements OnInit {
 
   isLoading: boolean
 
+  peopleNeeded: any
+
   constructor(
     private sparringSvc: SparringService,
     private authSvc: AuthService
@@ -48,6 +51,12 @@ export class SparringInfoPage implements OnInit {
     this.isJoined = await this.sparringSvc.isJoined(
       this.authSvc.getLoggedInUserID(),
       this.sparring.id)
+    
+    this.sparringSvc.getParticipants(this.sparring.id).then(
+      (res)=>{
+        this.peopleNeeded=sportDetails[this.sparring.sport_id].max_participant-res.length
+      }
+    )
 
     this.isLoading = false
   }
@@ -62,5 +71,4 @@ export class SparringInfoPage implements OnInit {
     }
     this.isLoading=false
   }
-
 }

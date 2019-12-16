@@ -32,6 +32,13 @@ export class SparringService {
     )
   }
   
+    
+  async getParticipants(sparring_id: any){
+    var x: any= await this.http.get(baseUrl+'/api/sparringparticipant').toPromise()
+    var y=x.filter((item) => item.sparring_id == sparring_id)
+    return y
+  }
+
   async isJoined(userID: any, sparring_id: any){
     var x: any= await this.http.get(baseUrl+'/api/sparringparticipant').toPromise()
     var y=x.filter((item) => item.sparring_id == sparring_id)

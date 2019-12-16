@@ -9,7 +9,10 @@
 
 <ion-content class="padding">
   <ion-spinner name="dots" *ngIf="loading"></ion-spinner>
-  <ion-list>
+  <ion-list *ngIf="!loading">
+    <ion-item *ngIf="listOfCourts.length == 0">
+      <ion-label>There are no available fields in this category</ion-label>
+    </ion-item>
     <ion-item *ngFor="let item of listOfCourts; let i = index">
       <ion-grid>
         <ion-row>

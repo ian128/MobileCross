@@ -30,7 +30,6 @@
             </ion-row>
           </ion-grid>
         </div>
-        <ion-button class="ion-float-right" size="small" fill="clear">See your upcoming events</ion-button>
       </ion-col>
     </ion-row>
 
@@ -39,10 +38,10 @@
       <!--Your active fields-->
     <ion-row  class="ion-align-items-center">
       <ion-col>
-        <p>
-          <ion-spinner *ngIf="loadingActiveFields" name="circles"></ion-spinner>  
+        <h3>
           Your Active Fields
-        </p>
+          <ion-spinner *ngIf="loadingActiveFields" name="dots"></ion-spinner>  
+        </h3>
       </ion-col>
         <ion-col>
           <a [routerLink]="['/','addnewfield']">
@@ -53,16 +52,14 @@
         </ion-col>
     </ion-row>
     
-    <ion-row>
+    <ion-row *ngIf="!loadingActiveFields">
       <ion-col>
         <div class="horizontal-scrolling">
             <app-card-field-short
             *ngFor="let item of activeFields"
             [court]="item"
           ></app-card-field-short>
-  
         </div>
-
       </ion-col>
     </ion-row>
 
@@ -71,10 +68,10 @@
     <!--Your active Events-->
     <ion-row class="justify-content-center">
         <ion-col>
-          <p>
-            <ion-spinner *ngIf="loadingActiveEvents" name="circles"></ion-spinner>  
+          <h3>
             Your Active Events
-          </p>
+            <ion-spinner *ngIf="loadingActiveEvents" name="dots"></ion-spinner>
+          </h3>
         </ion-col>
         <ion-col>
             <a [routerLink]="['/','addnewevent']">
@@ -84,20 +81,18 @@
             </a>
         </ion-col>
     </ion-row>
-    <ion-row>
+    
+    <ion-row *ngIf="!loadingActiveEvents">
       <ion-col>
-        <div class="horizontal-scrolling">
-
+        <div class="horizontal-scrolling" >
           <app-card-sparring *ngFor="let item of activeEvents"
           [sparring]="item.sparring"
           [court]="item.court"
           ></app-card-sparring>
-
-
         </div>
-
       </ion-col>
     </ion-row>
+
   </ion-grid>
 </ion-content>
 <app-footer-menu-bar></app-footer-menu-bar>
