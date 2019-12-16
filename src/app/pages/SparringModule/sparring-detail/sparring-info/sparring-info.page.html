@@ -20,8 +20,8 @@
         </ion-row>
         <ion-row>
           <h5><fa-icon [icon]="dollarSign"></fa-icon> {{
-            date.getDay().toString() == '0' || date.getDay().toString() == '6' ? (court.weekend_price | currency:'IDR'): 
-            (court.weekday_price | currency:'IDR')
+            date.getDay().toString() == '0' || date.getDay().toString() == '6' ? (court.weekend_price | currency:'IDR': 'Rp'): 
+            (court.weekday_price | currency:'IDR': 'Rp')
           }}/person</h5>
           </ion-row>
       </ion-grid>
@@ -30,9 +30,11 @@
     <ion-item>
       <ion-grid>
           <ion-row>
-              <h5><fa-icon [icon]="stopwatch"></fa-icon> {{sparring.date}}, {{sparring.start_time}} -  {{sparring.end_time}}  </h5>
-              <h5 *ngIf="sparring.repeat_every_week == 'yes'">Repeat every week</h5>
-            </ion-row>
+              <h5><fa-icon [icon]="stopwatch"></fa-icon> {{sparring.date}}, {{sparring.start_time}} -  {{sparring.end_time}} </h5>
+          </ion-row>
+          <ion-row *ngIf="sparring.repeat_every_week == 'yes'">
+            <h5>Repeat every week</h5>
+          </ion-row>
           <ion-row>
             <h5><fa-icon [icon]="mapPin"></fa-icon>{{court.location}}</h5>
           </ion-row>
@@ -40,13 +42,27 @@
               <h5><fa-icon [icon]="notes"></fa-icon>{{sparring.desc}}</h5>
           </ion-row>
           <ion-row>
-            <ion-img src="assets/images/placeholder/maps.png"></ion-img>
+            <ion-col>
+
+              <agm-map>
+                <agm-direction [origin]="origin" [destination]="destination">
+                </agm-direction>
+                <agm-marker></agm-marker>
+              </agm-map>
+            </ion-col>
+          </ion-row>
+          <ion-row class="ion-justify-content-center">
+            <ion-col>
+              <ion-spinner *ngIf="distance == undefined" class="ion-text-center" name="dots"></ion-spinner>
+              <ion-label *ngIf="distance != undefined" class="ion-text-center">{{distance}} km from your current location</ion-label>
+            </ion-col>
           </ion-row>
           <ion-row justify-content-center>
               <ion-button>Share this game</ion-button>
           </ion-row>
       </ion-grid>
     </ion-item>
+
   </ion-list>
 </ion-content>
 

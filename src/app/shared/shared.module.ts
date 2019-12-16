@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { SelectFieldComponent } from '../pages/addnewevent/select-field/select-field.component';
 import { CommonModule } from '@angular/common';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   imports: [
@@ -20,7 +21,13 @@ import { CommonModule } from '@angular/common';
     RouterModule,
     ReactiveFormsModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAmlnIAu52yOhMzIPFGxSsDaHB9TXmqhQk',
+      libraries:[
+        'geometry'
+      ]
+    }),
   ],
   declarations: [
     FooterMenuBarComponent,
