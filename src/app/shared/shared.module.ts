@@ -9,12 +9,25 @@ import { CardFieldShortComponent } from './card-field-short/card-field-short.com
 import { SelectorSportWordComponent } from './selector-sport-word/selector-sport-word.component';
 import { CardSparringComponent } from './card-sparring/card-sparring.component';
 import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { SelectFieldComponent } from '../pages/addnewevent/select-field/select-field.component';
+import { CommonModule } from '@angular/common';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   imports: [
     IonicModule,
     FontAwesomeModule,
     RouterModule,
+    ReactiveFormsModule,
+    FormsModule,
+    CommonModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAmlnIAu52yOhMzIPFGxSsDaHB9TXmqhQk',
+      libraries:[
+        'geometry'
+      ]
+    }),
   ],
   declarations: [
     FooterMenuBarComponent,
@@ -24,6 +37,7 @@ import { RouterModule } from '@angular/router';
     CardFieldShortComponent,
     SelectorSportWordComponent,
     CardSparringComponent,
+    SelectFieldComponent,
   ],
   exports: [
     FooterMenuBarComponent,
@@ -32,7 +46,12 @@ import { RouterModule } from '@angular/router';
     SportSelectorComponent,
     CardFieldShortComponent,
     SelectorSportWordComponent,
-    CardSparringComponent
+    CardSparringComponent,
+    SelectFieldComponent,
+    ReactiveFormsModule,
+  ],
+  entryComponents:[
+    SelectFieldComponent,
   ]
 })
 

@@ -1,16 +1,10 @@
-ion-toolbar{
-    --background: #3699F7;
-}
-
 *{
     position: relative;
 }
 
-
-ion-title{
-    text-transform: uppercase;
-    color: white;
-    font-weight: bolder;
+ion-spinner {
+    height: 24px !important;
+    width: 24px !important;
 }
 
 .joined-event{

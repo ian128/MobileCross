@@ -7,6 +7,9 @@ import { IonicModule } from '@ionic/angular';
 
 import { SparringInfoPage } from './sparring-info.page';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {AgmCoreModule} from '@agm/core';
+import { AgmDirectionModule } from 'agm-direction';   // agm-direction
+import { SharedModule } from 'src/app/shared/shared.module';
 
 const routes: Routes = [
   {
@@ -21,7 +24,15 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     FontAwesomeModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    SharedModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAmlnIAu52yOhMzIPFGxSsDaHB9TXmqhQk',
+      libraries:[
+        'geometry'
+      ]
+    }),
+    AgmDirectionModule
   ],
   declarations: [SparringInfoPage]
 })

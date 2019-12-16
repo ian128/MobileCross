@@ -1,27 +1,11 @@
-ion-toolbar{
-    --background: #3699F7;
-}
-
 *{
     position: relative;
-}
-
-
-ion-title{
-    text-transform: uppercase;
-    color: white;
-    font-weight: bolder;
 }
 
 .container{
     padding-left: 16px;
     margin-right: 16px;
 }
-
-h3{
-    font-weight: bolder;
-}
-
 
 .horizontal-scrolling{
     overflow-x: scroll;
