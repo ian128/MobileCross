@@ -52,6 +52,8 @@ export class SparringInfoPage implements OnInit {
   origin: Coordiantes
   destination: Coordiantes
   
+  nameOfSelectedSport
+
   constructor(
     private sparringSvc: SparringService,
     private authSvc: AuthService,
@@ -77,6 +79,8 @@ export class SparringInfoPage implements OnInit {
         this.peopleNeeded=sportDetails[this.sparring.sport_id].max_participant-res.length
       }
     )
+
+    this.nameOfSelectedSport = sportDetails[this.sparring.sport_id].name
 
     this.isLoading = false
     await this.getRoute();

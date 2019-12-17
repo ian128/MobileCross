@@ -81,13 +81,12 @@ export class EditprofilePage implements OnInit {
   }
 
   async submit(){
-
-    var loading = await this.loadingCtrl.create({
-      message: "Changing your profile details...",
-    })
-    loading.present()
-    
     if(this.formData.valid){
+      var loading = await this.loadingCtrl.create({
+        message: "Changing your profile details...",
+      })
+      loading.present()
+
       console.log(this.formData.value)
       this.editProfileSvc.updateCurrentProfile(this.userID,this.formData.value).subscribe(
         async response=>{
@@ -109,7 +108,15 @@ export class EditprofilePage implements OnInit {
         }
       )
     }else{
-      alert("Please fill this form")
+      this.toastCtrl.create({
+        message: "Please complete the form to continue..",
+        color: "danger",
+        duration: 2000
+      }).then(
+        (res)=>{
+          res.present()
+        }
+      )
     }
   }
 

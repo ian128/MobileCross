@@ -1,6 +1,8 @@
 <ion-content>
+  <app-sport-selector
+  [selected]="nameOfSelectedSport"
+  style="pointer-events: none !important;"></app-sport-selector>
   <ion-list>
-    
     <ion-item *ngIf="peopleNeeded != undefined">
       <ion-grid>
         <ion-row >
