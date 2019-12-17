@@ -92,6 +92,7 @@
       <ion-col>
         <div class="horizontal-scrolling" >
           <app-card-sparring *ngFor="let item of activeEvents"
+          style="max-width: 80% !important"
           [sparring]="item.sparring"
           [court]="item.court"
           ></app-card-sparring>
