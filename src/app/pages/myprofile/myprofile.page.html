@@ -19,7 +19,8 @@
         <ion-avatar class="avatar">
           <ion-img [src]="profilePicture"></ion-img>
         </ion-avatar>
-        <a [routerLink]="['/','editprofile']"><ion-button fill="clear">Edit Profile</ion-button></a>
+        <ion-button *ngIf="loadingProfile" fill="clear"><ion-spinner name="dots"></ion-spinner></ion-button>
+        <ion-button *ngIf="!loadingProfile" (click)="editProfile()" fill="clear">Edit Profile</ion-button>
       </ion-col>
       <ion-col>
         <h2 class="name">{{profile.first_name +' '+profile.last_name}}</h2>

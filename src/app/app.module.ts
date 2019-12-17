@@ -11,6 +11,8 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome'
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { environment } from 'src/environments/environment';
+import { AngularFireModule } from '@angular/fire';
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,6 +25,7 @@ import { CommonModule } from '@angular/common';
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [
     StatusBar,

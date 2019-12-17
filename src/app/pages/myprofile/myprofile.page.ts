@@ -6,11 +6,15 @@ import { Profile } from 'src/app/models/profile';
 import { Sparring } from 'src/app/models/sparring';
 import { Court } from 'src/app/models/court';
 import { NavController, ToastController } from '@ionic/angular';
+import { Route } from '@angular/compiler/src/core';
+import { Router } from '@angular/router';
+import { AngularFireDatabase } from '@angular/fire/database';
 
 type SparringPair={
   sparring: Sparring,
   court: Court
 }
+
 
 @Component({
   selector: 'app-myprofile',
@@ -26,45 +30,55 @@ export class MyprofilePage implements OnInit {
 
   loadingActiveEvents: Boolean
   loadingActiveFields: Boolean
+  loadingProfile: Boolean
 
   userId: any
   profile: Profile
-
-  profilePicture: any
 
   activeFields: Court[]
   activeEvents: SparringPair[]
 
   numberOfEvents: any
+  profilePicture
 
   constructor(
     private myProfileSvc: MyProfileService,
     private authSvc: AuthService,
     private ngZone: NgZone,
     private navCtrl: NavController,
-    private toastCtrl: ToastController
+    private toastCtrl: ToastController,
+    private router: Router,
+    private db: AngularFireDatabase
   ) {
     this.profile={
-      id: "Loading...",
-      email: "Loading...",
-      first_name: "Connecting...",
-      last_name: " ",
-      password: "Loading...",
-      phone_number: "Loading...",
-      photo_profile: "Loading...",
+      id: "",
+      email: "",
+      first_name: "Fetching...",
+      last_name: "",
+      password: "",
+      phone_number: "",
+      photo_profile: "",
     }
   }
 
   async ngOnInit() {
+    this.loadingProfile=true
+    this.profilePicture="assets/icon/profile.png"
+
     this.userId = this.authSvc.getLoggedInUserID()
 
     this.myProfileSvc.getUserAccount(this.userId).subscribe(
       (response)=>{
+        this.loadingProfile=false
         this.profile=response
       }
     )
 
-    this.profilePicture=this.myProfileSvc.getProfilePicture()
+    var re = this.db.database.ref('/raga/profile/p'+this.userId).on(
+      'value',(snapshot)=>{
+        if(snapshot.val() != null) this.profilePicture=snapshot.val()
+      },
+    )
 
     this.loadingActiveEvents=true
     this.myProfileSvc.getActiveEvents(this.userId).then(
@@ -92,6 +106,14 @@ export class MyprofilePage implements OnInit {
     })
   }
 
+  editProfile(){
+    this.router.navigate(['/','editprofile'],{
+      state:{
+        profile: this.profile
+      }
+    })
+  }
+
   ionViewWillEnter(){
     this.ngOnInit()
   }
@@ -100,6 +122,7 @@ export class MyprofilePage implements OnInit {
     if(this.authSvc.logout()){
       this.toastCtrl.create({
         message: "Logout is successful, see you soon!",
+        duration: 2000,
         color: "success"
       }).then((res)=>{
         res.present()
