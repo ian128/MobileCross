@@ -31,7 +31,7 @@ export class SparringListPage implements OnInit {
   async ngOnInit() {
     this.loading= true
     let loading = await this.toastCtrl.create({
-      message: 'Loading all fields, please wait...',
+      message: 'Loading all events, please wait...',
       duration: 2000
     });
     await loading.present();
