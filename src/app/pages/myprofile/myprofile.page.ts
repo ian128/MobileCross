@@ -5,6 +5,7 @@ import { AuthService } from 'src/app/services/auth/auth.service';
 import { Profile } from 'src/app/models/profile';
 import { Sparring } from 'src/app/models/sparring';
 import { Court } from 'src/app/models/court';
+import { NavController, ToastController } from '@ionic/angular';
 
 type SparringPair={
   sparring: Sparring,
@@ -40,6 +41,8 @@ export class MyprofilePage implements OnInit {
     private myProfileSvc: MyProfileService,
     private authSvc: AuthService,
     private ngZone: NgZone,
+    private navCtrl: NavController,
+    private toastCtrl: ToastController
   ) {
     this.profile={
       id: "Loading...",
@@ -91,6 +94,22 @@ export class MyprofilePage implements OnInit {
 
   ionViewWillEnter(){
     this.ngOnInit()
+  }
+
+  logout(){
+    if(this.authSvc.logout()){
+      this.toastCtrl.create({
+        message: "Logout is successful, see you soon!",
+        color: "success"
+      }).then((res)=>{
+        res.present()
+      })
+      this.navCtrl.navigateRoot(['/','onboarding'])
+    }
+  }
+
+  about(){
+    alert('Raga1.0.0 \n NullPointerException - UMN 2019')
   }
 
 }
