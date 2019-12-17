@@ -46,7 +46,7 @@ export class EditprofilePage implements OnInit {
     private sanitizer: DomSanitizer
   ) { }
 
-  pictureB64: any
+  picture: any
   toast: any
 
   async createToast(message, color){
@@ -65,8 +65,6 @@ export class EditprofilePage implements OnInit {
       message: "Fetching profile details ...",
     })
     loading.present()
-
-    this.pictureB64=this.editProfileSvc.getProfilePicture()
     
     this.userID = this.authSvc.getLoggedInUserID()
     this.editProfileSvc.retrieveCurrentProfile(this.userID).subscribe(
@@ -87,11 +85,19 @@ export class EditprofilePage implements OnInit {
       })
       loading.present()
 
-      console.log(this.formData.value)
-      this.editProfileSvc.updateCurrentProfile(this.userID,this.formData.value).subscribe(
-        async response=>{
+      let send = new FormData()
+      for(let key in this.formData.value){
+        send.append(key, this.formData.value[key])
+        console.log(send)
+      }
+      if(this.picture != null) send.append('photo_profile', this.picture)
 
-          this.editProfileSvc.setProfilePicture(this.pictureB64)
+      send.forEach((k,v)=>{
+        console.log(k+' - '+v)
+      })
+
+      this.editProfileSvc.updateCurrentProfile(this.userID, send).subscribe(
+        async response=>{
           var successToast = await this.toastCtrl.create({
             message: "Profile has been updated successfully. It may take sometimes to be updated in my profile",
             color: "success",
@@ -125,10 +131,12 @@ export class EditprofilePage implements OnInit {
       const image = await Plugins.Camera.getPhoto({
         quality: 90,
         allowEditing: false,
-        resultType: CameraResultType.Base64,
+        resultType: CameraResultType.Uri,
       });
 
-      this.pictureB64 = `data:image/${image.format};base64,`+image.base64String
+      this.picture = this.sanitizer.bypassSecurityTrustResourceUrl(image && (image.webPath));
+      alert(this.picture)
+      this.picture = image.webPath
       
     }catch(error){
       if(error == "Permission dismissed"){

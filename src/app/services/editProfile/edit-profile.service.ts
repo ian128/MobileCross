@@ -27,6 +27,10 @@ export class EditProfileService {
 
   updateCurrentProfile(id, body){
     return this.http.put(baseUrl+"/api/account/"+id,
-    body)
+    body, {
+      headers:{
+        'Content-Type':'application/x-www-form-urlencoded'
+      }
+    })
   }
 }
