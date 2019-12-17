@@ -50,4 +50,9 @@ ion-toolbar{
 
 ion-footer{
     margin-bottom: env(safe-area-inset-bottom);
-  }
+}
+
+ion-refresher{
+    margin-top: env(safe-area-inset-top);
+}
+  
