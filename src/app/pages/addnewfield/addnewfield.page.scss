@@ -1,4 +1,4 @@
-ion-input{
+ion-input,ion-textarea{
     --padding-start	: 4px;
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
@@ -12,4 +12,5 @@ ion-input{
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
     border-radius: 8px;
+    object-fit: cover;
 }

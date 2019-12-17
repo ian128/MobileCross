@@ -8,13 +8,13 @@
   </ion-header>
   
 <ion-content>
-  <form>
+  <form [formGroup]="formData">
     <ion-grid padding>
       
       <ion-row color="primary" justify-content-center>
         <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
             <ion-label>Field Name</ion-label>
-            <ion-input  name="fieldname" type="text" placeholder="Field Name" ngModel required></ion-input>
+            <ion-input formControlName="name" name="fieldname" type="text" placeholder="Field Name"></ion-input>
         </ion-col>
       </ion-row>
    
@@ -30,45 +30,29 @@
       <ion-row>   
           <ion-col>
               <ion-label>Phone Number</ion-label>
-              <ion-input  name="phone" type="text" placeholder="Phone Number" ngModel required></ion-input>
+              <ion-input formControlName="phone_number" name="phone" type="text" placeholder="Phone Number"></ion-input>
           </ion-col>
           <ion-col>
               <ion-label>E-Mail</ion-label>
-              <ion-input name="email" type="text" placeholder="Email" ngModel required></ion-input>
+              <ion-input formControlName="email" name="email" type="text" placeholder="Email"></ion-input>
           </ion-col>
       </ion-row>
 
       <ion-row>
         <ion-col>
           <ion-label>Field Location</ion-label>
-          <ion-input  name="fieldlocation" type="text" placeholder="Field Location" ngModel required></ion-input>
-        </ion-col>
-        <ion-col size="2" class="ion-align-items-end">
-          <ion-button size="large" fill="clear">
-            <fa-icon [icon]="direction"></fa-icon>
-          </ion-button>
+          <ion-textarea rows="5" formControlName="location" name="fieldlocation" type="text" placeholder="Field Location"></ion-textarea>
         </ion-col>
       </ion-row>
 
       <ion-row>   
           <ion-col>
               <ion-label>Weekday Price</ion-label>
-              <ion-input  name="weekdayprice" type="Number" placeholder="100.000" ngModel required></ion-input>
+              <ion-input formControlName="weekday_price" name="weekdayprice" type="Number" placeholder="100000"></ion-input>
           </ion-col>
           <ion-col>
               <ion-label>Weekend Price</ion-label>
-              <ion-input name="weekendprice" type="Number" placeholder="200.000" ngModel required></ion-input>
-          </ion-col>
-      </ion-row>
-
-      <ion-row>   
-          <ion-col>
-              <ion-label>Weekday Open Time</ion-label>
-              <ion-input  name="weekdayopentime" type="text" placeholder="09:00" ngModel required></ion-input>
-          </ion-col>
-          <ion-col>
-              <ion-label>Weekend Open Time</ion-label>
-              <ion-input name="weekendopentime" type="text" placeholder="09:00" ngModel required></ion-input>
+              <ion-input formControlName="weekend_price" name="weekendprice" type="Number" placeholder="200000"></ion-input>
           </ion-col>
       </ion-row>
 
@@ -76,20 +60,18 @@
           <ion-col>
               <ion-label>Add Field Photo</ion-label>
           </ion-col>
+          <ion-col >
+            <ion-button danger *ngIf="photo != placeholder" (click)="resetPicture()"> Reset Picture </ion-button>
+          </ion-col>
       </ion-row>
 
       <ion-row>
-        
-      </ion-row>
-
-    
-      <ion-row>
-        <div class="photo"></div>
+        <img [src]="photo" class="photo" (click)="takeAPicture()"/>
       </ion-row>
 
       <ion-row>
         <ion-col>
-            <ion-button size="large" type="submit" expand="block">Add New Field</ion-button>
+            <ion-button size="large" type="submit" (click)="submit()" expand="block">Add New Field</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
