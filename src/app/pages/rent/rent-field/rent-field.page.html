@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title text-center>Rent a field</ion-title>
+    <ion-title text-center>Find a field</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -16,7 +16,7 @@
       </div>
   </div>
   -->
-  <h3>Popular Fields
+  <h3>All Fields
     <ion-spinner *ngIf="loading" name="dots"></ion-spinner>
   </h3>
   <app-selector-sport-word  *ngIf="!loading"
@@ -31,6 +31,7 @@
       ></app-card-field-short>
   </div>
 
+  <!--
   <h3>Nearby Fields
     <ion-spinner *ngIf="loading" name="dots"></ion-spinner>
   </h3>
@@ -46,6 +47,7 @@
     ></app-card-field-short>
 
   </div>
+  -->
 
 </ion-content>
 <app-footer-menu-bar></app-footer-menu-bar>

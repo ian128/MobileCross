@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Profile } from 'src/app/models/profile';
-import { baseUrl } from '../base';
+import { baseUrl, auth } from '../base';
 
 @Injectable({
   providedIn: 'root'
@@ -25,8 +25,8 @@ export class EditProfileService {
     return this.http.get<Profile>(baseUrl+"/api/account/"+id)
   }
 
-  updateCurrentProfile(id, body){
-    return this.http.put(baseUrl+"/api/account/"+id,
+  updateCurrentProfile(userId, body){
+    return this.http.put(baseUrl+"/api/account/"+userId,
     body)
   }
 }
