@@ -12,7 +12,12 @@
 </ion-header>
 
 <ion-content>
-    <ion-list>
+    <ion-list *ngIf="loading" lines="none">
+      <ion-item>
+        <ion-spinner name="dots"></ion-spinner>
+      </ion-item>
+    </ion-list>
+    <ion-list *ngIf="!loading">
       <ion-item lines="none" *ngFor="let item of sparringPairFiltered"> 
           <app-card-sparring
           [sparring]="item.sparring"

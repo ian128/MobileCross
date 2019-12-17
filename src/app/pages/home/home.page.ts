@@ -28,6 +28,9 @@ export class HomePage implements OnInit {
   origin: Coordiantes
   newsList:any[]=[]
 
+  loadingNearbyField: Boolean
+  loadingNews: Boolean
+
   private geoCoder
   constructor(
     private router: Router,
@@ -37,9 +40,11 @@ export class HomePage implements OnInit {
     private route: Router,
   ) { }
 
-  async ngOnInit() {
+  async ngOnInit(event?) {
+    this.loadingNearbyField = true
+    this.loadingNews = true
+
     this.nearbyCourts = await this.homeSvc.getAllCourts().toPromise()
-    console.log(this.nearbyCourts)
     await this.getOrigin()
     
     this.measurements={}
@@ -58,7 +63,11 @@ export class HomePage implements OnInit {
       })
     }, 1000)
 
+    this.loadingNearbyField = false
+
     this.getNewsList()
+
+    event != null ? event.target.complete() : null
   }
 
   async getOrigin() {
@@ -100,6 +109,7 @@ export class HomePage implements OnInit {
   getNewsList(){
     this.http.get('https://newsapi.org/v2/top-headlines?country=id&category=sports&apiKey=b1374a9fb80a49fe87b4ca8794577a56').subscribe(data=>{
       this.newsList=data["articles"]
+      this.loadingNews=false
     })
   }
 

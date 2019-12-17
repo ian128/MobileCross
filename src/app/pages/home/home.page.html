@@ -1,4 +1,14 @@
+
 <ion-content class="ion-padding">
+  <ion-refresher slot="fixed" (ionRefresh)="ngOnInit($event)">
+    <ion-refresher-content
+      pullingIcon
+      pullingText="Pull to refresh"
+      refreshingSpinner="dots"
+      refreshingText="Updating your current location...">
+    </ion-refresher-content>
+  </ion-refresher>
+  
   <app-header-ellipse></app-header-ellipse>
   <ion-img class="logo" src="assets/images/splash/logo.png"></ion-img>
   <!-- Quicklink-->
@@ -44,15 +54,17 @@
       </ion-row>
     </ion-grid>
   <!-- Nearby Fields-->
-  <h3 class="bold">Nearby Field</h3>
+  <h3 class="bold">Nearby Field
+    <ion-spinner name='dots' *ngIf="loadingNearbyField"></ion-spinner>
+  </h3>
   
-  <div class="horizontal-scrolling">
+  <div class="horizontal-scrolling" *ngIf="!loadingNearbyField">
     
     <div class="field-card" *ngFor="let item of nearbyCourts" (click)="fieldDetails(item)">
         <ion-img class="field-picture" src="assets/icon/tennis.png"></ion-img>
         <div class="field-content">
-          <h3>{{item.name}}</h3>
-          <p>{{item.location}}</p>
+          <h3 class="ion-text-wrap">{{item.name}}</h3>
+          <p  class="ion-text-wrap">{{item.location}}</p>
           <p *ngIf="measurements != undefined">
             {{measurements.hasOwnProperty(item.id) ? measurements[item.id]+' km from you': 'Calculating..'}}
           </p>
@@ -61,15 +73,14 @@
 
   </div>
 
-  <h3 class="bold">Popular News</h3>
-  <div class="horizontal-scrolling">
-    <div class="news-card" *ngFor="let item of newsList;let i=index">
+  <h3 class="bold">Popular News
+    <ion-spinner name='dots' *ngIf="loadingNews"></ion-spinner>
+  </h3>
+  <div class="horizontal-scrolling" *ngIf="!loadingNews">
+    <div class="news-card" *ngFor="let item of newsList;let i=index" (click)="openNewsDetails(item.url)">
       <ion-img class="news-picture" [src]="item.urlToImage"></ion-img>
       <div class="news-content">
-        <p class="news-content-text">{{item.title}}</p>
-        <div class="more-button" (click)="openNewsDetails(item.url)">
-          View More
-        </div>
+        <p class="news-content-text" class="ion-text-wrap">{{item.title}}</p>
       </div>
     </div>
 </div>

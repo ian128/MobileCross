@@ -100,7 +100,6 @@ export class SparringInfoPage implements OnInit {
     this.getDestination()
   }
   
-
   getDestination(){
    this.ngZone.run(()=>{
       this.mapsAPILoader.load().then(() => {   

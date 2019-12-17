@@ -27,8 +27,6 @@ export class NewsPage implements OnInit {
     this.http.get('https://newsapi.org/v2/top-headlines?country=id&category=sports&apiKey=b1374a9fb80a49fe87b4ca8794577a56').subscribe(data=>{
       loading.dismiss()
       this.newsList=data["articles"]
-      console.log(this.newsList)
-      loading.dismiss()
     })
   }
 

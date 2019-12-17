@@ -112,6 +112,8 @@ ion-toolbar{
     .field-content{
         padding-left: 1rem;
         padding-top: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
     }
     
 }
@@ -148,7 +150,6 @@ ion-toolbar{
             max-width: 60vw;
             word-wrap: break-word;
             word-break: break-all;
-            overflow: hidden;
         }
 
         .more-button{

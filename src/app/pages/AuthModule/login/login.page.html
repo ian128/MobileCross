@@ -3,7 +3,7 @@
     <h1 class="title ion-text-center">Sign In</h1>
     <div class="spacer"></div>
     
-    <div padding>
+    <div class="ion-padding">
         <div class="card-container">
             <div class="form-title">
               Email
@@ -16,7 +16,7 @@
             <ion-input type="password" [(ngModel)]="password"  name="password" placeholder="Your password"></ion-input>
         </div>
     </div>
-    <div padding>
+    <div class="ion-padding">
       <a>
         <ion-button (click)="auth()" *ngIf="!isProcessing" class = "button button-block">Sign In</ion-button>
         <ion-button (click)="auth()" *ngIf="isProcessing" class = "button button-block" disabled>Processing...</ion-button>

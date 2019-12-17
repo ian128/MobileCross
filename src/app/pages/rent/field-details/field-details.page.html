@@ -8,6 +8,15 @@
   </ion-header>
 
 <ion-content>
+  <ion-refresher slot="fixed" (ionRefresh)="getRoute($event)">
+    <ion-refresher-content
+      pullingIcon
+      pullingText="Pull to refresh"
+      refreshingSpinner="dots"
+      refreshingText="Updating your current location...">
+    </ion-refresher-content>
+  </ion-refresher>
+
   <ion-img class="main-image" [src]="
   court.photo == null ? 'assets/images/placeholder/generic.jpg' : court.photo"></ion-img>
   <app-sport-selector
@@ -23,10 +32,10 @@
     <ion-grid>
       <ion-row>
         <ion-col>
-          <ion-button expand="block" >Call</ion-button>
+          <a href="tel:{{court.phone_number}}"><ion-button expand="block" >Call</ion-button></a>
         </ion-col>
         <ion-col>
-          <ion-button expand="block" color="medium">Email</ion-button>
+          <a href="mailto:{{court.email}}"><ion-button expand="block" color="light">Email</ion-button></a>
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -43,12 +52,19 @@
         </ion-col>
       </ion-row>
       <ion-row>
-          <ion-col>
-            09.00-22.00 WIB
-          </ion-col>
-          <ion-col>
-            09.00-22.00 WIB
-          </ion-col>
-        </ion-row>
+        <ion-col>
+          <agm-map>
+            <agm-direction [origin]="origin" [destination]="destination">
+            </agm-direction>
+            <agm-marker></agm-marker>
+          </agm-map>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-center">
+        <ion-col>
+          <ion-spinner *ngIf="distance == undefined" class="ion-text-center" name="dots"></ion-spinner>
+          <ion-label *ngIf="distance != undefined" class="ion-text-center">{{distance}} km from your current location</ion-label>
+        </ion-col>
+      </ion-row>
     </ion-grid>
 </ion-content>

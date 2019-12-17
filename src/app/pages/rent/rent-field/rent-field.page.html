@@ -19,7 +19,7 @@
   <h3>Popular Fields
     <ion-spinner *ngIf="loading" name="dots"></ion-spinner>
   </h3>
-  <app-selector-sport-word
+  <app-selector-sport-word  *ngIf="!loading"
   (onSelected)="popularFieldSelection($event)"
   ></app-selector-sport-word>
 
@@ -34,13 +34,13 @@
   <h3>Nearby Fields
     <ion-spinner *ngIf="loading" name="dots"></ion-spinner>
   </h3>
-  <app-selector-sport-word
+  <app-selector-sport-word  *ngIf="!loading"
     (onSelected)="nearbyFieldsSelection($event)"
   ></app-selector-sport-word>
 
   <div class="horizontal-scrolling"  *ngIf="!loading">
       <ion-label *ngIf="selectedNearbyFields.length==0">No item(s) in this selection</ion-label>
-      <app-card-field-short
+      <app-card-field-short 
       *ngFor="let item of selectedNearbyFields"
       [court]="item"
     ></app-card-field-short>

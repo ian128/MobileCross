@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 
 import { FieldDetailsPage } from './field-details.page';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { AgmCoreModule } from '@agm/core';
+import { AgmDirectionModule } from 'agm-direction';
 
 const routes: Routes = [
   {
@@ -21,7 +23,14 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes),
-    SharedModule
+    SharedModule,
+    AgmDirectionModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAmlnIAu52yOhMzIPFGxSsDaHB9TXmqhQk',
+      libraries:[
+        'geometry'
+      ]
+    }),
   ],
   declarations: [FieldDetailsPage]
 })

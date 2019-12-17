@@ -47,3 +47,7 @@ ion-title{
 ion-toolbar{
     --background: #3699F7;
 }
+
+ion-footer{
+    margin-bottom: env(safe-area-inset-bottom);
+  }
