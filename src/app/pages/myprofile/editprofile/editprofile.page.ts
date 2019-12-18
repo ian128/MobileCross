@@ -6,9 +6,9 @@ import { AlertController, LoadingController, NavController, ToastController } fr
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 import { Plugins, CameraResultType, CameraSource } from '@capacitor/core';
-
-
-const { Camera } = Plugins;
+import { Router } from '@angular/router';
+import { Profile } from 'src/app/models/profile';
+import { AngularFireDatabase } from '@angular/fire/database';
 
 @Component({
   selector: 'app-editprofile',
@@ -32,7 +32,7 @@ export class EditprofilePage implements OnInit {
     email: new FormControl(null,{
       updateOn: "change",
       validators: [Validators.required]
-    })
+    }),
   })
 
   userID: any
@@ -43,10 +43,14 @@ export class EditprofilePage implements OnInit {
     private loadingCtrl: LoadingController,
     private navCtrl: NavController,
     private toastCtrl: ToastController,
-    private sanitizer: DomSanitizer
+    private sanitizer: DomSanitizer,
+    private router: Router,
+    private db: AngularFireDatabase
   ) { }
 
-  pictureB64: any
+  picture: any
+    currentProfile: Profile
+
   toast: any
 
   async createToast(message, color){
@@ -60,39 +64,34 @@ export class EditprofilePage implements OnInit {
   }
 
   async ngOnInit() {
-
-    var loading = await this.loadingCtrl.create({
-      message: "Fetching profile details ...",
-    })
-    loading.present()
-
-    this.pictureB64=this.editProfileSvc.getProfilePicture()
-    
     this.userID = this.authSvc.getLoggedInUserID()
-    this.editProfileSvc.retrieveCurrentProfile(this.userID).subscribe(
-      (response)=>{
-        loading.dismiss()
-        this.formData.patchValue(response)
+
+    let profile: Profile = this.router.getCurrentNavigation().extras.state.profile
+    this.formData.patchValue(profile)
+
+    this.currentProfile=profile
+
+    var re = this.db.database.ref('/raga/profile/p'+this.userID).on(
+      'value',(snapshot)=>{
+        if(snapshot.val() != null) this.picture=snapshot.val()
+        else this.picture = "assets/icon/profile.png"
       },
-      async (err)=>{
-        loading.dismiss()
-      }
     )
+
   }
 
   async submit(){
-
-    var loading = await this.loadingCtrl.create({
-      message: "Changing your profile details...",
-    })
-    loading.present()
-    
     if(this.formData.valid){
-      console.log(this.formData.value)
+      var loading = await this.loadingCtrl.create({
+        message: "Changing your profile details...",
+      })
+      loading.present()
+
       this.editProfileSvc.updateCurrentProfile(this.userID,this.formData.value).subscribe(
         async response=>{
+        
+          await this.db.database.ref('/raga/profile/p'+this.userID).set(this.picture)
 
-          this.editProfileSvc.setProfilePicture(this.pictureB64)
           var successToast = await this.toastCtrl.create({
             message: "Profile has been updated successfully. It may take sometimes to be updated in my profile",
             color: "success",
@@ -100,16 +99,26 @@ export class EditprofilePage implements OnInit {
           })
 
           successToast.present()
-
           loading.dismiss()
           this.navCtrl.back()
         },
         error=>{
+          console.log(error)
+          this.createToast("This email has been used!", "danger")
           loading.dismiss()
         }
       )
+      
     }else{
-      alert("Please fill this form")
+      this.toastCtrl.create({
+        message: "Please complete the form to continue..",
+        color: "danger",
+        duration: 2000
+      }).then(
+        (res)=>{
+          res.present()
+        }
+      )
     }
   }
 
@@ -120,8 +129,7 @@ export class EditprofilePage implements OnInit {
         allowEditing: false,
         resultType: CameraResultType.Base64,
       });
-
-      this.pictureB64 = `data:image/${image.format};base64,`+image.base64String
+      this.picture = `data:image/${image.format};base64,`+image.base64String
       
     }catch(error){
       if(error == "Permission dismissed"){

@@ -33,3 +33,25 @@
 * {
   font-family: 'Proxima Nova';
 }
+
+h3{
+    font-weight: bolder;
+}
+
+ion-title{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+}
+
+ion-toolbar{
+    --background: #3699F7;
+}
+
+ion-footer{
+    margin-bottom: env(safe-area-inset-bottom);
+}
+
+ion-refresher{
+    margin-top: env(safe-area-inset-top);
+}

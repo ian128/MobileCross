@@ -3,7 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { AuthGuardService } from './services/authGuard/auth-guard.service';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'addnewevent', pathMatch: 'full' },
+  { path: '', redirectTo: 'splash', pathMatch: 'full' },
   { path: 'login', loadChildren: './pages/AuthModule/login/login.module#LoginPageModule' },
   { path: 'register', loadChildren: './pages/AuthModule/register/register.module#RegisterPageModule' },
   { path: 'password-register', loadChildren: './pages/AuthModule/register/password-register/password-register.module#PasswordRegisterPageModule' },

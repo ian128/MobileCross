@@ -6,6 +6,7 @@ import { Comment } from 'src/app/models/comment';
 import { SparringService } from 'src/app/services/sparring/sparring.service';
 import { AuthService } from 'src/app/services/auth/auth.service';
 import { Profile } from 'src/app/models/profile';
+import { AngularFireDatabase } from '@angular/fire/database';
 
 @Component({
   selector: 'app-sparring-discussion',
@@ -26,11 +27,14 @@ export class SparringDiscussionPage implements OnInit {
   sendingMessage: Boolean
 
   users:{}
+  
+  profilePictures:{} = {}
 
 
   constructor(
     private sparringSvc: SparringService,
-    private authSvc: AuthService
+    private authSvc: AuthService,
+    private db: AngularFireDatabase
   ) { }
 
   async ngOnInit() {
@@ -51,9 +55,21 @@ export class SparringDiscussionPage implements OnInit {
     )
     this.comments = await this.sparringSvc.getSparringComments(this.sparring.id)
 
+    this.comments.forEach(
+      (item)=>{
+        this.db.database.ref('/raga/profile/p'+item.user_id).once('value').then(
+          (res)=>{
+            if(res.val() == null) this.profilePictures[item.user_id]="assets/icon/profile.png"
+            else this.profilePictures[item.user_id]=res.val()
+          }
+        )
+
+      }
+    )
+
     this.loadingComment=false
   }
-
+  
   async sendComment(){
     this.sendingMessage=true
 

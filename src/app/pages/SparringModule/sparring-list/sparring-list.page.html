@@ -6,13 +6,18 @@
 
 <!--Selector-->
 <ion-header>
-    <ion-toolbar>
-        <app-selector-sport-word (onSelected)="select($event)"></app-selector-sport-word>
-    </ion-toolbar>
-  </ion-header>
+  <ion-toolbar class="main-selector">
+      <app-selector-sport-word (onSelected)="select($event)"></app-selector-sport-word>
+  </ion-toolbar>
+</ion-header>
 
 <ion-content>
-    <ion-list>
+    <ion-list *ngIf="loading" lines="none">
+      <ion-item>
+        <ion-spinner name="dots"></ion-spinner>
+      </ion-item>
+    </ion-list>
+    <ion-list *ngIf="!loading">
       <ion-item lines="none" *ngFor="let item of sparringPairFiltered"> 
           <app-card-sparring
           [sparring]="item.sparring"

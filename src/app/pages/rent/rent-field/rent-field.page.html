@@ -1,11 +1,12 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title text-center>Rent a field</ion-title>
+    <ion-title class="ion-text-center">Find a field</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <!--Featured Fields-->
+    <!--Featured Fields-->
+  <!--
   <h3>Featured Fields</h3>
   <div class="field-card">
       <ion-img class="field-picture" src="assets/icon/tennis.png"></ion-img>
@@ -14,34 +15,39 @@
         <p>Gading Serpong, Tangerang</p>
       </div>
   </div>
-
-  <h3>Popular Fields <ion-spinner *ngIf="loading" name="dots"></ion-spinner></h3>
-  <app-selector-sport-word
+  -->
+  <h3>All Fields
+    <ion-spinner *ngIf="loading" name="dots"></ion-spinner>
+  </h3>
+  <app-selector-sport-word  *ngIf="!loading"
   (onSelected)="popularFieldSelection($event)"
   ></app-selector-sport-word>
 
-  <div class="horizontal-scrolling" >
+  <div class="horizontal-scrolling"  *ngIf="!loading">
     <ion-label *ngIf="selectedPopularFields.length==0">No item(s) in this selection</ion-label>
       <app-card-field-short
       *ngFor="let item of selectedPopularFields"
       [court]="item"
-    
       ></app-card-field-short>
   </div>
 
-  <h3>Nearby Fields <ion-spinner *ngIf="loading" name="dots"></ion-spinner></h3>
-  <app-selector-sport-word
+  <!--
+  <h3>Nearby Fields
+    <ion-spinner *ngIf="loading" name="dots"></ion-spinner>
+  </h3>
+  <app-selector-sport-word  *ngIf="!loading"
     (onSelected)="nearbyFieldsSelection($event)"
   ></app-selector-sport-word>
 
-  <div class="horizontal-scrolling">
+  <div class="horizontal-scrolling"  *ngIf="!loading">
       <ion-label *ngIf="selectedNearbyFields.length==0">No item(s) in this selection</ion-label>
-      <app-card-field-short
+      <app-card-field-short 
       *ngFor="let item of selectedNearbyFields"
       [court]="item"
     ></app-card-field-short>
 
   </div>
+  -->
 
 </ion-content>
 <app-footer-menu-bar></app-footer-menu-bar>

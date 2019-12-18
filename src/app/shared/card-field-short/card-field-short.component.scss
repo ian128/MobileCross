@@ -12,18 +12,15 @@
     }
 
     .field-content{
-        padding: 0.2rem;
-        
-        h6{
+        padding: 0.3rem;
+
+        .court-name{
             font-weight: bolder;
-            line-height: 0;
-            max-width: 100%;
-            overflow-wrap: break-word;
-            word-wrap: break-word;
-            hyphens: auto;
+            font-size: 14px;
         }    
+
         .detail{
-            font-size: 12px;
+            font-size: 10px;
         }
         
     }

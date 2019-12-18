@@ -19,7 +19,7 @@ export class SplashPage implements OnInit {
 
   ngOnInit() {
     setTimeout(()=>{
-      if(this.authSvc.isLoggedIn){
+      if(this.authSvc.isLoggedIn()){
         this.navCtrl.navigateRoot(['/','home'])
       }
       else this.navCtrl.navigateRoot(['/','onboarding'])

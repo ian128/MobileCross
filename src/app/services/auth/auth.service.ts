@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpHeaders, HttpClient } from '@angular/common/http';
 import { baseUrl } from '../base';
+import { toUnicode } from 'punycode';
 
 @Injectable({
   providedIn: 'root'
@@ -51,6 +52,11 @@ export class AuthService {
        headers: this.kHttpHeaders,
      },
     )
+  }
+
+  logout(){
+    localStorage.removeItem('raga')
+    return true;
   }
 
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 
@@ -12,10 +12,12 @@ export class NewsDetailPage{
   constructor(
     private route: ActivatedRoute,
     private sanitize: DomSanitizer,
+    private hostElement: ElementRef,
   ) { }
 
   url() {
-    return this.sanitize.bypassSecurityTrustResourceUrl(this.route.snapshot.queryParamMap.get('link'));
+    const iframe = this.hostElement.nativeElement.querySelector('iframe');
+    iframe.src = this.route.snapshot.queryParamMap.get('link');
   }
 
 }

@@ -7,6 +7,10 @@ import { IonicModule } from '@ionic/angular';
 
 import { HomePage } from './home.page';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { AgmCoreModule } from '@agm/core';
+import { AgmDirectionModule } from 'agm-direction';
+
+declare var google: any
 
 const routes: Routes = [
   {
@@ -21,7 +25,14 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes),
-    SharedModule
+    SharedModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAmlnIAu52yOhMzIPFGxSsDaHB9TXmqhQk',
+      libraries:[
+        'geometry'
+      ]
+    }),
+    AgmDirectionModule
   ],
   declarations: [HomePage]
 })

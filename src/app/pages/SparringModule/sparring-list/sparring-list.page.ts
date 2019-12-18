@@ -3,7 +3,7 @@ import { SparringService } from 'src/app/services/sparring/sparring.service';
 import { Sparring } from 'src/app/models/sparring';
 import { Court } from 'src/app/models/court';
 import { sports } from 'src/app/services/base';
-import { LoadingController } from '@ionic/angular';
+import { LoadingController, ToastController } from '@ionic/angular';
 
 type SparringPair={
   sparring: Sparring
@@ -21,15 +21,18 @@ export class SparringListPage implements OnInit {
 
   sparringPairFiltered: SparringPair[] = []
 
+  loading: boolean
+
   constructor(
     private sparringSvc: SparringService,
-    private loadingController: LoadingController
+    private toastCtrl: ToastController
   ) { }
 
   async ngOnInit() {
-
-    let loading = await this.loadingController.create({
-      message: 'Loading..',
+    this.loading= true
+    let loading = await this.toastCtrl.create({
+      message: 'Loading all events, please wait...',
+      duration: 2000
     });
     await loading.present();
 
@@ -47,6 +50,7 @@ export class SparringListPage implements OnInit {
     )
    
     await loading.dismiss();
+    this.loading= false
   }
 
   select(e) {

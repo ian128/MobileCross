@@ -24,7 +24,7 @@ export class LoginPage implements OnInit {
 
   ngOnInit() {
     this.isProcessing=false;
-    this.email="tes@tes.com"
+    this.email="tes@gmail.com"
     this.password="tes"
   }
 
