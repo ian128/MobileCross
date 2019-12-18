@@ -144,6 +144,5 @@ export class AddnewfieldPage implements OnInit {
       else this.createToast("Please complete all forms before continue","danger")
     }
   }
-  
 
 }
