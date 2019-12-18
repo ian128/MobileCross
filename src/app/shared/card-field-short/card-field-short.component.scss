@@ -1,19 +1,21 @@
 .field-card-small{
     margin-right: 0.5em;
-    width: 50%;
+    width: 15rem;
     border: 1px solid #EAEAEA;
     border-radius: 12pt;
     display: inline-block;
     overflow: hidden;
 
     .field-picture{
-        height: 8em;
+        height: 7em;
         object-fit: cover;
     }
 
     .field-content{
-        padding: 0.3rem;
-
+        padding-top: 0.2rem;
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+        min-height: 6rem;
         .court-name{
             font-weight: bolder;
             font-size: 14px;

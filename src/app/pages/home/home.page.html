@@ -61,7 +61,7 @@
   <div class="horizontal-scrolling" *ngIf="!loadingNearbyField">
     
     <div class="field-card" *ngFor="let item of nearbyCourts" (click)="fieldDetails(item)">
-        <ion-img class="field-picture" src="assets/icon/tennis.png"></ion-img>
+        <ion-img class="field-picture" [src]="nearbyFieldsPicture[item.id] == null ? placeholder : nearbyFieldsPicture[item.id]"></ion-img>
         <div class="field-content">
           <h3 class="ion-text-wrap">{{item.name}}</h3>
           <p  class="ion-text-wrap">{{item.location}}</p>

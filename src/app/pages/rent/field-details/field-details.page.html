@@ -17,8 +17,7 @@
     </ion-refresher-content>
   </ion-refresher>
 
-  <ion-img class="main-image" [src]="
-  court.photo == null ? 'assets/images/placeholder/generic.jpg' : court.photo"></ion-img>
+  <ion-img class="main-image" [src]="photo"></ion-img>
   <app-sport-selector
     style="pointer-events: none !important;"
     [selected]="selected"

@@ -93,7 +93,7 @@ ion-toolbar{
 
 .field-card{
     margin-right: 1em;
-    width: 100%;
+    width: 80%;
     border: 1px solid #EAEAEA;
     border-radius: 12pt;
     display: inline-block;
@@ -102,6 +102,7 @@ ion-toolbar{
     h3{
         font-weight: bolder;
         line-height: 0;
+        font-size: 16px;
     }
     
     .field-picture{
@@ -110,10 +111,12 @@ ion-toolbar{
     }
 
     .field-content{
+        min-height: 10em;
         padding-left: 1rem;
-        padding-top: 1rem;
+        padding-top: 0.5rem;
         padding-right: 1rem;
-        padding-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        font-size: 12px;
     }
     
 }

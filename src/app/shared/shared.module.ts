@@ -40,6 +40,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
     SelectorSportWordComponent,
     CardSparringComponent,
     SelectFieldComponent,
+    
   ],
   exports: [
     FooterMenuBarComponent,
@@ -51,7 +52,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
     CardSparringComponent,
     SelectFieldComponent,
     ReactiveFormsModule,
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
   ],
   entryComponents:[
     SelectFieldComponent,

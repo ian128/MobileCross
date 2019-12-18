@@ -27,25 +27,16 @@ export class RentFieldPage implements OnInit {
     this.allFields = await this.rentFieldSvc.getAllCourt().toPromise()
     console.log(this.allFields)
     this.popularFieldSelection(sports[1])
-    this.nearbyFieldsSelection(sports[1])
     this.loading=false
   }
 
   popularFieldSelection(e){
+    console.log(sports[e])
     console.log(e)
     if(this.allFields == null) return
     this.selectedPopularFields = this.allFields.filter(
-      (item) => item.id == sports[e]
+      (item) => item.sport_id == sports[e]
     )
     console.log(this.selectedPopularFields)
-  }
-
-  nearbyFieldsSelection(e){
-    console.log(e)
-    if(this.allFields == null) return
-    this.selectedNearbyFields = this.allFields.filter(
-      (item) => item.id == sports[e]
-    )
-    console.log(this.selectedNearbyFields)
   }
 }
