@@ -6,6 +6,7 @@ import { Court } from 'src/app/models/court';
 import { HomeService } from 'src/app/services/home/home.service';
 import { MapsAPILoader } from '@agm/core';
 import { HttpClient } from '@angular/common/http';
+import { AngularFireDatabase } from '@angular/fire/database';
 const { Geolocation } = Plugins;
 
 type Coordiantes={
@@ -31,6 +32,10 @@ export class HomePage implements OnInit {
   loadingNearbyField: Boolean
   loadingNews: Boolean
 
+  public nearbyFieldsPicture={}
+
+  placeholder = "assets/images/placeholder/generic.jpg"
+  
   private geoCoder
   constructor(
     private router: Router,
@@ -38,6 +43,7 @@ export class HomePage implements OnInit {
     private mapsAPILoader: MapsAPILoader,
     private http: HttpClient,
     private route: Router,
+    private db: AngularFireDatabase
   ) { }
 
   async ngOnInit(event?) {
@@ -48,11 +54,10 @@ export class HomePage implements OnInit {
     await this.getOrigin()
     
     this.measurements={}
-    //calculate distance
+
+    //calculate distance for the first time
     this.nearbyCourts.forEach((item)=>{
-      this.getDestination(item).then(
-        ()=>{}
-      )
+      this.getDestination(item)
     })
 
     setInterval(()=>{
@@ -61,7 +66,13 @@ export class HomePage implements OnInit {
         if(this.measurements[item.id] == undefined) return true;
         else return (this.measurements[item.id] < 4.0)
       })
-    }, 1000)
+
+      this.nearbyCourts.forEach((res)=>{
+        this.db.database.ref('/raga/court/c'+res.id).once('value').then((val)=>{
+          this.nearbyFieldsPicture[res.id] = val.val() == null ? this.placeholder : val.val()
+        })
+      })
+    }, 5000)
 
     this.loadingNearbyField = false
 

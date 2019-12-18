@@ -134,7 +134,7 @@ export class AddnewfieldPage implements OnInit {
         },
         (err)=>{
           wait.dismiss()
-          this.createToast(err.error,"Danger");
+          this.createToast("Email has been used","danger");
         }
       )
 
