@@ -13,7 +13,7 @@
     <ion-row color="primary" class="ion-justify-content-center">
       <ion-col class="ion-align-self-center size" size-md="6" size-lg="5" size-xs="12">
           <ion-label>Field Name</ion-label>
-          <ion-input  formControlName="fieldName" name="fieldname" type="text" placeholder="Field Name"></ion-input>
+          <ion-input  formControlName="name" name="name" type="text" placeholder="Field Name"></ion-input>
       </ion-col>
     </ion-row>
  
@@ -43,7 +43,7 @@
     <ion-row>
       <ion-col>
         <ion-label>Field Location</ion-label>
-        <ion-input  formControlName="field_location" name="fieldlocation" type="text" placeholder="Field Location" ngModel required></ion-input>
+        <ion-input  formControlName="location" name="location" type="text" placeholder="Field Location" ngModel required></ion-input>
       </ion-col>
       <ion-col size="2" class="ion-align-items-end">
         <ion-button size="large" fill="clear">
@@ -63,7 +63,7 @@
         </ion-col>
     </ion-row>
 
-    <ion-row>   
+    <!-- <ion-row>   
         <ion-col>
             <ion-label>Weekday Open Time</ion-label>
             <ion-input  name="weekdayopentime" type="text" placeholder="09:00" ngModel required></ion-input>
@@ -72,7 +72,7 @@
             <ion-label>Weekend Open Time</ion-label>
             <ion-input name="weekendopentime" type="text" placeholder="09:00" ngModel required></ion-input>
         </ion-col>
-    </ion-row>
+    </ion-row> -->
 
     <ion-row>
         <ion-col>
@@ -91,7 +91,7 @@
 
     <ion-row>
       <ion-col>
-          <ion-button size="large" type="submit" expand="block">Add New Field</ion-button>
+          <ion-button size="large" type="submit" expand="block" (click)="sendData()">Add New Field</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>

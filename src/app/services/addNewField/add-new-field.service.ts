@@ -16,15 +16,11 @@ export class AddNewFieldService {
     private http: HttpClient
   ) { }
 
-  connectToApi(body){
+  connectToApi(body: Object){
     return this.http.post(baseUrl+'/api/court',
     body,
     {
       headers: this.httpHeader
     })
-  }
-
-  getAllCourts(){ 
-    return this.http.get<Court[]>(baseUrl+'/api/court')
   }
 }
