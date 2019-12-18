@@ -23,8 +23,9 @@ const routes: Routes = [
     IonicModule,
     FontAwesomeModule,
     RouterModule.forChild(routes),
-    SharedModule
+    SharedModule,
   ],
-  declarations: [AddneweventPage]
+  declarations: [AddneweventPage],
+  entryComponents:[]
 })
 export class AddneweventPageModule {}

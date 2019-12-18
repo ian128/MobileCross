@@ -1,3 +1,34 @@
 export const baseUrl="https://metal-coil-259515.appspot.com"
 
-export const auth="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImI1MmMwNjUxZjVmODA0Y2JlMmQxNDFkNTliZjI5ZDY2OWI0ZTZjMDAyZjAwNDhmOGI5NjY4ZjVhMjdlMmY4NzRlNDI0NGE1NzI1OGUwNjM3In0.eyJhdWQiOiIxIiwianRpIjoiYjUyYzA2NTFmNWY4MDRjYmUyZDE0MWQ1OWJmMjlkNjY5YjRlNmMwMDJmMDA0OGY4Yjk2NjhmNWEyN2UyZjg3NGU0MjQ0YTU3MjU4ZTA2MzciLCJpYXQiOjE1NzIyMjU5NDksIm5iZiI6MTU3MjIyNTk0OSwiZXhwIjoxNjAzODQ4MzQ5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.M0Hol1tEuAvsaej7zOtg2ZwB5wegSNV9zZCMCv7runw6KiytOd4Tk5jyuWWpudFHvuS7AYNcY6agHCZGatYfCnlO-UE2Zla5RciZBTLHppQ512_Dq52q1nyPwRXZaeEVEc2x-MXvFxcm-MSsBP9KktgiTXBAZMun6nwDWfwDvZvo4WXaUIC-OmaXS2tBurHRQxKkLOdx63-aI-6pSSkZv54QCPRpa78V-lTZ9jSChpC-hPjpuer9v5RATk5wtTw7qr-plTasNhuP6-KZxfhmPOslI9ZWEdG3ZM9k-PR9rRotOUzmJlaqX9rbBhLxfNCAhqhiKjhxfmNAVAIkMtuZMNpD12oYQa4TAb7HGqYt4qRr64K6b1DkEykRqO2OQYBUpQ1Qxq8qjPUI_mW8r138KpCzBXj8yOntyKJtAznWUVmSBA4obDjCiM86WtkvXmFBP4mTHYHOwI2knhRo13dnIjUaLakUQz5pjEQDCBiyRpkOgcvWOUh0rlxCHNkuhQcK88VzpwPAfVQvsY1e_kVXz9hdlahJ6WQkjeyVAIQNh7BpimudSlihroRLaY_i2GXSgjJYaxnujgXjrW9CiMn8IoRxlFujYwbowv898-RRD4wn9CGoNluq_coQkc0H0Ooa9AO8WJSbJwqoWJ2XLlqXOoMbqGu2Y1Raup0XOVxSBWw"
+export const auth="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjlmNDFlODgwMzk3YTU5ZDc2ZWI2ZWMyMjQ1YzA5N2ZmMzNjY2MxN2Q1YmY0ZjcyZWY0ZDRiNTUxODJhYzRmYjE5ZmE3YzYyZGRjNGE1YTgyIn0.eyJhdWQiOiIxIiwianRpIjoiOWY0MWU4ODAzOTdhNTlkNzZlYjZlYzIyNDVjMDk3ZmYzM2NjYzE3ZDViZjRmNzJlZjRkNGI1NTE4MmFjNGZiMTlmYTdjNjJkZGM0YTVhODIiLCJpYXQiOjE1NzI0MTY4ODQsIm5iZiI6MTU3MjQxNjg4NCwiZXhwIjoxNjA0MDM5Mjg0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Xz1tSWGNWvGy4WsFQUVCHMjBQfqWWBvS_EjhVTuJZ-Ok5knL71jMbxGvEf4Iiy_JqE2sMfNf0BsnSmG15S24AaThw8Zzu7UhdPxXVnXW_I3wDyfVtURuXdYL7AP8JReNp1whN-grPRjFFpGV9nKNVs9Tj2HqFsz256bcxVeTWLvLbQj-yBhyPBOuNf7VB3GtScsH1Q4j4lqvbWGHxgA2rrMxClyi7ngx7y4hXTQZ9KE0zFHcyoM2Zfd0EiHUhz99bGQpW12w2mJb8sR2LVEW-FYuk4IpAGazffZMbIw6uHHk8nBFsKoVG0QrGzYHmbpXqY7KRjnqrX1uLJY09QXekLFWBi_Ocv00F4wbtVhvq8KNj9NaQDILePxrt1johkhvhD2AR3aLA_98L_QtprZ7gGY5RSsR_5qvwaruGZ3sya3ykE5xpi6szYTa_YAI5Xt5jHsFv_hOCPox4hgWYkPJszCl2uPkHv22XxVxA0NElpcgkGdBK6sT6RcQgL5RXJU_Gj3H5YH-TQFfC_a8Cx_CPrk32gdMf0pjU__Qf73FiaODY9rfUxawdS-tM2s9cBhhkAh4Ts53GFTSROgZzHSnwpDfq0Ai4V6m3joCqfcQPkZ3kkQfJUtiLL8BhgNtgmnrEP7jGu6nKejJywV-kzrgtqfwZrK6KvdvtAqcZ4xQlM0"
+
+export const sports={
+    1: "badminton",
+    2: "basketball",
+    3: "futsal",
+    4: "tennis",
+    "badminton" : 1,
+    "basketball": 2,
+    "futsal": 3,
+    "tennis": 4
+}
+
+export const sportDetails={
+    1:{
+        "name": "badminton",
+        "max_participant": 8
+    },
+    2:{
+        "name": "basketball",
+        "max_participant": 15
+    },
+    3:{
+        "id": 3,
+        "name": "futsal",
+        "max_participant": 15
+    },
+    4:{
+        "name": "tennis",
+        "max_participant": 6
+    }
+}

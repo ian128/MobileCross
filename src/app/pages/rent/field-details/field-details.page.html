@@ -8,19 +8,33 @@
   </ion-header>
 
 <ion-content>
-  <ion-img class="main-image" src="https://img.fcbayern.com/image/fetch/f_auto,h_768,q_auto:good,w_1366/https://fcbayern.com/binaries/content/gallery/fc-bayern/homepage/saison-18-19/galerien/neue-allianz-arena/arenaumbau_02_duc_030818.jpg/arenaumbau_02_duc_030818.jpg/fcbhippo%3Axtralargesixteentonine%3Fv%3D1533304938776"></ion-img>
+  <ion-refresher slot="fixed" (ionRefresh)="getRoute($event)">
+    <ion-refresher-content
+      pullingIcon
+      pullingText="Pull to refresh"
+      refreshingSpinner="dots"
+      refreshingText="Updating your current location...">
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <ion-img class="main-image" [src]="photo"></ion-img>
+  <app-sport-selector
+    style="pointer-events: none !important;"
+    [selected]="selected"
+  ></app-sport-selector
+    >
   <div class="padding-left">
-    <h3>Cisauk Staples Centre</h3>
-    <p>Gading Serpong, Tangerang</p>
+    <h3>{{court.name}}</h3>
+    <p>{{court.location}}</p>
     </div>
     <!--Buttons-->
     <ion-grid>
       <ion-row>
         <ion-col>
-          <ion-button expand="block" >Call</ion-button>
+          <a href="tel:{{court.phone_number}}"><ion-button expand="block" >Call</ion-button></a>
         </ion-col>
         <ion-col>
-          <ion-button expand="block" color="medium">Email</ion-button>
+          <a href="mailto:{{court.email}}"><ion-button expand="block" color="light">Email</ion-button></a>
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -28,40 +42,28 @@
     <ion-grid class="price-table ion-text-center">
       <ion-row>
         <ion-col>
-          <b>Rp120.000</b>
+          <b>Rp{{court.weekday_price}}</b>
           <p>Weekday</p>
         </ion-col>
         <ion-col>
-          <b>Rp180.000</b>
+          <b>Rp{{court.weekend_price}}</b>
           <p>Weekend</p>
         </ion-col>
       </ion-row>
       <ion-row>
-          <ion-col>
-            09.00-22.00 WIB
-          </ion-col>
-          <ion-col>
-            09.00-22.00 WIB
-          </ion-col>
-        </ion-row>
+        <ion-col>
+          <agm-map>
+            <agm-direction [origin]="origin" [destination]="destination">
+            </agm-direction>
+            <agm-marker></agm-marker>
+          </agm-map>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-center">
+        <ion-col>
+          <ion-spinner *ngIf="distance == undefined" class="ion-text-center" name="dots"></ion-spinner>
+          <ion-label *ngIf="distance != undefined" class="ion-text-center">{{distance}} km from your current location</ion-label>
+        </ion-col>
+      </ion-row>
     </ion-grid>
-
-    <!--list -->
-    <ion-list class="field-list">
-
-      <ion-item *ngFor="let n of [].constructor(3)">
-        <ion-grid>
-          <ion-row>
-            <ion-col>
-              <h4 class="bold">Lapangan Alpha</h4>
-              <p class="thin tight">Luas: 3x4 meter</p>
-            </ion-col>
-            <ion-col>
-
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      </ion-item>
-
-    </ion-list>
 </ion-content>

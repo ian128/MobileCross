@@ -8,13 +8,12 @@
   </ion-header>
   
 <ion-content>
-  <form>
-    <ion-grid padding>
-      
-      <ion-row color="primary" justify-content-center>
-        <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+  <form [formGroup] = "formData"> 
+    <ion-grid class="ion-padding">
+      <ion-row color="primary" class="ion-justify-content-center">
+        <ion-col class="ion-align-self-center" size-md="6" size-lg="5" size-xs="12">
             <ion-label>Event Name</ion-label>
-            <ion-input  name="fieldname" type="text" placeholder="Event Name" ngModel required></ion-input>
+            <ion-input formControlName="name" name="name" type="text" placeholder="Event Name"></ion-input>
         </ion-col>
       </ion-row>
     
@@ -25,15 +24,31 @@
       </ion-row>
 
       <!--Sport selection-->
-      <app-sport-selector></app-sport-selector>
+      <app-sport-selector
+        (onSelected)="select($event)"
+      ></app-sport-selector
+        >
+      <ion-row>   
+          <ion-col>
+              <ion-label>Event Date</ion-label>
+              <ion-datetime
+              [min]="minDate"
+              [max]="maxDate"
+              formControlName="date" placeholder="01-01-2019" displayFormat="DD-MMMM-YYYY"></ion-datetime>
+          </ion-col>
+          <ion-col>
+              <ion-label>Price per Person</ion-label>
+              <ion-input formControlName="price_per_person" readonly name="email" type="Number" placeholder="100.000"></ion-input>
+          </ion-col>
+      </ion-row>
 
       <ion-row>
         <ion-col>
-          <ion-label>Field Location</ion-label>
-          <ion-input  name="fieldlocation" type="text" placeholder="Field Location" ngModel required></ion-input>
+          <ion-label>Field Name</ion-label>
+          <ion-input formControlName="fieldName" readonly name="fieldName" type="text" placeholder="Field Name"></ion-input>
         </ion-col>
         <ion-col size="2" class="ion-align-items-end">
-          <ion-button size="large" fill="clear">
+          <ion-button size="large" fill="clear" (click)="selectField()">
             <fa-icon [icon]="direction"></fa-icon>
           </ion-button>
         </ion-col>
@@ -41,23 +56,14 @@
 
       <ion-row>   
           <ion-col>
-              <ion-label>Event Date</ion-label>
-              <ion-input name="event" type="text" placeholder="1/11/2019"></ion-input>
-          </ion-col>
-          <ion-col>
-              <ion-label>Price per Person</ion-label>
-              <ion-input name="email" type="Number" placeholder="100.000"></ion-input>
-          </ion-col>
-      </ion-row>
-
-      <ion-row>   
-          <ion-col>
               <ion-label>Start Time</ion-label>
-              <ion-input  name="startTime" type="text" placeholder="09:00"></ion-input>
+              <ion-datetime
+              formControlName="start_time" placeholder="09:00" displayFormat="HH:mm"></ion-datetime>
           </ion-col>
           <ion-col>
               <ion-label>End Time</ion-label>
-              <ion-input name="endTime" type="text" placeholder="18:00"></ion-input>
+              <ion-datetime
+              formControlName="end_time" placeholder="15:00" displayFormat="HH:mm"></ion-datetime>
           </ion-col>
       </ion-row>
 
@@ -68,10 +74,11 @@
       </ion-row>
           
       <ion-row>
-        <ion-textarea class='desc' placeholder="Describe your event here" rows=6></ion-textarea>
+        <ion-textarea class='desc' formControlName="desc" placeholder="Describe your event here" rows=6></ion-textarea>
       </ion-row>
 
       <ion-row>
+        <!--
         <ion-col>
 
             <ion-label>Max. Participant</ion-label>
@@ -85,9 +92,10 @@
             </ion-row>
 
         </ion-col>
+        -->
         <ion-col>
             <ion-label>Who can play?</ion-label>
-            <ion-input placeholder="Only for organizations.."></ion-input>
+            <ion-input formControlName="who_can_play" placeholder="Only for organizations.."></ion-input>
         </ion-col>
       </ion-row>
 
@@ -97,13 +105,18 @@
             <ion-label> Repeat this event every week?</ion-label>
           </ion-col>
           <ion-col>
-              <ion-toggle></ion-toggle>
+              <ion-toggle formControlName="repeat_every_week"></ion-toggle>
           </ion-col>
       </ion-row>
 
       <ion-row>
           <ion-col>
-              <ion-button size="large" type="submit" expand="block">Add New Event</ion-button>
+              <ion-button *ngIf="isProcessing" size="large" type="submit" expand="block" disabled>
+                <ion-spinner name="bubbles"></ion-spinner>
+              </ion-button>
+              <ion-button *ngIf="!isProcessing" (click)="submit()"size="large" type="submit" expand="block">
+                Add New Event
+              </ion-button>
           </ion-col>
         </ion-row>
 

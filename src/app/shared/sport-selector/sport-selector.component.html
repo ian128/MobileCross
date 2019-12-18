@@ -1,7 +1,7 @@
 <ion-row>
   <ion-col>
-    <ion-segment>
-      <ion-segment-button class="sport-button" value="badminton" checked (click)="onSelected.emit('badminton')">
+    <ion-segment [(ngModel)]="selected">
+      <ion-segment-button class="sport-button" value="badminton" (click)="onSelected.emit('badminton')">
           <ion-img class="quicklink-icon" src="assets/icon/badminton.png"></ion-img>
           <ion-label class="bold quicklink-text">Badminton</ion-label>
       </ion-segment-button>

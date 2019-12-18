@@ -3,7 +3,7 @@ import { AuthService } from 'src/app/services/auth/auth.service';
 
 import * as md5 from 'md5';
 
-import { ToastController } from '@ionic/angular';
+import { ToastController, NavController } from '@ionic/angular';
 import { Router } from '@angular/router';
 
 @Component({
@@ -19,12 +19,12 @@ export class LoginPage implements OnInit {
   constructor(
     private authSvc: AuthService,
     private toastController: ToastController,
-    private router: Router
+    private navCtrl: NavController,
   ) { }
 
   ngOnInit() {
     this.isProcessing=false;
-    this.email="tes@tes.com"
+    this.email="tes@gmail.com"
     this.password="tes"
   }
 
@@ -70,7 +70,7 @@ export class LoginPage implements OnInit {
         })
         if(found){
           this.authSvc.setLoggedIn(selectedID);
-          location.href='/home'
+          this.navCtrl.navigateRoot(['/','home'])
           return;
         }else{
           var err = await this.toastController.create(

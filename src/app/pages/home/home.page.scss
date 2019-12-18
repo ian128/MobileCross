@@ -93,14 +93,16 @@ ion-toolbar{
 
 .field-card{
     margin-right: 1em;
-    width: 100%;
+    width: 80%;
     border: 1px solid #EAEAEA;
     border-radius: 12pt;
     display: inline-block;
+    overflow: hidden;
 
     h3{
         font-weight: bolder;
         line-height: 0;
+        font-size: 16px;
     }
     
     .field-picture{
@@ -109,20 +111,26 @@ ion-toolbar{
     }
 
     .field-content{
+        min-height: 10em;
         padding-left: 1rem;
-        padding-top: 1rem;
+        padding-top: 0.5rem;
+        padding-right: 1rem;
+        padding-bottom: 0.5rem;
+        font-size: 12px;
     }
     
 }
 
 .news-card{
+    display: inline-block;
     margin-right: 1em;
     width: 100%;
     border: 1px solid #EAEAEA;
     border-radius: 12pt;
-    display: inline-block;
     overflow: hidden;
     color:white;
+    margin-bottom: 1em;
+    
     p{
         padding-top: 0.7em;
     }
@@ -133,20 +141,28 @@ ion-toolbar{
     }
 
     .news-content{
-        display: block;
         margin-top: -6em;
+        padding-top:-6em;
         padding-left:16px;
         padding-right: 16px;
         height: 4em;
         background: rgba(0, 0, 0, 0.44);
-    }
 
-    .more-button{
-        top:25%;
-        right:5%;
-        padding: 4pt;
-        position: absolute;
-        background: #3D89FB;
-        border-radius: 12pt;
+        .news-content-text{
+            top: 1vh;
+            max-width: 60vw;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+
+        .more-button{
+            top: 1vh;
+            right: 5vw;
+            padding: 8pt;
+            position: absolute;
+            background: #3D89FB;
+            border-radius: 12pt;
+            font-size: 8pt;
+        }
     }
 }
