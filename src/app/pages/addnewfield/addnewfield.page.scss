@@ -14,18 +14,27 @@ ion-title{
     font-weight: bolder;
 }
 
-ion-input{
+ion-input, ion-datetime {
     --padding-start	: 4px;
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
     border-radius: 8px;
 }
-    
-.photo{
-    height: 128px;
-    width: 100%;
-    background : #888888;
+
+
+.desc{
+    --padding-start	: 4px;
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
     border-radius: 8px;
+}
+
+.center{
+    margin: auto;
+}
+
+.repeat-dialog{
+    border: 1px solid #3D89FB;
+    box-sizing: border-box;
+    border-radius: 12px;
 }
