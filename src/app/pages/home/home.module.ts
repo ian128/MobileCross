@@ -9,6 +9,7 @@ import { HomePage } from './home.page';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { AgmCoreModule } from '@agm/core';
 import { AgmDirectionModule } from 'agm-direction';
+import { environment } from 'src/environments/environment';
 
 declare var google: any
 
@@ -27,7 +28,7 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     SharedModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAmlnIAu52yOhMzIPFGxSsDaHB9TXmqhQk',
+      apiKey: environment.googleAPI,
       libraries:[
         'geometry'
       ]
