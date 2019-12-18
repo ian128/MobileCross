@@ -10,6 +10,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {AgmCoreModule} from '@agm/core';
 import { AgmDirectionModule } from 'agm-direction';   // agm-direction
 import { SharedModule } from 'src/app/shared/shared.module';
+import { environment } from 'src/environments/environment';
 
 const routes: Routes = [
   {
@@ -27,7 +28,7 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     SharedModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAmlnIAu52yOhMzIPFGxSsDaHB9TXmqhQk',
+      apiKey: environment.googleAPI,
       libraries:[
         'geometry'
       ]

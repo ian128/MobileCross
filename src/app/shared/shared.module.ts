@@ -14,6 +14,7 @@ import { SelectFieldComponent } from '../pages/addnewevent/select-field/select-f
 import { CommonModule } from '@angular/common';
 import { AgmCoreModule } from '@agm/core';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   imports: [
@@ -24,7 +25,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
     FormsModule,
     CommonModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAmlnIAu52yOhMzIPFGxSsDaHB9TXmqhQk',
+      apiKey: environment.googleAPI,
       libraries:[
         'geometry'
       ]
