@@ -5,7 +5,9 @@ import { sportDetails, sports } from 'src/app/services/base';
 import { AuthService } from 'src/app/services/auth/auth.service';
 
 import { Plugins, CameraResultType, CameraSource } from '@capacitor/core';
-import { ToastController } from '@ionic/angular';
+import { ToastController, AlertController, LoadingController, NavController } from '@ionic/angular';
+import { AddNewFieldService } from 'src/app/services/addNewField/add-new-field.service';
+import { AngularFireDatabase } from '@angular/fire/database';
 
 @Component({
   selector: 'app-addnewfield',
@@ -16,7 +18,11 @@ export class AddnewfieldPage implements OnInit {
   direction = faDirections;
   constructor(
     private authSvc: AuthService,
-    private toastCtrl: ToastController
+    private toastCtrl: ToastController,
+    private addNewFieldSvc: AddNewFieldService,
+    private loadingCtrl: LoadingController,
+    private db: AngularFireDatabase,
+    private navCtrl: NavController
   ) { }
 
   photo: any
@@ -107,9 +113,31 @@ export class AddnewfieldPage implements OnInit {
     this.photo=this.placeholder
   }
 
-  submit(){
+  async submit(){
     if(this.formData.valid && this.photo != this.placeholder){
       console.log(this.formData.value)
+
+      var wait = await this.loadingCtrl.create(
+        {
+          backdropDismiss: false,
+          message: "Creating your new field..."
+        }
+      )
+      
+      wait.present()
+      this.addNewFieldSvc.addNewField(this.formData.value).subscribe(
+        async (res)=>{
+          wait.dismiss()
+          await this.db.database.ref('/raga/court/c'+res.id).set(this.photo)
+          this.createToast("Your field has been added succesfully!", "success")
+          this.navCtrl.back()
+        },
+        (err)=>{
+          wait.dismiss()
+          this.createToast(err.error,"Danger");
+        }
+      )
+
     }else{
       if(this.formData.get('email').hasError('required') || this.formData.get('email').hasError('email')) this.createToast("Please check your email formats!","danger")
       else if(this.photo == this.placeholder) this.createToast("Please upload a picture of your court!","danger")

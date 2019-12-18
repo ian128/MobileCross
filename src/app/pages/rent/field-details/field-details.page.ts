@@ -4,6 +4,7 @@ import { Court } from 'src/app/models/court';
 import { sports } from 'src/app/services/base';
 import { Plugins } from '@capacitor/core';
 import { MapsAPILoader } from '@agm/core';
+import { AngularFireDatabase } from '@angular/fire/database';
 
 declare var google: any
 
@@ -27,19 +28,23 @@ export class FieldDetailsPage implements OnInit {
   distance: any
 
   private geoCoder;
+  photo
 
   constructor(
     private router : Router,
     private mapsAPILoader: MapsAPILoader,
     private ngZone: NgZone,
+    private db: AngularFireDatabase
   ) { }
 
   ngOnInit() {
+    this.photo = 'assets/images/placeholder/generic.jpg'
     this.court = this.router.getCurrentNavigation().extras.state.court
     this.selected=sports[this.court.sport_id.toString()]
     this.getRoute()
-    if(this.court.photo == null) return
-    if(!this.court.photo.includes('http')) this.court.photo = null
+    this.db.database.ref('/raga/court/c'+this.court.id).once('value').then(
+      (res)=> this.photo= res.val() == null ? 'assets/images/placeholder/generic.jpg' : res.val()
+    )
   }
 
   async getRoute(event?) {
