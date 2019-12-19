@@ -24,8 +24,6 @@ export class LoginPage implements OnInit {
 
   ngOnInit() {
     this.isProcessing=false;
-    this.email="tes@gmail.com"
-    this.password="tes"
   }
 
   async auth(){

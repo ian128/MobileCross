@@ -13,27 +13,27 @@ import { Router } from '@angular/router';
 export class RegisterPage implements OnInit {
   isProcessing: Boolean
   mainRegister: FormGroup=new FormGroup({
-    first_name: new FormControl("Kucing",{
+    first_name: new FormControl(null,{
       updateOn: 'change',
       validators: [Validators.required]
     }),
-    last_name:new FormControl("Oren",{
+    last_name:new FormControl(null,{
       updateOn: 'change',
       validators: [Validators.required]
     }),
-    phone_number:new FormControl("0928932",{
+    phone_number:new FormControl(null,{
       updateOn: 'change',
       validators: [Validators.required]
     }),
-    email:new FormControl("tes@tes.com",{
+    email:new FormControl(null,{
       updateOn: 'change',
       validators: [Validators.required]
     }),
-    password: new FormControl("1234",{
+    password: new FormControl(null,{
       updateOn: 'change',
       validators: [Validators.required]
     }),
-    confirmPass: new FormControl("1234",{
+    confirmPass: new FormControl(null,{
       updateOn: 'change',
       validators: [Validators.required]
     }),
