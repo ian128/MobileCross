@@ -6,7 +6,760 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2371136b-062f-44b7-a8fe-b1b42c535438" name="Default Changelist" comment="" />
+    <list default="true" id="2371136b-062f-44b7-a8fe-b1b42c535438" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/android.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/2g4XvYq3qtjNfkLG6F1uEuPS9rw=" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/2g4XvYq3qtjNfkLG6F1uEuPS9rw=" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/ZqqLl4UhRBNTLjivllJf+uWVdmI=" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/ZqqLl4UhRBNTLjivllJf+uWVdmI=" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/processDebugManifest/instant-app-manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/processDebugManifest/instant-app-manifest/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/capacitor.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/capacitor.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/1-es2015.a3952206e37fdedbd545.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/1-es5.72b66c1338d010820cc2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/10-es2015.43b6ee2551e8ae01e417.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/10-es5.baa0cb051d327a640b8d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/100-es2015.179bb98c34a0e2cb9e61.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/100-es5.11b8efd666ff48f181d0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/101-es2015.8a2f18252e6cff21f8e7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/101-es5.cb6c2e793b7f03be908f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/102-es2015.381d4b887c5b2c5abb3c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/102-es5.dd6a343060dbd2ad574d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/103-es2015.a0280022e35100121cec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/103-es5.30a05c98122f1c94e50f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/104-es2015.57fc48619c992f13748c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/104-es5.a9d5cfffd493b8276721.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/105-es2015.35350a35b765eeab640e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/105-es5.5a63e4682dad4d783e4a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/106-es2015.00ea954eca744421b03b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/106-es5.0627a0eafe0fbb4a5b2c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/107-es2015.5c9e0e0a61621404ad58.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/107-es5.e918cdfc88869061966f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/108-es2015.a12bde0f8d37b9dee671.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/108-es5.16e2ff27a6e5ead3db7f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/109-es2015.d227396ed3f7799450ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/109-es5.787452f3c5c0fc2ad331.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/11-es2015.f9591877b4aaa9ff7e89.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/11-es5.abbfcc1a3d31f8ad5202.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/110-es2015.871c1e30402216749257.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/110-es5.e4a56e1649391cbef560.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/111-es2015.c7703eea9bbf08970820.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/111-es5.0e4dbe4e30544d29067e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/112-es2015.adeadb9021f785f66eb2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/112-es5.ada49fae4d97b272fa1a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/113-es2015.a0cb37ed25fe3cd562d4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/113-es5.89ac6e34f41b809c993f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/114-es2015.d9e0eefcbdece19193e8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/114-es5.ed361188f23a5ee01022.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/115-es2015.23d36f405d246006ee2f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/115-es5.ff89d5ec70d969729d26.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/116-es2015.0cb56f34c6025e033de4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/12-es2015.2952743ccd9a459e7454.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/12-es5.a4bf5da8f1d617ff7dbf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/15-es5.a4a73f5c8fed6975b929.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/16-es2015.6dca8b982a55b31f0e1b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/16-es5.f020eb0ab8552819ec58.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/17-es2015.0000603162cc94232485.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/17-es5.60e1528d68485bd5c7d6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/18-es2015.164c7b0e316a16389a7a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/18-es5.3fdc047cc7246b6874be.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/19-es2015.60e992eae72e61d000a6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/19-es5.692d95f1b4f6abec15a5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/2-es5.3c2bd9f7b5a131f7398c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/20-es2015.5ba4ad65102fb9356163.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/20-es5.64ddedd12377a09f2a19.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/21-es2015.eb38ce12bca13c5ec2f9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/21-es5.59118e9012df6c5eb2f5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/22-es2015.6e6c21c8991b615f357b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/22-es5.4e8d02f68dee6e340f19.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/23-es2015.eefd9f577a12ca5ea11f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/23-es5.ecb4d8f5b0f522cb31e0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/24-es2015.176cdf5dc748f8e161f2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/24-es5.1265fa5cb6fa3762f007.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/25-es2015.66cb1aa645ca39d5964c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/25-es5.644ae7796478b70b4ff8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/26-es2015.8c8da8f83e6c254affe3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/26-es5.1da34c4561f6bc7bdb5b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/27-es2015.7140d0ad12653ca219a2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/27-es5.126a758dc73fc6ce14e1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/28-es2015.0427d182e3323ff32790.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/28-es5.94febc97b35649c7e15f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/29-es2015.fbf496f63cb9e1ce42e4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/29-es5.3e0f5fbab8a9631ca8f7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/3-es2015.e83822dc78876d2c3d7e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/30-es2015.80c0e52e28bc40ca70d3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/30-es5.cc1859f7dea44c013fdd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/31-es2015.52459f1a9377edb8cab2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/31-es5.14eba46a2982e31759f3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/32-es2015.e6d94896ea19e044ee79.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/32-es5.13d9610d0341fd19dc2f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/33-es2015.c98d798066346f0c4ab5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/33-es5.b7947bcd4cdb7bdc6297.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/34-es2015.d6c0bce68c6684d879ec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/34-es5.fc456c68f144905f9ce7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/35-es2015.3bae5079a5dd88308c61.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/35-es5.d2da994af59d4373a091.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/36-es2015.87d0bd694e35ccf3b955.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/36-es5.64b83e469d6825c7f17b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/37-es2015.051a8aafca00b51eab2e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/37-es5.f49f000db9ec61b37a2c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/38-es2015.d569dd7ef6ca59ab8f58.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/38-es5.5c8b6d4822a77b150629.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/39-es2015.31f78d3d5f9ae3037bb6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/39-es5.ecd7216885c8bc0c784f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/3rdpartylicenses.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/4-es2015.5132ccb3ab1ca7d4c512.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/4-es5.4320f4bfb01b95c0aee0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/40-es2015.3ac1048a2c35f6646e47.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/40-es5.fc032a6f4a28de6fb9cb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/41-es2015.abdb12299eaad7ec1bb0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/41-es5.bcedf2d826e80d271418.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/42-es2015.caa9834c9b68997379a0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/42-es5.07645e713f8caba263a2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/43-es2015.c9022bd4f3b41d79ded5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/43-es5.7b5b1f57298af96af982.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/44-es2015.bff35dc0b61f7aaa4dfa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/44-es5.d0fb7f89bf442f9916fb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/45-es2015.584ef553b3d9d76d753b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/45-es5.28181e20baccd9c67629.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/46-es2015.8f601c15459b68d01482.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/46-es5.d6ba9776e99e11f2bfd7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/47-es2015.54a8c2aeed5fc97beb89.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/47-es5.d4fea07362b71a7cb317.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/48-es2015.dde60ee42d9ecec4c435.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/48-es5.52764e413807ac94c7b3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/49-es2015.3e070a3f003a3d43710c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/49-es5.be11ba8925d561b94c76.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/5-es2015.4ba70b5c31d199511896.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/5-es5.61e1b18a9b1970c6c265.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/50-es2015.5210aba4915dfd1ed248.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/50-es5.fa57bd61b8043aea26d8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/51-es2015.7508cdf4d5c9899c39d1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/51-es5.b1a2370a051dffa7f839.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/52-es2015.bc34f49640e427d512ee.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/52-es5.958ae4aee29a11b6c9da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/53-es2015.665b6288ca8d5c6fb00e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/53-es5.b827799840fcefaff769.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/54-es2015.9904f3b2d284f8d20f61.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/54-es5.a49990a035aa10407749.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/55-es2015.a2a6e904dbdb8cb25dd7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/55-es5.8019522fc66d9e579713.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/56-es2015.3ce7f642344db518c1ff.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/56-es5.74e67f77e63a4275398e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/57-es2015.5931c168467fb9061f4d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/57-es5.d0c44c903e0e264989bb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/58-es2015.cbbe259d9eff340f3700.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/58-es5.79d9384df6d612099ce7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/59-es2015.2acd20787ad82bfa15d6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/59-es5.7343ca9fad845f7c9336.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/6-es2015.fe1c33984283d60aa5b7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/6-es5.3af5dbfd1ca95fc08ab8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/60-es2015.2f790bc6186c9485b6e2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/60-es5.57413a0b830af9b7f6ee.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/61-es2015.5cb4600f8d88de626864.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/61-es5.0630756d4c1f810974a5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/62-es2015.e8081581ec94c9ad7b4e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/62-es5.0fc15c534971f601e006.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/63-es2015.b9a3c7dfdc587efcd88d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/63-es5.e45dbe4359ebda96bc50.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/64-es2015.55b750ae958dae748a68.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/64-es5.5b073af1741c2fc14f73.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/65-es2015.28b29172a7082ea8a1c8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/65-es5.943b4da6cce633676065.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/66-es2015.93d0dcf4c66e57f63fae.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/66-es5.912bf5ef7cd10ab91811.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/67-es2015.6a30d1ab4527be79ce6a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/67-es5.f93ffd50024ecdb8967b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/68-es2015.5b36e426f587a74306a0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/68-es5.707f151075c57a30721f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/69-es2015.c2f995989067ca0f708a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/69-es5.1ac43bcfa64ed4ca58e8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/7-es2015.77fa25bbaa4c4152c8e1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/7-es5.b26b29953356db551ac7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/70-es2015.49f0086213a87bf0f029.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/70-es5.56252f3623b38cb937a9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/71-es2015.13d96a6fcee6c12bfc53.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/71-es5.0ba8354b920e2e72fc05.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/72-es2015.0e4443be3d21bacc506c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/72-es5.0e2535663e6866af20bd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/73-es2015.c38a1e930cd3be606da8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/73-es5.203f63464a7f1ac11639.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/74-es2015.d7aeea52db52c1764d27.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/74-es5.94638b6e88e65a6c12ae.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/75-es2015.0875de3916e8db2bb67c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/75-es5.e7ee39cd3d57c525d377.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/76-es2015.3db12aa98649fc4ee7db.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/76-es5.33624d13c823569d2ce5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/77-es2015.65d4199ee6dc18ba46f8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/77-es5.8cf336597c24d06b14ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/78-es2015.010e9826cb030feb250c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/78-es5.972679f3a72c7644f38f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/79-es2015.f38d91de6ae64a3b8506.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/79-es5.9d84271f215cd4fe4944.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/8-es2015.a2c1e72bbd49514c1bbf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/8-es5.1735a7265e10126c8a30.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/80-es2015.eaabda17693fab9ce580.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/80-es5.35c0ee4e5351f4d1c602.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/81-es2015.7ccf8db8a56c9a79713f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/81-es5.7efa69c0a41f9acb8517.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/82-es2015.48080f34f7071abca9ef.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/82-es5.b64a818723b1d5d41f65.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/83-es2015.0043dab346f4673625bf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/83-es5.8968c438114107036167.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/84-es2015.a7dcf216c8a7ad2a1554.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/84-es5.b412f9038439eac4a1e6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/85-es2015.8e25831749b0c9ce6733.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/85-es5.c5e2f6183612a8ab6865.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/86-es2015.4098c7f4c4de1cfd5d35.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/86-es5.6a24caeec49107d036ce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/87-es2015.9a9e5157819aec612c75.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/87-es5.a5b5aafa08a9e9d1c7c7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/88-es2015.56fc7b7592cef7034dec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/88-es5.33e2302b49caccf9876b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/89-es2015.f90b7d26bb7fc0e122bc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/89-es5.2f364ab5c74b2dbc8783.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/9-es2015.5443cbc7423b3e93c026.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/9-es5.bf98adaa3f25ee5dfdff.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/90-es2015.bd3c9446419d95eaadfa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/90-es5.83c2306e3729d7c7cc9d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/91-es2015.b7f671ba5bed5b2b1066.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/91-es5.9601ba2315606c0cdb4b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/92-es2015.c265d0b1073516792661.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/92-es5.7338a5970c3565782b1e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/93-es2015.358709e702134e20355b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/93-es5.b2d006757c6578ff78a2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/94-es2015.67c15b599affeaadcdac.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/94-es5.ca5079ec337e605ae3d0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/95-es2015.9def40db19ddb229be56.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/95-es5.1a31a6dcdf715276112b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/96-es2015.a46928b2af7b7b6e5295.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/96-es5.33a039b6809c3a9bedab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/97-es2015.3b06056c8b051694ce79.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/97-es5.bcf02d960c9df4443690.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/98-es2015.cc6e5f5693e167f663ed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/98-es5.0f36b486eb967bb990cc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/99-es2015.3437fa7d08f646c42a39.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/99-es5.8a258d5d237a97555e98.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/common-es2015.3dbace5681709073836d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/common-es5.58f7a084a0b344940160.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/main-es2015.3cc02d6e5761a12e0415.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/main-es5.1916f4e345d990faf33a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/polyfills-es2015.a09cfa39e740a8fd21b0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/polyfills-es5.ae3d12c36abf48a64ecb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/runtime-es2015.9a477dc7f26f8dddcdbb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/runtime-es5.3ce161cf87c29db81c50.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/public/styles.18076e1b899a1aea4aa7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-land-hdpi_splash.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-land-hdpi_splash.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-land-mdpi_splash.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-land-mdpi_splash.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-land-xhdpi_splash.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-land-xhdpi_splash.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-land-xxhdpi_splash.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-land-xxhdpi_splash.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-land-xxxhdpi_splash.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-land-xxxhdpi_splash.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-port-hdpi_splash.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-port-hdpi_splash.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-port-mdpi_splash.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-port-mdpi_splash.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-port-xhdpi_splash.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-port-xhdpi_splash.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-port-xxhdpi_splash.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-port-xxhdpi_splash.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-port-xxxhdpi_splash.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-port-xxxhdpi_splash.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable_splash.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable_splash.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_foreground.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_foreground.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/1-es2015.a3952206e37fdedbd545.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/1-es5.72b66c1338d010820cc2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/10-es2015.43b6ee2551e8ae01e417.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/10-es5.baa0cb051d327a640b8d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/100-es2015.179bb98c34a0e2cb9e61.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/100-es5.11b8efd666ff48f181d0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/101-es2015.8a2f18252e6cff21f8e7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/101-es5.cb6c2e793b7f03be908f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/102-es2015.381d4b887c5b2c5abb3c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/102-es5.dd6a343060dbd2ad574d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/103-es2015.a0280022e35100121cec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/103-es5.30a05c98122f1c94e50f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/104-es2015.57fc48619c992f13748c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/104-es5.a9d5cfffd493b8276721.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/105-es2015.35350a35b765eeab640e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/105-es5.5a63e4682dad4d783e4a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/106-es2015.00ea954eca744421b03b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/106-es5.0627a0eafe0fbb4a5b2c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/107-es2015.5c9e0e0a61621404ad58.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/107-es5.e918cdfc88869061966f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/108-es2015.a12bde0f8d37b9dee671.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/108-es5.16e2ff27a6e5ead3db7f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/109-es2015.d227396ed3f7799450ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/109-es5.787452f3c5c0fc2ad331.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/11-es2015.f9591877b4aaa9ff7e89.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/11-es5.abbfcc1a3d31f8ad5202.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/110-es2015.871c1e30402216749257.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/110-es5.e4a56e1649391cbef560.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/111-es2015.c7703eea9bbf08970820.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/111-es5.0e4dbe4e30544d29067e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/112-es2015.adeadb9021f785f66eb2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/112-es5.ada49fae4d97b272fa1a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/113-es2015.a0cb37ed25fe3cd562d4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/113-es5.89ac6e34f41b809c993f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/114-es2015.d9e0eefcbdece19193e8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/114-es5.ed361188f23a5ee01022.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/115-es2015.23d36f405d246006ee2f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/115-es5.ff89d5ec70d969729d26.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/116-es2015.0cb56f34c6025e033de4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/12-es2015.2952743ccd9a459e7454.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/12-es5.a4bf5da8f1d617ff7dbf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/15-es5.a4a73f5c8fed6975b929.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/16-es2015.6dca8b982a55b31f0e1b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/16-es5.f020eb0ab8552819ec58.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/17-es2015.0000603162cc94232485.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/17-es5.60e1528d68485bd5c7d6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/18-es2015.164c7b0e316a16389a7a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/18-es5.3fdc047cc7246b6874be.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/19-es2015.60e992eae72e61d000a6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/19-es5.692d95f1b4f6abec15a5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/2-es5.3c2bd9f7b5a131f7398c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/20-es2015.5ba4ad65102fb9356163.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/20-es5.64ddedd12377a09f2a19.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/21-es2015.eb38ce12bca13c5ec2f9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/21-es5.59118e9012df6c5eb2f5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/22-es2015.6e6c21c8991b615f357b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/22-es5.4e8d02f68dee6e340f19.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/23-es2015.eefd9f577a12ca5ea11f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/23-es5.ecb4d8f5b0f522cb31e0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/24-es2015.176cdf5dc748f8e161f2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/24-es5.1265fa5cb6fa3762f007.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/25-es2015.66cb1aa645ca39d5964c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/25-es5.644ae7796478b70b4ff8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/26-es2015.8c8da8f83e6c254affe3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/26-es5.1da34c4561f6bc7bdb5b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/27-es2015.7140d0ad12653ca219a2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/27-es5.126a758dc73fc6ce14e1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/28-es2015.0427d182e3323ff32790.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/28-es5.94febc97b35649c7e15f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/29-es2015.fbf496f63cb9e1ce42e4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/29-es5.3e0f5fbab8a9631ca8f7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/3-es2015.e83822dc78876d2c3d7e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/30-es2015.80c0e52e28bc40ca70d3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/30-es5.cc1859f7dea44c013fdd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/31-es2015.52459f1a9377edb8cab2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/31-es5.14eba46a2982e31759f3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/32-es2015.e6d94896ea19e044ee79.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/32-es5.13d9610d0341fd19dc2f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/33-es2015.c98d798066346f0c4ab5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/33-es5.b7947bcd4cdb7bdc6297.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/34-es2015.d6c0bce68c6684d879ec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/34-es5.fc456c68f144905f9ce7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/35-es2015.3bae5079a5dd88308c61.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/35-es5.d2da994af59d4373a091.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/36-es2015.87d0bd694e35ccf3b955.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/36-es5.64b83e469d6825c7f17b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/37-es2015.051a8aafca00b51eab2e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/37-es5.f49f000db9ec61b37a2c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/38-es2015.d569dd7ef6ca59ab8f58.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/38-es5.5c8b6d4822a77b150629.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/39-es2015.31f78d3d5f9ae3037bb6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/39-es5.ecd7216885c8bc0c784f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/3rdpartylicenses.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/4-es2015.5132ccb3ab1ca7d4c512.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/4-es5.4320f4bfb01b95c0aee0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/40-es2015.3ac1048a2c35f6646e47.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/40-es5.fc032a6f4a28de6fb9cb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/41-es2015.abdb12299eaad7ec1bb0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/41-es5.bcedf2d826e80d271418.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/42-es2015.caa9834c9b68997379a0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/42-es5.07645e713f8caba263a2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/43-es2015.c9022bd4f3b41d79ded5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/43-es5.7b5b1f57298af96af982.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/44-es2015.bff35dc0b61f7aaa4dfa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/44-es5.d0fb7f89bf442f9916fb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/45-es2015.584ef553b3d9d76d753b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/45-es5.28181e20baccd9c67629.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/46-es2015.8f601c15459b68d01482.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/46-es5.d6ba9776e99e11f2bfd7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/47-es2015.54a8c2aeed5fc97beb89.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/47-es5.d4fea07362b71a7cb317.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/48-es2015.dde60ee42d9ecec4c435.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/48-es5.52764e413807ac94c7b3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/49-es2015.3e070a3f003a3d43710c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/49-es5.be11ba8925d561b94c76.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/5-es2015.4ba70b5c31d199511896.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/5-es5.61e1b18a9b1970c6c265.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/50-es2015.5210aba4915dfd1ed248.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/50-es5.fa57bd61b8043aea26d8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/51-es2015.7508cdf4d5c9899c39d1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/51-es5.b1a2370a051dffa7f839.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/52-es2015.bc34f49640e427d512ee.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/52-es5.958ae4aee29a11b6c9da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/53-es2015.665b6288ca8d5c6fb00e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/53-es5.b827799840fcefaff769.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/54-es2015.9904f3b2d284f8d20f61.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/54-es5.a49990a035aa10407749.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/55-es2015.a2a6e904dbdb8cb25dd7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/55-es5.8019522fc66d9e579713.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/56-es2015.3ce7f642344db518c1ff.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/56-es5.74e67f77e63a4275398e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/57-es2015.5931c168467fb9061f4d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/57-es5.d0c44c903e0e264989bb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/58-es2015.cbbe259d9eff340f3700.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/58-es5.79d9384df6d612099ce7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/59-es2015.2acd20787ad82bfa15d6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/59-es5.7343ca9fad845f7c9336.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/6-es2015.fe1c33984283d60aa5b7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/6-es5.3af5dbfd1ca95fc08ab8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/60-es2015.2f790bc6186c9485b6e2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/60-es5.57413a0b830af9b7f6ee.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/61-es2015.5cb4600f8d88de626864.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/61-es5.0630756d4c1f810974a5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/62-es2015.e8081581ec94c9ad7b4e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/62-es5.0fc15c534971f601e006.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/63-es2015.b9a3c7dfdc587efcd88d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/63-es5.e45dbe4359ebda96bc50.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/64-es2015.55b750ae958dae748a68.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/64-es5.5b073af1741c2fc14f73.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/65-es2015.28b29172a7082ea8a1c8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/65-es5.943b4da6cce633676065.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/66-es2015.93d0dcf4c66e57f63fae.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/66-es5.912bf5ef7cd10ab91811.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/67-es2015.6a30d1ab4527be79ce6a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/67-es5.f93ffd50024ecdb8967b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/68-es2015.5b36e426f587a74306a0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/68-es5.707f151075c57a30721f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/69-es2015.c2f995989067ca0f708a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/69-es5.1ac43bcfa64ed4ca58e8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/7-es2015.77fa25bbaa4c4152c8e1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/7-es5.b26b29953356db551ac7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/70-es2015.49f0086213a87bf0f029.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/70-es5.56252f3623b38cb937a9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/71-es2015.13d96a6fcee6c12bfc53.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/71-es5.0ba8354b920e2e72fc05.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/72-es2015.0e4443be3d21bacc506c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/72-es5.0e2535663e6866af20bd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/73-es2015.c38a1e930cd3be606da8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/73-es5.203f63464a7f1ac11639.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/74-es2015.d7aeea52db52c1764d27.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/74-es5.94638b6e88e65a6c12ae.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/75-es2015.0875de3916e8db2bb67c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/75-es5.e7ee39cd3d57c525d377.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/76-es2015.3db12aa98649fc4ee7db.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/76-es5.33624d13c823569d2ce5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/77-es2015.65d4199ee6dc18ba46f8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/77-es5.8cf336597c24d06b14ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/78-es2015.010e9826cb030feb250c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/78-es5.972679f3a72c7644f38f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/79-es2015.f38d91de6ae64a3b8506.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/79-es5.9d84271f215cd4fe4944.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/8-es2015.a2c1e72bbd49514c1bbf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/8-es5.1735a7265e10126c8a30.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/80-es2015.eaabda17693fab9ce580.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/80-es5.35c0ee4e5351f4d1c602.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/81-es2015.7ccf8db8a56c9a79713f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/81-es5.7efa69c0a41f9acb8517.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/82-es2015.48080f34f7071abca9ef.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/82-es5.b64a818723b1d5d41f65.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/83-es2015.0043dab346f4673625bf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/83-es5.8968c438114107036167.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/84-es2015.a7dcf216c8a7ad2a1554.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/84-es5.b412f9038439eac4a1e6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/85-es2015.8e25831749b0c9ce6733.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/85-es5.c5e2f6183612a8ab6865.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/86-es2015.4098c7f4c4de1cfd5d35.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/86-es5.6a24caeec49107d036ce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/87-es2015.9a9e5157819aec612c75.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/87-es5.a5b5aafa08a9e9d1c7c7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/88-es2015.56fc7b7592cef7034dec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/88-es5.33e2302b49caccf9876b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/89-es2015.f90b7d26bb7fc0e122bc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/89-es5.2f364ab5c74b2dbc8783.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/9-es2015.5443cbc7423b3e93c026.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/9-es5.bf98adaa3f25ee5dfdff.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/90-es2015.bd3c9446419d95eaadfa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/90-es5.83c2306e3729d7c7cc9d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/91-es2015.b7f671ba5bed5b2b1066.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/91-es5.9601ba2315606c0cdb4b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/92-es2015.c265d0b1073516792661.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/92-es5.7338a5970c3565782b1e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/93-es2015.358709e702134e20355b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/93-es5.b2d006757c6578ff78a2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/94-es2015.67c15b599affeaadcdac.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/94-es5.ca5079ec337e605ae3d0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/95-es2015.9def40db19ddb229be56.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/95-es5.1a31a6dcdf715276112b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/96-es2015.a46928b2af7b7b6e5295.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/96-es5.33a039b6809c3a9bedab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/97-es2015.3b06056c8b051694ce79.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/97-es5.bcf02d960c9df4443690.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/98-es2015.cc6e5f5693e167f663ed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/98-es5.0f36b486eb967bb990cc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/99-es2015.3437fa7d08f646c42a39.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/99-es5.8a258d5d237a97555e98.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/common-es2015.3dbace5681709073836d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/common-es5.58f7a084a0b344940160.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/main-es2015.3cc02d6e5761a12e0415.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/main-es5.1916f4e345d990faf33a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/polyfills-es2015.a09cfa39e740a8fd21b0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/polyfills-es5.ae3d12c36abf48a64ecb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/runtime-es2015.9a477dc7f26f8dddcdbb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/runtime-es5.3ce161cf87c29db81c50.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/styles.18076e1b899a1aea4aa7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capacitor-cordova-android-plugins/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/capacitor-cordova-android-plugins/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/capacitor-cordova-android-plugins/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/capacitor-cordova-android-plugins/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/1-es2015.a3952206e37fdedbd545.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/1-es5.72b66c1338d010820cc2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/10-es2015.43b6ee2551e8ae01e417.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/10-es5.baa0cb051d327a640b8d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/100-es2015.179bb98c34a0e2cb9e61.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/100-es5.11b8efd666ff48f181d0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/101-es2015.8a2f18252e6cff21f8e7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/101-es5.cb6c2e793b7f03be908f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/102-es2015.381d4b887c5b2c5abb3c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/102-es5.dd6a343060dbd2ad574d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/103-es2015.a0280022e35100121cec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/103-es5.30a05c98122f1c94e50f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/104-es2015.57fc48619c992f13748c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/104-es5.a9d5cfffd493b8276721.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/105-es2015.35350a35b765eeab640e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/105-es5.5a63e4682dad4d783e4a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/106-es2015.00ea954eca744421b03b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/106-es5.0627a0eafe0fbb4a5b2c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/107-es2015.5c9e0e0a61621404ad58.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/107-es5.e918cdfc88869061966f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/108-es2015.a12bde0f8d37b9dee671.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/108-es5.16e2ff27a6e5ead3db7f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/109-es2015.d227396ed3f7799450ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/109-es5.787452f3c5c0fc2ad331.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/11-es2015.f9591877b4aaa9ff7e89.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/11-es5.abbfcc1a3d31f8ad5202.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/110-es2015.871c1e30402216749257.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/110-es5.e4a56e1649391cbef560.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/111-es2015.c7703eea9bbf08970820.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/111-es5.0e4dbe4e30544d29067e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/112-es2015.adeadb9021f785f66eb2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/112-es5.ada49fae4d97b272fa1a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/113-es2015.a0cb37ed25fe3cd562d4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/113-es5.89ac6e34f41b809c993f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/114-es2015.d9e0eefcbdece19193e8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/114-es5.ed361188f23a5ee01022.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/115-es2015.23d36f405d246006ee2f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/115-es5.ff89d5ec70d969729d26.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/116-es2015.0cb56f34c6025e033de4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/12-es2015.2952743ccd9a459e7454.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/12-es5.a4bf5da8f1d617ff7dbf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/15-es5.a4a73f5c8fed6975b929.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/16-es2015.6dca8b982a55b31f0e1b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/16-es5.f020eb0ab8552819ec58.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/17-es2015.0000603162cc94232485.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/17-es5.60e1528d68485bd5c7d6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/18-es2015.164c7b0e316a16389a7a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/18-es5.3fdc047cc7246b6874be.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/19-es2015.60e992eae72e61d000a6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/19-es5.692d95f1b4f6abec15a5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/2-es5.3c2bd9f7b5a131f7398c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/20-es2015.5ba4ad65102fb9356163.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/20-es5.64ddedd12377a09f2a19.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/21-es2015.eb38ce12bca13c5ec2f9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/21-es5.59118e9012df6c5eb2f5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/22-es2015.6e6c21c8991b615f357b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/22-es5.4e8d02f68dee6e340f19.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/23-es2015.eefd9f577a12ca5ea11f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/23-es5.ecb4d8f5b0f522cb31e0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/24-es2015.176cdf5dc748f8e161f2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/24-es5.1265fa5cb6fa3762f007.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/25-es2015.66cb1aa645ca39d5964c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/25-es5.644ae7796478b70b4ff8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/26-es2015.8c8da8f83e6c254affe3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/26-es5.1da34c4561f6bc7bdb5b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/27-es2015.7140d0ad12653ca219a2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/27-es5.126a758dc73fc6ce14e1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/28-es2015.0427d182e3323ff32790.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/28-es5.94febc97b35649c7e15f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/29-es2015.fbf496f63cb9e1ce42e4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/29-es5.3e0f5fbab8a9631ca8f7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/3-es2015.e83822dc78876d2c3d7e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/30-es2015.80c0e52e28bc40ca70d3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/30-es5.cc1859f7dea44c013fdd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/31-es2015.52459f1a9377edb8cab2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/31-es5.14eba46a2982e31759f3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/32-es2015.e6d94896ea19e044ee79.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/32-es5.13d9610d0341fd19dc2f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/33-es2015.c98d798066346f0c4ab5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/33-es5.b7947bcd4cdb7bdc6297.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/34-es2015.d6c0bce68c6684d879ec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/34-es5.fc456c68f144905f9ce7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/35-es2015.3bae5079a5dd88308c61.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/35-es5.d2da994af59d4373a091.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/36-es2015.87d0bd694e35ccf3b955.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/36-es5.64b83e469d6825c7f17b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/37-es2015.051a8aafca00b51eab2e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/37-es5.f49f000db9ec61b37a2c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/38-es2015.d569dd7ef6ca59ab8f58.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/38-es5.5c8b6d4822a77b150629.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/39-es2015.31f78d3d5f9ae3037bb6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/39-es5.ecd7216885c8bc0c784f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../www/3rdpartylicenses.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/4-es2015.5132ccb3ab1ca7d4c512.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/4-es5.4320f4bfb01b95c0aee0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/40-es2015.3ac1048a2c35f6646e47.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/40-es5.fc032a6f4a28de6fb9cb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/41-es2015.abdb12299eaad7ec1bb0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/41-es5.bcedf2d826e80d271418.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/42-es2015.caa9834c9b68997379a0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/42-es5.07645e713f8caba263a2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/43-es2015.c9022bd4f3b41d79ded5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/43-es5.7b5b1f57298af96af982.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/44-es2015.bff35dc0b61f7aaa4dfa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/44-es5.d0fb7f89bf442f9916fb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/45-es2015.584ef553b3d9d76d753b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/45-es5.28181e20baccd9c67629.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/46-es2015.8f601c15459b68d01482.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/46-es5.d6ba9776e99e11f2bfd7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/47-es2015.54a8c2aeed5fc97beb89.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/47-es5.d4fea07362b71a7cb317.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/48-es2015.dde60ee42d9ecec4c435.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/48-es5.52764e413807ac94c7b3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/49-es2015.3e070a3f003a3d43710c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/49-es5.be11ba8925d561b94c76.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/5-es2015.4ba70b5c31d199511896.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/5-es5.61e1b18a9b1970c6c265.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/50-es2015.5210aba4915dfd1ed248.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/50-es5.fa57bd61b8043aea26d8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/51-es2015.7508cdf4d5c9899c39d1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/51-es5.b1a2370a051dffa7f839.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/52-es2015.bc34f49640e427d512ee.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/52-es5.958ae4aee29a11b6c9da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/53-es2015.665b6288ca8d5c6fb00e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/53-es5.b827799840fcefaff769.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/54-es2015.9904f3b2d284f8d20f61.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/54-es5.a49990a035aa10407749.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/55-es2015.a2a6e904dbdb8cb25dd7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/55-es5.8019522fc66d9e579713.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/56-es2015.3ce7f642344db518c1ff.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/56-es5.74e67f77e63a4275398e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/57-es2015.5931c168467fb9061f4d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/57-es5.d0c44c903e0e264989bb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/58-es2015.cbbe259d9eff340f3700.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/58-es5.79d9384df6d612099ce7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/59-es2015.2acd20787ad82bfa15d6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/59-es5.7343ca9fad845f7c9336.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/6-es2015.fe1c33984283d60aa5b7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/6-es5.3af5dbfd1ca95fc08ab8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/60-es2015.2f790bc6186c9485b6e2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/60-es5.57413a0b830af9b7f6ee.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/61-es2015.5cb4600f8d88de626864.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/61-es5.0630756d4c1f810974a5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/62-es2015.e8081581ec94c9ad7b4e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/62-es5.0fc15c534971f601e006.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/63-es2015.b9a3c7dfdc587efcd88d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/63-es5.e45dbe4359ebda96bc50.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/64-es2015.55b750ae958dae748a68.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/64-es5.5b073af1741c2fc14f73.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/65-es2015.28b29172a7082ea8a1c8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/65-es5.943b4da6cce633676065.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/66-es2015.93d0dcf4c66e57f63fae.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/66-es5.912bf5ef7cd10ab91811.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/67-es2015.6a30d1ab4527be79ce6a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/67-es5.f93ffd50024ecdb8967b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/68-es2015.5b36e426f587a74306a0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/68-es5.707f151075c57a30721f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/69-es2015.c2f995989067ca0f708a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/69-es5.1ac43bcfa64ed4ca58e8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/7-es2015.77fa25bbaa4c4152c8e1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/7-es5.b26b29953356db551ac7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/70-es2015.49f0086213a87bf0f029.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/70-es5.56252f3623b38cb937a9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/71-es2015.13d96a6fcee6c12bfc53.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/71-es5.0ba8354b920e2e72fc05.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/72-es2015.0e4443be3d21bacc506c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/72-es5.0e2535663e6866af20bd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/73-es2015.c38a1e930cd3be606da8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/73-es5.203f63464a7f1ac11639.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/74-es2015.d7aeea52db52c1764d27.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/74-es5.94638b6e88e65a6c12ae.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/75-es2015.0875de3916e8db2bb67c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/75-es5.e7ee39cd3d57c525d377.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/76-es2015.3db12aa98649fc4ee7db.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/76-es5.33624d13c823569d2ce5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/77-es2015.65d4199ee6dc18ba46f8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/77-es5.8cf336597c24d06b14ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/78-es2015.010e9826cb030feb250c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/78-es5.972679f3a72c7644f38f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/79-es2015.f38d91de6ae64a3b8506.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/79-es5.9d84271f215cd4fe4944.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/8-es2015.a2c1e72bbd49514c1bbf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/8-es5.1735a7265e10126c8a30.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/80-es2015.eaabda17693fab9ce580.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/80-es5.35c0ee4e5351f4d1c602.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/81-es2015.7ccf8db8a56c9a79713f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/81-es5.7efa69c0a41f9acb8517.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/82-es2015.48080f34f7071abca9ef.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/82-es5.b64a818723b1d5d41f65.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/83-es2015.0043dab346f4673625bf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/83-es5.8968c438114107036167.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/84-es2015.a7dcf216c8a7ad2a1554.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/84-es5.b412f9038439eac4a1e6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/85-es2015.8e25831749b0c9ce6733.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/85-es5.c5e2f6183612a8ab6865.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/86-es2015.4098c7f4c4de1cfd5d35.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/86-es5.6a24caeec49107d036ce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/87-es2015.9a9e5157819aec612c75.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/87-es5.a5b5aafa08a9e9d1c7c7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/88-es2015.56fc7b7592cef7034dec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/88-es5.33e2302b49caccf9876b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/89-es2015.f90b7d26bb7fc0e122bc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/89-es5.2f364ab5c74b2dbc8783.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/9-es2015.5443cbc7423b3e93c026.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/9-es5.bf98adaa3f25ee5dfdff.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/90-es2015.bd3c9446419d95eaadfa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/90-es5.83c2306e3729d7c7cc9d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/91-es2015.b7f671ba5bed5b2b1066.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/91-es5.9601ba2315606c0cdb4b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/92-es2015.c265d0b1073516792661.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/92-es5.7338a5970c3565782b1e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/93-es2015.358709e702134e20355b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/93-es5.b2d006757c6578ff78a2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/94-es2015.67c15b599affeaadcdac.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/94-es5.ca5079ec337e605ae3d0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/95-es2015.9def40db19ddb229be56.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/95-es5.1a31a6dcdf715276112b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/96-es2015.a46928b2af7b7b6e5295.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/96-es5.33a039b6809c3a9bedab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/97-es2015.3b06056c8b051694ce79.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/97-es5.bcf02d960c9df4443690.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/98-es2015.cc6e5f5693e167f663ed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/98-es5.0f36b486eb967bb990cc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/99-es2015.3437fa7d08f646c42a39.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/99-es5.8a258d5d237a97555e98.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/common-es2015.3dbace5681709073836d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/common-es5.58f7a084a0b344940160.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../www/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/main-es2015.3cc02d6e5761a12e0415.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/main-es5.1916f4e345d990faf33a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/polyfills-es2015.a09cfa39e740a8fd21b0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/polyfills-es5.ae3d12c36abf48a64ecb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/runtime-es2015.9a477dc7f26f8dddcdbb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/runtime-es5.3ce161cf87c29db81c50.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www/styles.18076e1b899a1aea4aa7.css" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +769,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="65acc62d7ce6" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_28" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -27,16 +780,18 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+        <entry file="file://$PROJECT_DIR$/settings.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+            <state relative-caret-position="60">
+              <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
             </state>
           </provider>
-          <provider editor-type-id="android-manifest" />
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -45,18 +800,36 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages ProjectPane="true" />
+      <hideEmptyPackages ProjectPane="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -71,7 +844,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/../../../../../../sdk/android" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -167,7 +944,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.23462088" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3297568" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -184,7 +961,7 @@
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Build" order="9" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Build" order="9" visible="true" weight="0.3283767" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
@@ -194,26 +971,62 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Preview" order="7" weight="0.3297568" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3297568" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Build Variants" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Designer" order="5" />
+      <window_info id="Resources Explorer" order="6" weight="0.3297568" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="0" />
+      <window_info anchor="bottom" id="Logcat" order="1" />
+      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Debug" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="5" visible="true" weight="0.32957748" />
+      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Flutter Performance" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Build" order="9" weight="0.38450703" />
+      <window_info anchor="right" id="Preview" order="0" weight="0.3297568" />
+      <window_info anchor="right" id="Device File Explorer" order="1" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="right" id="Gradle" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Flutter Inspector" order="5" />
+      <window_info anchor="right" id="Flutter Outline" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../node_modules/@capacitor/android/capacitor/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../node_modules/@capacitor/android/capacitor/src/main/res/layout/bridge_layout_main.xml">
-      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../node_modules/@capacitor/android/capacitor/src/main/res/drawable/ic_transparent.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
